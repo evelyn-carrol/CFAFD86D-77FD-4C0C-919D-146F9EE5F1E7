@@ -1,0 +1,264 @@
+<div class="media_on">
+    <div class="hamburger_menu" onclick="document.querySelector('.responsive_toggle_menu').classList.toggle('show');
+            document.querySelector('.responsive_toggle_m').classList.toggle('active')">
+        <img src="/assets/img/menu.svg" alt="">
+    </div>
+    <div class="bl-panel">
+        <div class="balance oddiy">
+            <a href="/profile/deposit/" class="flex flex-align-center">
+                <span>+ {{profile.balance|money}}</span>
+                <img src="/assets/img/usd.svg" alt="">
+            </a>
+            <a onclick="document.querySelector('main .blurred-cover').classList.toggle('active');
+                                document.querySelector('.head-context-menu').classList.add('active');
+                                document.querySelector('.head-currency-menu').classList.remove('active')">
+                <img class="arrow-down-2" style="width: 12px;" src="/assets/img/arrow-down.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="blurred-cover" onclick="this.classList.remove('active');">
+    <div class="context-menu">
+        <div class="wrapper head-context-menu">
+            <div class="corner-right-top-clip-xs flex flex-col">
+                <div class="bordered text-right">
+                    <p>{{#i18n}}header.my_profile{{/i18n}}</p>
+                </div>
+                <nav class="flex flex-col flex-align-flex-end margin-top-sm">
+                    <a href="/profile/">{{#i18n}}header.settings{{/i18n}}</a>
+                    {{#if profile.role 'IN' 'client' 'seller'}}
+                        <a href="/shop/cart/">{{#i18n}}cart.title{{/i18n}}</a>
+                    {{/if}}
+                </nav>
+            </div>
+            <div class="corner-left-bottom-clip-xs flex flex-col">
+                <div class="bordered text-right">
+                    <p>{{#i18n}}header.more{{/i18n}}</p>
+                </div>
+                <nav class="flex flex-col flex-align-flex-end margin-top-sm">
+                    <a href="/support/">{{#i18n}}header.support{{/i18n}}</a>
+                    <a onclick="___mc.auth.logout()">{{#i18n}}header.log_out{{/i18n}}</a>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper head-currency-menu">
+            <div class="corner-left-top-clip-xs search">
+                <img src="/assets/img/search.svg" alt="">
+                <p>Search currencies</p>
+            </div>
+            <div class="items">
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="corner-right-bottom-clip-xs buttons">
+                <div class="border"></div>
+                <button>See my wallet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="bl-top account_page_media media_off">
+            <div class="navi-path">
+                <h1>{{header.title}}</h1>
+                {{#each header.breadcrumbs}}
+                    <p><span>{{url}}</span>{{name}}</p>
+                {{/each}}
+            </div>
+            <div class="info-panel">
+                {{#if profile.role 'seller'}}
+                    <div class="bl-panel">
+                        <a class="rank">
+                            <span>{{#i18n}}dashboard.rank.title{{/i18n}}</span>
+                            <span class="arrow arrow-right"></span>
+                        </a>
+                        <a class="button bordered">
+                            <span>{{profile.rank.name}}</span>
+                        </a>
+                        <a>
+                            <img src="/assets/img/{{profile.rank.name}}.svg" alt="">
+                        </a>
+                    </div>
+                {{/if}}
+                <div class="index_html_show_profile">
+                    <div class="bl-panel ">
+                        <div class="balance">
+                            <a href="/profile/deposit/">
+                                <span>+ {{profile.balance|money}}</span>
+                                <img src="/assets/img/usd.svg" alt="">
+                            </a>
+                            <a class="hide" onclick="document.querySelector('main .blurred-cover').classList.toggle('active');
+                                document.querySelector('.head-context-menu').classList.add('active');
+                                document.querySelector('.head-currency-menu').classList.remove('active')">
+                                <img class="arrow-down-2" style="width: 12px;" src="/assets/img/arrow-down.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl-panel">
+                    <div class="index_html_show_profile2">
+                        <div>
+                            <a href="/profile/">
+                                <span>{{profile.nickname}}</span>
+                            </a>
+                        </div>
+                        <!--
+                        <div class="login">
+                            <a href="/profile/">
+                                <img src="/assets/img/login.svg" alt="">
+                            </a>
+                        </div>
+                        -->
+                        {{#if profile.role 'IN' 'client' 'seller'}}
+                            <div class="cart">
+                                <a href="/shop/cart/">
+                                    <img src="/assets/img/cart.svg" alt="">
+                                </a>
+                            </div>
+                        {{/if}}
+                    </div>
+                    <div class="flex">
+                        <a class="header-menu" onclick="document.querySelector('main .blurred-cover').classList.toggle('active');
+                        document.querySelector('.head-context-menu').classList.add('active');
+                        document.querySelector('.head-currency-menu').classList.remove('active')">
+                            <span class="menu-dots">
+                                <span class="menu-dot"></span>
+                                <span class="menu-dot"></span>
+                                <span class="menu-dot"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bl-bottom responsiveNone">
+            <div>
+                {{#each header.actions}}
+                    <!--
+                        <button>Buy individually</button>
+                        <button>Buy in bulk</button>
+                    -->
+                    {{{.}}}
+                {{/each}}
+            </div>
+            <div>
+                {{#each header.notes}}
+                    <!--
+                        <p>text block</p>
+                        <p>.<span class="el-count red">001</span></p>
+                    -->
+                    {{{.}}}
+                {{/each}}
+            </div>
+            <div>
+                {{#each header.counters}}
+                    <!--
+                    <a>acheter la selection <span class="el-count">(5)</span></a>
+                    <a>goto cart <span class="el-count">(7)</span></a>
+                    <a>all filters</a>
+                    -->
+                    {{{.}}}
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+    <div class="index_page_main context-menu active">
+        <div class="wrapper index_page_wrapper2">
+            <div class="corner-left-top-clip-xs search">
+                <img src="/assets/img/search.svg" alt="">
+                <input style="background: transparent !important;" placeholder="Search currencies" type="text">
+            </div>
+            <div class="items">
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <span class="title">0.00</span>
+                    <img src="/assets/img/btc.svg" alt="">
+                    <span class="caption">BTC</span>
+                    <button>
+                        <img src="/assets/img/arrow-top-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="corner-right-bottom-clip-xs buttons">
+                <div class="border"></div>
+                <button>See my wallet</button>
+            </div>
+        </div>
+        <div class="wrapper index_page_wrapper">
+            <div class="corner-right-top-clip-xs flex flex-col">
+                <div class="bordered text-right">
+                    <p>My Profile</p>
+                </div>
+                <nav class="flex flex-col flex-align-flex-end margin-top-sm">
+                    <a href="/profile/">Settings</a>
+                </nav>
+            </div>
+            <div class="corner-left-bottom-clip-xs flex flex-col">
+                <div class="bordered text-right">
+                    <p>More</p>
+                </div>
+                <nav class="flex flex-col flex-align-flex-end margin-top-sm">
+                    <a href="/support/">Support</a>
+                    <a href="#">Log out</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

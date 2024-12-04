@@ -1,0 +1,101 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="flex gap-sm reglaments_page">
+            <div class="flex flex-col">
+                <div class="block corner-left-top-right-bottom-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>Les qualités</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-inner">
+                            <button class="bordered margin-bottom-sm">Déposer des fonds</button>
+                            <div class="col-1-1">
+                                <p>Conscient de l'importance d'un accès rapide et organisé aux
+                                    fonctionnalités
+                                    essentielles, le menu situé en haut à droite de notre maquette est
+                                    un
+                                    élément clé du design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="corner-right-top-clip-sm space-wrapper media_off">
+                    <div class="placeholder striped" style="height: 55vh"></div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <div class="corner-right-bottom-clip-sm space-wrapper media_off">
+                    <div class="placeholder striped" style="height: 55vh"></div>
+                </div>
+                <div class="block corner-left-top-right-bottom-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>02</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>Les règles à suivre</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-inner">
+                            <div class="col-1-1">
+                                <button class="bordered margin-bottom-sm">Déposer des fonds</button>
+                                <p></p>
+                                <p>Conscient de l'importance d'un accès rapide et organisé aux
+                                    fonctionnalités
+                                    essentielles, le menu situé en haut à droite de notre maquette est
+                                    un
+                                    élément clé du design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="block corner-left-top-right-bottom-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>03</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>Contacter le support</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-inner">
+                            <div class="col-1-1">
+                                <button class="bordered margin-bottom-sm">Déposer des fonds</button>
+                                <p></p>
+                                <p>Conscient de l'importance d'un accès rapide et organisé aux
+                                    fonctionnalités
+                                    essentielles, le menu situé en haut à droite de notre maquette est
+                                    un
+                                    élément clé du design.</p>
+                                <p></p>
+                                <a href="" class="button margin-top-sm">Contacter le support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="corner-right-top-clip-sm space-wrapper media_off">
+                    <div class="placeholder striped" style="height: 55vh"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

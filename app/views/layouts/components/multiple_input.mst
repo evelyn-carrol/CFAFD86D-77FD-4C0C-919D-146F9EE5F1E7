@@ -1,0 +1,17 @@
+<div class="multiple-input {{classlist}}" id="{{id}}">
+    {{#if label }}
+        <label class="mt-0 pointer">{{label}}</label>
+    {{/if}}
+    <div class="d-flex">
+        <input name="{{name}}" type="{{type}}" placeholder="{{placeholder}}" autocomplete="off" {{#if disabled }}disabled{{/if }} //>
+        <div class="multiple-input__actions d-flex">
+            <button class=" ml-2 icon {{#unless multiple}}hide{{/unless}} " {{#if disabled }}disabled{{/if }} data-type="add">
+                <span class="mdi mdi-plus-thick"></span>
+            </button>
+            <button class=" ml-2 icon {{#unless delete}}hide{{/unless}} " {{#if disabled }}disabled{{/if }} data-type="delete">
+                <span class="mdi mdi-delete"></span>
+            </button>
+        </div>
+    </div>
+    <div class="multiple-input__errors hide"></div>
+</div>

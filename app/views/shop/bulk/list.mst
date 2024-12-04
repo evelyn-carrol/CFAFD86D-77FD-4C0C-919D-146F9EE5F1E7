@@ -1,0 +1,100 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm manage_base_page_corner_left_top_clip_sm">
+            <div class="title ">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption panel_seller_h2">
+                    <h2>{{#i18n}}shop.bulk.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="withdrawal_texts manage_bases_html manage_base_section_meyn_div manage_base_section_meyn_div_res">
+                <div class="meyn_div">
+                    <div class="title">
+                        <div class="block_caption" style="border: none; padding: 0">
+                            <div class="block_caption">
+                                {{#datetimepicker type='datetime' placeholder='shop.bulk.table.created' value=filter.period_s onchange='shop.bulk.filter.created.start.change'}}{{/datetimepicker}}
+                            </div>
+                            <div class="block_caption">
+                                {{#datetimepicker type='datetime' placeholder='shop.bulk.table.created' value=filter.period_e onchange='shop.bulk.filter.created.end.change'}}{{/datetimepicker}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <div class="block_caption">
+                            {{#filter_autocomplete multiple='false' placeholder='shop.seller' name='seller' value=filter.seller onset=seller_set onsuggest='sellers.suggest' min=0 onchange=filter_change}}
+                            {{/filter_autocomplete}}
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <div class="block_caption">
+                            <input type="text" placeholder="{{#i18n}}shop.bulk.table.base_name{{/i18n}}" name="q" value="{{filter.q}}" onchange="___mc.events.push('shop.bulk.filter.q.change', this)" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="buttons manage_button manage_base_page_button">
+                        <button type="button" class="bordered col-1-1" onclick="___mc.events.push('shop.bulk.filter.filter', this)">
+                            {{#i18n}}buttons.search{{/i18n}}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1-5 responsive_off_coriner responsive_off_coriner_">
+                    <div class="corner-right-top-clip-sm media_off space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents contents_inner_manage_base_page" handler="controllers/shop/bulk/handler">
+                <div class="contents-inner contents_inner_">
+                    <div class="table-container withdraw_req_page_table_container manage_bases_page_table_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" onchange="___mc.events.push('shop.bulk.checkbox.all.toggle', this)"></th>
+                                    <th>{{#i18n}}shop.bulk.table.name{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.bulk.table.price{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.bulk.table.status{{/i18n}}</th>
+                                    <th>{{#i18n}}table.action{{/i18n}}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="100%">
+                                        <div class="loader">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        <div class="placeholder striped flex flex-justify-center">
+                            {{#pagination}}{{/pagination}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

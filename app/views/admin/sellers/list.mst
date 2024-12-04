@@ -1,0 +1,421 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="admin_panel block corner-left-top-clip-sm">
+
+            <div class="flex_div sellers_page_flex_div">
+                <div class="admin_panel_cards">
+                    <div class="admin_panel_cards_2">
+                        <div class="dashboard">
+
+                            <div
+                                    class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>Total balance</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">2,144</span>
+                                    <span class="measure">usd</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard">
+                            <div
+                                    class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>TOTAL sales</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">1,250</span>
+                                    <span class="measure">pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard">
+                            <div
+                                    class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>sales</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">1,250</span>
+                                    <span class="measure">pcs</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="base_page_main_html">
+                        <div class="filter_text">
+                            <p class="filters_text filters_basee">filters</p>
+                            <span></span>
+                        </div>
+                        <div
+                                class="admin_panel_page_caption admin_panel_page_caption_base_html corner-left-top-right-bottom-clip-xs">
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="base" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="type" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="buttons margin-top-sm">
+                                <button type="submit" class="bordered col-1-1">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive_offf corner-right-top-clip-sm media_off space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+
+
+                </div>
+                <div class="sellers_page_right">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>312</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>sellers / statisitcs</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="corner_triangle corner_triangle_sellers_page">
+                        <div class="corner-right-top-clip-sm space-wrapper">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+
+                    <div class="table-container sellers_page_table_container">
+                        <table>
+                            <thead>
+                            <tr class="sellers_page_tr">
+                                <th>sellers</th>
+                                <th>daily</th>
+                                <th>monthly</th>
+                                <th>all</th>
+                                <th>withdraw</th>
+                            </tr>
+                            <tr class="">
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    opa (50%)
+                                </td>
+                                <td>
+                                    0% of total sales $0/0 btc
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>0% of total sales $0/0 btc</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    202.00 €
+                                </td>
+                                <td class="withdraw_color">
+                                    16.00 €
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="placeholder  pagination-wrapper sellers_page_placeholder">
+                        <nav class="pagination">
+                            <a href="" class="prev"></a>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <span class="active">-</span>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href="" class="next"></a>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

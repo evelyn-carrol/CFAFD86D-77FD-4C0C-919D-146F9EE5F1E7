@@ -1,0 +1,618 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="admin_panel block corner-left-top-clip-sm withdrawal_requests_page_admin_panel">
+            <div class="dashboard referral_page responsive_card_div">
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>Total users</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">2,144</span>
+                        <span class="measure">users</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>total balance</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>requested</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">users</span>
+                    </div>
+                </div>
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>tickets</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <!-- <span class="measure">users</span> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="hr"></div>
+            <div>
+
+                <div class="corner_triangle">
+                    <div class="corner-right-top-clip-sm space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+
+                <div class="table-container ">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>user id</th>
+                            <th>username</th>
+                            <th>rank</th>
+                            <th>balance</th>
+                            <th>to pay</th>
+                            <th>status</th>
+                            <th colspan="2">action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered">APPROvED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_uncheck">PENDING</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_red">CANCELED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_uncheck">PENDING</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered">APPROvED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_red">CANCELED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_uncheck">PENDING</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_red">CANCELED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered">APPROvED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span class="masked"></span>
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>
+                                user name
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button">
+                                        <span>GOLD</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="price">16.00 €</span>
+                            </td>
+                            <td>
+                                <span class="bordered">$241</span>
+                            </td>
+                            <td>
+                                <span class="bordered_red">CANCELED</span>
+                            </td>
+                            <td class="action">
+                                <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                            </td>
+                            <td class="action">
+                                <button class="cancel_bordered remove bordered red padding-sm"></button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="line-with-triangle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                    <div class="placeholder striped pagination-wrapper">
+                        <nav class="pagination">
+                            <a href="" class="prev"></a>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <span class="active">-</span>
+                            <a href="">4</a>
+                            <a href="" class="next"></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="block corner-left-top-clip-sm withdrawal_requests_background">
+            <div class="user_detail_page corner-left-top-clip-sm">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>12</span>
+                    </div>
+                    <div class="block-caption block_caption">
+                        <h2>SELLERS</h2>
+                        <a href="">
+                            <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="hr"></div>
+            </div>
+
+            <div class="withdrawal_requests_page_flex">
+
+                <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                    <div class="placeholder striped pagination-wrapper"></div>
+                </div>
+
+                <div class="user_detail_page">
+                    <div class="title">
+                        <div class="block-caption block_caption">
+                            <h2>USERNAME</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="buttons">
+                        <button type="submit" class="bordered col-1-1">SEARCH</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="table-container withdrawal_requests_table_container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>user id</th>
+                        <th>percentage</th>
+                        <th>balance</th>
+                        <th colspan="2">action</th>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            user name
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <a href="" class="button">
+                                    <span class="bordered">50%</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/gold.svg" alt="">
+                                </a>
+
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price">16.00 €</span>
+                        </td>
+                        <td class="action">
+                            <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                        </td>
+                        <td class="action">
+                            <button class="cancel_bordered remove bordered red padding-sm"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            user name
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <a href="" class="button">
+                                    <span class="bordered">50%</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/gold.svg" alt="">
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price">16.00 €</span>
+                        </td>
+                        <td class="action">
+                            <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                        </td>
+                        <td class="action">
+                            <button class="cancel_bordered remove bordered red padding-sm"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            user name
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <a href="" class="button">
+                                    <span class="bordered">50%</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/gold.svg" alt="">
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price">16.00 €</span>
+                        </td>
+                        <td class="action">
+                            <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                        </td>
+                        <td class="action">
+                            <button class="cancel_bordered remove bordered red padding-sm"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            user name
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <a href="" class="button">
+                                    <span class="bordered">50%</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/gold.svg" alt="">
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price">16.00 €</span>
+                        </td>
+                        <td class="action">
+                            <img class="ok_img" src="/assets/img/ok.svg" alt="">
+                        </td>
+                        <td class="action">
+                            <button class="cancel_bordered remove bordered red padding-sm"></button>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</section>

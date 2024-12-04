@@ -1,0 +1,17 @@
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>{{id}}</span>
+        </div>
+    </td>
+    <td>
+        <span class="bordered">{{timestamp}}</span>
+    </td>
+    <td>
+        <span class="price">{{amount|money}}</span>
+    </td>
+    <td>
+        {{comment}}
+    </td>
+</tr>

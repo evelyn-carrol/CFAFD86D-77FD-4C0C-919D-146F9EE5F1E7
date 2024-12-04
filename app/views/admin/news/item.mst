@@ -1,0 +1,25 @@
+<tr>
+    <td>
+        {{id}}
+    </td>
+    <td>
+        {{created|datetime}}
+    </td>
+    <td>
+        {{role}}
+    </td>
+    <td>
+        {{lang}}
+    </td>
+    <td>
+        {{title}}
+    </td>
+    <td class="action">
+        <a href="/admin/news/edit/{{id}}" class="button pencil bordered"></a>
+    </td>
+    <td class="action">
+        {{#if status 'active'}}
+            <button class="button remove red bordered" data-id="{{id}}" onclick="___mc.events.push('admin.news.archive', {id: {{id}}, title:'{{title|escape_html}}' })"></button>
+        {{/if}}
+    </td>
+</tr>

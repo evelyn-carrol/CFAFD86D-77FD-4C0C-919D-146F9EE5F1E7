@@ -1,0 +1,51 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{#i18n}}news.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+
+                    <div class="news-container">
+<!--                        <div class="news-periods margin-top-sm">-->
+<!--                            <button>Week1</button>-->
+<!--                            <button>Week2</button>-->
+<!--                            <button>Week3</button>-->
+<!--                            <button>Week4</button>-->
+<!--                        </div>-->
+                        <div class="corner-left-bottom-right-bottom-clip-sm space-wrapper margin-top">
+                            <div class="placeholder striped"></div>
+                        </div>
+                        <div class="news-list-container" handler="controllers/news/handler">
+<!--                            <select>-->
+<!--                                <option value="">Today</option>-->
+<!--                                <option value="">Tomorrow</option>-->
+<!--                            </select>-->
+
+                            <div class="news-list">
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

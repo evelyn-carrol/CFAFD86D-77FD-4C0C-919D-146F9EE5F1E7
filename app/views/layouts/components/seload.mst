@@ -1,0 +1,7 @@
+<div class="select {{classlist}}" id="{{id}}">
+    <div class="option" data-value="{{value}}">
+        <span>{{#i18n}}select.default{{/i18n}}</span>
+        <ul class="options">
+        </ul>
+    </div>
+</div>

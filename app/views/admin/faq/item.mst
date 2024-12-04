@@ -1,0 +1,25 @@
+<tr>
+    <td>
+        {{id}}
+    </td>
+    <td>
+        {{created|datetime}}
+    </td>
+    <td>
+        {{language}}
+    </td>
+    <td>
+        {{question}}
+    </td>
+    <td>
+        {{status}}
+    </td>
+    <td class="action">
+        <a href="/admin/faq/edit/{{id}}" class="button pencil bordered"></a>
+    </td>
+    <td class="action">
+        {{#if status 'active'}}
+            <button class="button remove red bordered" data-id="{{id}}" onclick="___mc.events.push('admin.faq.archive', {id: {{id}}, question:'{{question|escape_html}}' })"></button>
+        {{/if}}
+    </td>
+</tr>

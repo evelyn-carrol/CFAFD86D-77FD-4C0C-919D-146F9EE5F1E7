@@ -1,0 +1,14 @@
+<li class="active">
+    <div class="faq-title">
+        <p>
+            <span>0{{__k}}</span>
+            {{question}}
+        </p>
+        <a onclick="this.closest('li').classList.toggle('active')">
+            <img src="/assets/img/arrow-down.svg" alt="">
+        </a>
+    </div>
+    <div class="faq-item">
+        <p>{{answer}}</p>
+    </div>
+</li>

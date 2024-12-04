@@ -1,0 +1,52 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>Sender ID</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <div class="outils">
+                        <form action="">
+                            <div class="col-1-1">
+                                <div class="form-element">
+                                    <p class="label">sender</p>
+                                    <input type="text" placeholder="Enter the requested information">
+                                    <p class="notes">
+                                        alphanumeric character (3 - 11 character)
+                                    </p>
+                                </div>
+                                <div class="form-element">
+                                    <p class="label">recipient</p>
+                                    <input type="text" placeholder="Enter the requested information">
+                                </div>
+                                <div class="form-element">
+                                    <p class="label">message</p>
+                                    <textarea placeholder="Enter the requested information"></textarea>
+                                    <p class="notes">
+                                        160 characters minimum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <p>price per text <span>0.10&euro;</span></p>
+                                <button type="submit" class="bordered">Send the text message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<div class="col-1-1">
+    <div class="support-chat-item corner-left-top-right-bottom-clip-xs col-1-2 {{#if user.is_me}}me{{/if}}">
+        <div class="title">
+            <span class="username">
+                {{#if user.is_me}}me{{/if}}{{#unless user.is_me}}{{user.nickname}}{{/unless}}
+            </span>
+            <span class="datetime">{{created|datetime}}</span>
+        </div>
+        <div class="message">
+            {{{text}}}
+        </div>
+    </div>
+</div>

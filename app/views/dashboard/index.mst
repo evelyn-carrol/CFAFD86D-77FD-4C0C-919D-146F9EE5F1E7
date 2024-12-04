@@ -1,0 +1,134 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+
+        <div class="block corner-left-top-clip-sm dashboard_page_cornered_titles" handler="controllers/dashboard/tiles">
+            <div class="dashboard referral_page">
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>{{#i18n}}dashboard.tiles.total.deposit{{/i18n}}</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between stat_deposit">
+                        <span class="value">0</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>{{#i18n}}dashboard.tiles.total.orders{{/i18n}}</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between stat_orders">
+                        <span class="value">0</span>
+                        <span class="measure">pcs</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>{{#i18n}}dashboard.tiles.total.spend{{/i18n}}</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between stat_spend">
+                        <span class="value">0</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+
+                <div class="col-1-4 referral_page_col_1">
+                    <div class="cornered-text-block corner-left-top-right-bottom-clip-xs margin-bottom-xs referral-link">
+                        <img src="/assets/img/ok.svg" alt="">
+                        <p>{{#i18n}}dashboard.tiles.referral.copy{{/i18n}}</p>
+                    </div>
+                    <div class="referral-url">
+                        <a href="#" class="button gap-xs">
+                            <span></span>
+                            <img src="/assets/img/arrow-top-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard-container dashboard_section dashboard_page_section">
+            <div class="block corner-left-top-right-bottom-clip-sm dashboard-left-top ">
+                <div class="title_and_contents">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}cards.title{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents right_connect" handler="controllers/dashboard/cards">
+                        <div class="loader" style="margin: 20vh auto">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                {{#if profile.role 'seller'}}
+                    <div class="block width_full connect_dashboard_page_titltess bg-red">
+                        <div class="title">
+                            <div class="block-number corner-left-top-right-bottom-clip-xs">
+                                <span>03</span>
+                            </div>
+                            <div class="block-caption block_caption">
+                                <h2>{{#i18n}}dashboard.rank.title{{/i18n}}</h2>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="connect_dashboard_page_title" handler="controllers/dashboard/rank">
+                            <div class="loader" style="margin: 20vh auto">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+            
+            <div class="block corner-left-top-clip-sm dashboard-right-top">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>02</span>
+                    </div>
+                    <div class="block-caption block_caption">
+                        <h2>{{#i18n}}dashboard.activity.title{{/i18n}}</h2>
+                        <span>
+                            <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="flex flex-col gap-sm margin-top-sm" handler="controllers/dashboard/activity">
+                        <div class="loader" style="margin: 20vh auto">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="add_texts">
+            <div>
+                <h1>add your ad here</h1>
+            </div>
+            <div>
+                <h1>add your ad here</h1>
+            </div>
+        </div>
+        
+    </div>
+</section>

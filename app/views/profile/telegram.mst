@@ -1,0 +1,58 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="user-space-wrapper flex gap-sm deposit_page_user_space_wrapper_2">
+            {{>/profile/menu active='telegram'}}
+            <div class="col-3-4">
+                <div class="block corner-left-top-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}profile.telegram.title{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="col-1-3">
+                            <h2 class="account-edit-h2">
+                                <span>{{#i18n}}profile.info.title{{/i18n}}</span>
+                                <img src="/assets/img/warning-yellow.svg" alt="">
+                            </h2>
+                            <p>{{#i18n}}profile.info.text{{/i18n}}</p>
+                        </div>
+                        <div class="account-edit">
+                            <form action="" autocomplete="off">
+                                <div class="form-element col-1-1">
+                                    <p class="label">Status</p>
+                                    <div class="wrap-container">
+                                        <div class="col-1-1">
+                                            <p>
+                                                {{#if profile.telegram_id}}
+                                                    {{#i18n}}profile.telegram.status.linked{{/i18n}}
+                                                {{/if}}
+                                                {{#unless profile.telegram_id}}
+                                                    {{#i18n}}profile.telegram.status.not_linked{{/i18n}}
+                                                {{/unless}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    {{#unless profile.telegram_id}}
+                                        <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('profile.link_tg', this)">{{#i18n}}buttons.link_tg{{/i18n}}</button>
+                                    {{/unless}}
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

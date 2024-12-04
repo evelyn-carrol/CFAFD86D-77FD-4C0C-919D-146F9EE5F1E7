@@ -1,0 +1,13 @@
+<div class="dropdown lang">
+    <div class="title">
+        <a class="mdi mdi-web"></a>{{lang}}
+    </div>
+    <div class="content">
+        {{#if lang 'ru' }}
+            <a class="link" onclick="___mc.events.push('lang.change', 'en')">En</a>
+        {{/if}}
+        {{#if lang 'en' }}
+            <a class="link" onclick="___mc.events.push('lang.change', 'ru')">Ru</a>
+        {{/if}}
+    </div>
+</div>

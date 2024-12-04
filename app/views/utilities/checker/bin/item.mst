@@ -1,0 +1,23 @@
+<tr>
+    <td>
+        <img src="/assets/cards/thumb/{{BIN}}.png" alt="">&nbsp;
+        {{BIN}} - {{Brand}}
+    </td>
+    <td>
+        {{#unless IssuerUrl}}{{Issuer}}{{/unless}}
+        {{#if IssuerUrl}}<a href="{{IssuerUrl}}" target="_blank">{{Issuer}}</a>{{/if}}
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>{{CountryName}}</span>
+            </a>
+            <a href="" class="button">
+                <img src="https://flagcdn.com/w20/{{isoCode2|lowercase}}.png" alt="" >
+            </a>
+        </div>
+    </td>
+    <td>
+        {{Type}}
+    </td>
+</tr>

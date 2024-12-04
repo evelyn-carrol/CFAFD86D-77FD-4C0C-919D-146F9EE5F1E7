@@ -1,0 +1,88 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm manage_base_page_corner_left_top_clip_sm">
+            <div class="title ">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption panel_seller_h2">
+                    <h2>{{#i18n}}cards.caption{{/i18n}} {{filter.base_id}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="withdrawal_texts manage_bases_html manage_base_section_meyn_div manage_base_section_meyn_div_res">
+                <div class="meyn_div">
+                    <div class="title">
+                        <div class="block_caption">
+                            {{#filter_autocomplete multiple='true' placeholder='bases.table.status' name='status' value=filter.status onset=status_set onsuggest=status_suggest min=0 onchange=filter_change}}
+                            {{/filter_autocomplete}}
+                        </div>
+                    </div>
+
+                    <div class="buttons manage_button manage_base_page_button">
+                        <button type="button" class="bordered col-1-1" onclick="___mc.events.push('bases.cards.filter.filter', this)">
+                            {{#i18n}}buttons.search{{/i18n}}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1-5 responsive_off_coriner responsive_off_coriner_">
+                    <div class="corner-right-top-clip-sm media_off space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents contents_inner_manage_base_page" data-base-id="{{filter.base_id}}" handler="controllers/bases/cards/handler">
+                <div class="contents-inner contents_inner_">
+                    <div class="table-container withdraw_req_page_table_container manage_bases_page_table_container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" onchange="___mc.events.push('shop.cvv.checkbox.all.toggle', this)"></th>
+                                <th>{{#i18n}}shop.cvv.table.bin{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.expire{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.brand{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.type{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.category{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.country{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.issuer{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.base{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.price{{/i18n}}</th>
+                                <th>{{#i18n}}table.action{{/i18n}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <td colspan="11">
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </td>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        <div class="placeholder striped flex flex-justify-center">
+                            {{#pagination}}{{/pagination}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,6 @@
+<div id="bg-circle"></div>
+<div id="app">
+    <div id="not_found" data-content-holder>
+        {{{content}}}
+    </div>
+</div>

@@ -1,0 +1,83 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="flex gap-sm checker-wrapper_">
+            <div class="col-1-2">
+                <div class="block corner-left-top-clip-sm checker_bin_page">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}utilities.checker.bin.title{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <form action="">
+                            <div class="col-1-1">
+                                <div class="form-element">
+                                    <p class="label">{{#i18n}}utilities.checker.bin.label{{/i18n}}</p>
+                                    <input class="main_input_el" type="number" placeholder="1234 5678 1234 5678" name="bin">
+                                    <p class="notes">
+                                        {{#i18n}}utilities.checker.bin.notes{{/i18n}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button type="submit" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('utils.bin_checker.submit', this)">{{#i18n}}utilities.checker.bin.button{{/i18n}}</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="corner-right-bottom-clip-sm media_off space-wrapper margin-top checker_bin_page_corner">
+                    <div class="placeholder striped "></div>
+                </div>
+            </div>
+            <div id="bins-list" class="col-1-2 corner-left-top-clip-sm" handler="controllers/utilities/checker/bin/handler">
+                <div class="table-container">
+                    <div class="table-filters">
+                        <div class="corner-right-top-clip-xs space-wrapper col-2-3">
+                            <div class="placeholder striped"></div>
+                        </div>
+                        <div class="search-input media_off">
+                            <input class="padding-sm" type="search" placeholder="{{#i18n}}utilities.checker.bin.table.search{{/i18n}}">
+                            <span class="search-input-img"></span>
+                        </div>
+                        <div class="search_icon media_onn">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>{{#i18n}}utilities.checker.bin.table.bin{{/i18n}}</th>
+                            <th>{{#i18n}}utilities.checker.bin.table.bank{{/i18n}}</th>
+                            <th>{{#i18n}}utilities.checker.bin.table.country{{/i18n}}</th>
+                            <th>{{#i18n}}utilities.checker.bin.table.type{{/i18n}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="100%">
+                                    <div class="loader">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        {{#pagination}}{{/pagination}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

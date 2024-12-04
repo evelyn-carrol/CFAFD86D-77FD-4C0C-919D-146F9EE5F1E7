@@ -1,0 +1,65 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{title}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}faq.table.question{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}faq.table.question{{/i18n}}" name="question" autocomplete="off" value="{{faq.question}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}faq.table.lang{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=faq.language items=languages onchange=faq_lang_change}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}faq.table.status{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=faq.status items=statuses onchange=faq_status_change}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}faq.table.answer{{/i18n}} *</p>
+                            <textarea placeholder="{{#i18n}}faq.table.answer{{/i18n}}" name="answer" autocomplete="off">{{faq.answer}}</textarea>
+                            <p class="notes">10 {{#i18n}}info.characters_minimum{{/i18n}}</p>
+                        </div>
+
+                        <div class="buttons">
+                            {{#if faq.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.faq.save', this)" data-action="create">{{#i18n}}buttons.add{{/i18n}}</button>
+                            {{/if}}
+                            {{#unless faq.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.faq.save', this)" data-action="update">{{#i18n}}buttons.update{{/i18n}}</button>
+                            {{/unless}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

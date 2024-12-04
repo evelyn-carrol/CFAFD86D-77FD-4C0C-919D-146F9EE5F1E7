@@ -1,0 +1,13 @@
+<div class="autocomplete {{classlist}}" id="{{id}}">
+    {{#if label}}
+        <label>{{#i18n}}{{label}}{{/i18n}}</label>
+    {{/if}}
+    <input type="text" placeholder="{{placeholder}}" {{#if name }}name="{{name }}"{{/if }} value="{{value }}" {{#if disabled }}disabled{{/if }} autocomplete="off"/>
+    <span class="mdi mdi-close {{#unless disabled}}clear{{/unless}} {{#if disabled }}disabled{{/if }}"></span>
+    <ul class="options">
+        <li class="empty">{{#i18n}}table.empty{{/i18n}}</li>
+    </ul>
+</div>
+<div>
+    <img src="/assets/img/box-arrow-right-top.svg" alt="">
+</div>

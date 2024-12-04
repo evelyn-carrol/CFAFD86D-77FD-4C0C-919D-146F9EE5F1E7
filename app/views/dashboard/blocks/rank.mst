@@ -1,0 +1,56 @@
+<div class="contents_1">
+    <div class="flex flex-justify-between flex-align-center margin-top-sm block_div">
+        <div class="flex">
+            <a class="button">
+                <span>{{#i18n}}dashboard.rank.title{{/i18n}}</span>
+                <img class="arrow_red" src="/assets/img/arrow-right.svg" alt="">
+            </a>
+            <a class="button bordered">
+                <span>{{profile.rank.name}}</span>
+            </a>
+            <img src="/assets/img/{{profile.rank.name}}.svg" alt="">
+        </div>
+
+
+        <div class="col-2-3">
+            <div class="progress-container padding-xs blue">
+                <div class="progress-indicator percent_indicator">
+                    <div class="progress-percent" style="width: {{profile.rank.progress}}%"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex">
+            <a class="button">
+                <span>{{#i18n}}dashboard.rank.title{{/i18n}}</span>
+                <img class="arrow_red" src="/assets/img/arrow-right.svg" alt="">
+            </a>
+            <a class="button bordered">
+                <span>{{profile.rank.next}}</span>
+            </a>
+            <img src="/assets/img/{{profile.rank.next}}.svg" alt="">
+        </div>
+
+    </div>
+
+    <div class="block width_full">
+        <div class="col-1-1 flex flex-justify-center margin-top-lg dashboard_page_percent  mid_caption_red">
+            <p>
+                <span class="mid-caption">{{profile.rank.progress}}%</span>
+                <span>{{#i18n}}dashboard.rank.of{{/i18n}}</span>
+                <span class="mid-caption">100%</span>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="contents_2">
+    <div class="col-1-2 corner-right-bottom-clip-sm padding-lg margin-top-sm">
+        <p>{{#i18n}}dashboard.rank.my_progress{{/i18n}}</p>
+    </div>
+    <div class="corner-right-bottom-clip-sm media_off space-wrapper margin-top">
+        <div class="placeholder striped "></div>
+    </div>
+</div>

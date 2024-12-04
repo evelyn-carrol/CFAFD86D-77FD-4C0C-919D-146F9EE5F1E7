@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Bai Jamjuree ExtraLight";
+    font-weight: 200;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree Light";
+    font-weight: 300;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-Light.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-Regular.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-Medium.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree SemiBold";
+    font-weight: 600;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/fonts/BaiJamjuree-Bold.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree ExtraLight";
+    font-weight: 200;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree Light";
+    font-weight: 300;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-Italic.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree Medium";
+    font-weight: 500;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-MediumItalic.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree SemiBold";
+    font-weight: 600;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-SemiBoldItalic.ttf")
+}
+@font-face {
+    font-family: "Bai Jamjuree Bold";
+    font-weight: 700;
+    font-style: italic;
+    src: url("/assets/fonts/BaiJamjuree-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-Regular.ttf");
+}
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-Medium.ttf");
+}
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 600;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-Bold.ttf");
+}
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 800;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-style: normal;
+    src: url("/assets/fonts/Orbitron-Black.ttf");
+}

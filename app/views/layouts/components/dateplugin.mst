@@ -1,0 +1,38 @@
+<div class="dateplugin " id="{{id}}">
+    {{#if years }}
+        <div class="controls {{#if type 'NE' 'period'}}hide{{/if}} calendar-list">
+            <span class="btn round today">{{#i18n}}calendar.controls.today{{/i18n}}</span>
+            <span class="btn round yesterday">{{#i18n}}calendar.controls.yesterday{{/i18n}}</span>
+            <span class="btn round sevendays">{{#i18n}}calendar.controls.sevendays{{/i18n}}</span>
+            <span class="btn round currentmonth">{{#i18n}}calendar.controls.currentmonth{{/i18n}}</span>
+            <span class="btn round currentyear">{{#i18n}}calendar.controls.currentyear{{/i18n}}</span>
+        </div>
+        <ul class="years calendar-list">
+            {{#each years }}
+                <li{{#if selected }} class="selected"{{/if }}>{{year }}
+                </li>
+            {{/each}}
+        </ul>
+        <ul class="months calendar-list">
+            {{#each months }}
+                <li{{#if selected }} class="selected"{{/if }} data-month="{{ordinal }}">{{month }}
+                </li>
+            {{/each}}
+        </ul>
+        <ul class="weekdays calendar-list">
+            <li>{{#i18n}}calendar.weekdays.mon{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.tue{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.wed{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.thu{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.fri{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.sat{{/i18n}}</li>
+            <li>{{#i18n}}calendar.weekdays.sun{{/i18n}}</li>
+        </ul>
+        <ul class="days calendar-list">
+            {{#each days }}
+                <li{{#if selected }} class="selected"{{/if }} data-day="{{day }}">{{day }}
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</div>

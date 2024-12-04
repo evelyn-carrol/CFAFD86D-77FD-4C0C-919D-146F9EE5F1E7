@@ -1,0 +1,96 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="user-space-wrapper flex gap-sm deposit_page_user_space_wrapper_2">
+            {{> /profile/menu active='deposit'}}
+            <div class="col-3-4">
+                <div class="block corner-left-top-right-bottom-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}deposit.subtitle{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="balance-container deposit_page_container">
+                            <div class="info col-1-1">
+                                <div class="cornered-text-block cornered_text_block corner-right-top-clip-xs">
+                                    <p>{{#i18n}}deposit.balance.title{{/i18n}}</p>
+                                </div>
+                                <p class="flex gap-sm margin-top-sm margin-bottom-sm">
+                                    <span class="total-balance">{{profile.balance|money}}</span>
+                                    <span class="total-balance-currency">USD</span>
+                                </p>
+                                <p>{{#i18n}}deposit.balance.text{{/i18n}}</p>
+
+                                <div class="deposit-block margin-top-sm margin-bottom-sm padding-sm">
+                                    <div class="cornered-text-block cornered_text_block corner-right-top-clip-xs">
+                                        <p>{{#i18n}}deposit.funds.title{{/i18n}}</p>
+                                    </div>
+                                    <p></p>
+                                    <div class="flex gap-sm">
+                                        <div id="qr-code" style="min-width:128px;padding:4px;background:#fff" class="flex margin-top-sm margin-bottom-sm"></div>
+                                        <div class="margin-top-sm">
+                                            <p>{{#i18n}}deposit.funds.caption{{/i18n}}</p>
+                                            <div class="flex gap-xs flex-align-center">
+                                                <img src="/assets/img/warning-yellow.svg" alt="" style="width: 36px">
+                                                <p>{{#i18n}}deposit.funds.notice{{/i18n}}</p>
+                                            </div>
+                                            <button type="button" class="button bordered margin-top-lg" onclick="___mc.events.push('deposit.address.show', this)">{{#i18n}}deposit.funds.show{{/i18n}}</button>
+                                            <div id="address-container" class="margin-top-lg hide">
+                                                <p style="color:var(--color__green_50)">{{#i18n}}deposit.funds.address{{/i18n}}:
+                                                    <span id="btc-address" onclick="___mc.events.push('deposit.address.copy', this)" style="cursor: pointer; text-transform: none">
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="corner-right-top-clip-xs space-wrapper deposit_page_space_wrapper ">
+                                    <div class="placeholder striped" style="height: 64px"></div>
+                                </div>
+                            </div>
+
+                            <div class="chiziq"></div>
+
+                            <div class="info col-2-3">
+                                <div class="cornered-text-block cornered_text_block corner-right-top-clip-xs">
+                                    <p>{{#i18n}}deposit.history.title{{/i18n}}</p>
+                                </div>
+                                <div class="table-container history_page_table_container" handler="controllers/profile/deposit/handler">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>{{#i18n}}deposit.date{{/i18n}}</th>
+                                            <th>{{#i18n}}deposit.total{{/i18n}}</th>
+                                            <th>{{#i18n}}deposit.comment{{/i18n}}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="100%">
+                                                <div class="loader">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

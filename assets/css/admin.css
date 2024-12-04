@@ -1,0 +1,2378 @@
+/* Admin page uchun css  */
+
+#app-wrapper .primary.primary-admin {
+  margin-top: 0;
+}
+#app-wrapper .secondary.secondary-admin {
+  margin-top: 0;
+}
+
+#app-wrapper .secondary.secondary-admin .menu-item p {
+  color: rgba(11, 241, 255, 0.5);
+}
+#app-wrapper .secondary.secondary-admin .menu-item a {
+  color: rgba(11, 241, 255, 1);
+}
+
+ #app-wrapper .bl-bottom.bl-bottom-admin-page {
+  margin-top: 150px;
+}
+
+.admin_panel {
+  background: rgba(11, 241, 255, 0.1);
+}
+
+.admin_panel_cards {
+  display: grid;
+}
+
+.admin_panel_cards .dashboard .indicator-panel {
+  width: 100% !important;
+}
+
+.overview_page_right_content {
+  width: 100%;
+}
+
+.hr {
+  background: rgba(11, 241, 255, 0.1);
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.admin_panel_page_caption {
+  padding: 31px 20px;
+  opacity: 0;
+  background: rgba(11, 241, 255, 0.1);
+  width: 290px !important;
+  display: grid;
+  gap: 18px;
+}
+
+.admin_panel_page_caption .title {
+  display: flex;
+  align-items: center;
+}
+
+.admin_panel_page_caption .title .block-caption {
+  margin-left: 0 !important;
+}
+
+.admin_panel_page_caption button {
+  border: 1px solid !important;
+
+  border-image-source: linear-gradient(
+    99.91deg,
+    rgba(11, 241, 255, 0.1) -0.14%,
+    rgba(11, 241, 255, 0) 99.46%
+  );
+  padding: 13px 0;
+  width: 100%;
+}
+
+.flex_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+}
+
+.corner_triangle {
+  width: 100%;
+}
+
+/* user details page */
+
+.user_detail_page {
+  background: transparent !important;
+}
+
+/* sellers page */
+
+.withdraw_color {
+  color: rgba(250, 65, 65, 1) !important;
+}
+
+.sellers_page_tr {
+  margin-bottom: 20px;
+}
+
+.sellers_page_table_container table {
+  border-spacing: 6px 10px !important;
+}
+
+.corner_triangle_sellers_page {
+  margin-top: 20px;
+}
+
+.sellers_page_table_container {
+  height: 700px !important;
+  overflow: scroll;
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.sellers_page_right {
+  padding: 22px;
+  background: rgba(11, 241, 255, 0.1);
+  width: 100%;
+}
+
+/* panel support */
+
+.panel_support_flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: rgba(11, 241, 255, 0.5);
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+}
+
+.panel_support_flex_text {
+  color: rgba(11, 241, 255, 0.5);
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+}
+
+.support_chat_container_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(11, 241, 255, 0.1);
+  padding: 25px;
+}
+
+.pnael_support_ {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.pnael_support_ img {
+  width: 9px;
+  height: 9px;
+  gap:0;
+  opacity: 0;
+}
+
+.support_page_title td .title {
+  display: flex !important;
+  justify-content: start;
+  gap: 17px;
+}
+
+.panel_support___ {
+  padding: 0 !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.panel_support_page_block {
+  background: transparent !important;
+}
+
+.support_page_title {
+  height: 100vh !important;
+  background: rgba(151, 151, 151, 0.02) !important;
+}
+
+.support_container_1_3 {
+  height: 100vh !important;
+}
+
+.support_page_title table tr td {
+  background: rgba(151, 151, 151, 0.05) !important;
+  cursor: pointer;
+  border-top: 4px solid #212020 !important;
+}
+
+.support_page_title table tr td .title {
+  color: rgba(151, 151, 151, 0.5);
+}
+.support_page_title table tr td .description {
+  color: rgba(151, 151, 151, 0.25);
+}
+.support_page_title table tr td img {
+  width: 16px;
+  height: 16px;
+  gap:0;
+  opacity: 0;
+}
+
+.support_page_title table tr:hover {
+  background: rgba(61, 61, 61, 0.1) !important;
+}
+
+.no_active_text {
+  opacity: 0.4;
+}
+
+.no_active_text:hover {
+  opacity: 1;
+}
+
+/* withdrawal requests/cvv page */
+.withdrawal_texts {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.meyn_div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(15, 58, 60, 1);
+  padding: 9px 12px !important;
+  align-items: center;
+}
+
+.withdrawal_texts .title {
+  width: 100%;
+}
+
+.withdrawal_texts button {
+  width: 200px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background: rgba(11, 241, 255, 0.05);
+  border: 1px solid !important;
+
+  border-image-source: linear-gradient(
+    99.91deg,
+    rgba(11, 241, 255, 0.1) -0.14%,
+    rgba(11, 241, 255, 0) 99.46%
+  );
+  padding: 10px 0;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+}
+
+.withdraw_req_page_table_container {
+  margin-top: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.contents_inner_ {
+  margin: 0 15px;
+}
+
+.withdrawal_texts .corner-right-top-clip-sm {
+  clip-path: polygon(
+    0 4px,
+    100% 0,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px)
+  ) !important;
+}
+
+.details_user {
+  background: rgba(11, 241, 255, 0.05);
+  padding: 38px 50px;
+}
+
+.details_user .details_user_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details_user_title_flex_div {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.details_user_title_flex_div_1 h1 {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 1);
+  text-transform: uppercase;
+}
+
+.details_user_title_flex_div_1 p {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12.5px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.25);
+  text-transform: uppercase;
+}
+
+.details_user_title_flex_div_2 p {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+}
+
+.details_user_title_flex_div_2 .bordered {
+  border: 2px solid rgba(11, 241, 255, 0.1);
+  padding: 6px;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+}
+
+.details_user_title_flex_div_2_img {
+  opacity: 0.3;
+}
+
+.details_user_page_flex_div {
+  display: flex;
+  gap: 17px;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+}
+.details_user_left_content,
+.details_user_right_content {
+  width: 50%;
+}
+
+.details_user_left_content p {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.details_user_left_content span {
+  font-family: Orbitron, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.3px;
+  text-align: left;
+  color: rgba(11, 241, 255, 1);
+  text-transform: uppercase;
+}
+
+.details_user_page_little_div {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.details_user_page_little_flex {
+  display: flex;
+  align-items: end;
+  gap: 50px;
+  padding-bottom: 25px;
+}
+
+.details_user_right_content {
+  background: rgba(11, 241, 255, 0.05);
+  padding: 26px 40px;
+}
+
+.details_user_right_content p {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12.5px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.25);
+  text-transform: uppercase;
+}
+
+.details_user_right_content .hr {
+  margin: 35px 0 !important;
+}
+
+.checkbox_container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.role_select div {
+  display: flex;
+  gap: 17px;
+  cursor: pointer;
+}
+
+.role_select {
+  display: grid;
+  gap: 17px;
+}
+
+.input_radion_and_button {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.input_radion_and_button button {
+  width: 153px;
+  padding: 10px 0;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12.5px;
+  text-align: left;
+  color: rgba(11, 241, 255, 1);
+  border: 1px solid !important;
+  text-align: center;
+
+  border-image-source: linear-gradient(
+    99.91deg,
+    rgba(11, 241, 255, 0.1) -0.14%,
+    rgba(11, 241, 255, 0) 99.46%
+  );
+}
+
+.details_user_page_some_text {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+  background: rgba(11, 241, 255, 0.05);
+  width: fit-content;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+  text-transform: uppercase;
+  padding: 7px 13px;
+  margin-top: 20px;
+}
+
+.div_flex {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.div_flex .active {
+  color: rgba(11, 241, 255, 1);
+}
+
+.details_page_table thead {
+  background: rgba(11, 241, 255, 0.02) !important;
+}
+
+/* dashboard page */
+
+.dashboard_page_flex {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.dashboard_page_flex p {
+  background: rgba(11, 241, 255, 0.02);
+}
+
+.dashboard_page_flex .p_one {
+  width: 85%;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12.5px;
+  text-align: left;
+  padding: 9px 17px;
+}
+
+.dashboard_page_flex .p_two {
+  width: 15%;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12.5px;
+  text-align: left;
+  padding: 9px 17px;
+}
+
+.dashboard_page_tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second_table {
+  width: 100%;
+}
+
+.dashboard_page_table_container .action {
+  width: 15%;
+}
+
+.dashboard_page_flex_2 {
+  margin-top: 20px;
+}
+
+.admin_panel_cards_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.dashboard_flex .admin_panel_cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+}
+
+.dashboard_flex .contents {
+  width: 100%;
+}
+/* 
+.dashboard_page_contents .corner-right-bottom-clip-sm .space-wrapper {
+	margin: 0 0 0 !important;
+} */
+
+section .block .dashboard_page_contents .space-wrapper {
+  margin: 0 0 !important;
+}
+
+.dashboard_page_table_container_1 {
+  margin-bottom: 15px;
+}
+
+/* withdrawal requests page */
+
+.ok_img {
+  width: 14.05px;
+  height: 14.22px;
+  gap:0;
+  opacity: 0;
+}
+
+.cancel_bordered {
+  border: 2px solid rgba(250, 65, 65, 0.5) !important;
+}
+
+.withdrawal_requests_page_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+.withdrawal_requests_page_flex .corner-left-bottom-clip-sm {
+  width: 100%;
+}
+
+.withdrawal_requests_page_flex .user_detail_page {
+  width: 30%;
+}
+
+.withdrawal_requests_page_flex button {
+  padding: 13px 0;
+  color: rgba(11, 241, 255, 1);
+  width: 150px;
+  background: rgba(11, 241, 255, 0.05);
+  border: 1px solid rgba(11, 241, 255, 0.1) !important;
+}
+
+.withdrawal_requests_page_flex .block_caption {
+  margin-left: 0 !important;
+}
+
+.withdrawal_requests_background {
+  background: rgba(11, 241, 255, 0.1) !important;
+}
+
+.withdrawal_requests_table_container {
+  background: transparent !important;
+}
+
+.withdrawal_requests_table_container table tr td {
+  background: rgba(11, 241, 255, 0.02) !important;
+}
+
+/* sales page */
+
+.sales_page_ {
+  background: rgba(11, 241, 255, 0.1);
+  padding: 23px;
+  width: 100%;
+  max-width: 200vh;
+}
+
+.sales_page_ .placeholder {
+  /* background: transparent !important; */
+  display: flex;
+  align-items: center !important;
+}
+
+.sales_page_clip .corner-right-top-clip-sm {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0 100%
+  );
+}
+
+.filters_text {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 1);
+  text-transform: uppercase;
+}
+
+.filter_text {
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter_text span {
+  width: 1px;
+  height: 10px;
+  background: rgba(11, 241, 255, 0.1);
+}
+
+/* deposits page */
+.deposits_page_table_container {
+  background: transparent !important;
+  padding: 0 !important;
+  overflow-y: scroll;
+  height: 690px;
+}
+
+.bordered_red {
+  border: 1px solid rgba(250, 65, 65, 0.538);
+  padding: 2px 7px;
+  cursor: pointer;
+  color: rgba(250, 65, 65, 0.5);
+}
+/*
+.bordered {
+  border: 1px solid rgba(11, 241, 255, 0.1);
+  padding: 2px 7px;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center !important;
+  gap: 0 !important;
+}
+*/
+.bordered_uncheck {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.25);
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+.boridered {
+  border: 1px solid rgba(250, 65, 65, 0.538);
+  padding: 2px 7px;
+  cursor: pointer;
+  color: rgba(250, 65, 65, 0.5);
+}
+
+/* base page */
+
+.trash_image {
+  border: 2px solid rgba(250, 65, 65, 0.5);
+  width: 25px !important;
+  height: 25px !important;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.none_image {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.eye_image img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.base_page {
+  background: transparent !important;
+}
+
+@media (max-width: 1800px) {
+  section .dashboard-container .manage_bases_dashboard_block_chart {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1530px) {
+  .deposit_page_dashboard_flex .dashboard_page_admin_panel_cards .dashboard {
+    gap: 20px;
+    display: flex !important;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1550px) {
+  section .dashboard-container .manage_bases_dashboard_block_chart {
+    width: 100% !important;
+  }
+  section .dashboard-container .chart-donut {
+    width: 70px !important;
+    height: 60px !important;
+  }
+
+  .dashboard_page_div {
+    gap: 10px !important;
+  }
+}
+
+/* manage bases page */
+
+.manage_bases_dashboard_block {
+  width: calc(100% - 0px) !important;
+  margin: 0 !important;
+}
+
+.chart_texts {
+  width: 100%;
+}
+
+.chart_texts p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard_page_div .chart-donut {
+  /*height: 100% !important;*/
+}
+
+/* manage users page */
+
+.search_user_input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search_user_input ::placeholder {
+  color: rgba(11, 241, 255, 0.5) !important;
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+}
+
+.search_user_input img {
+  width: 50px;
+  height: 50px;
+  gap:0;
+  padding: 15px;
+  opacity: 0;
+}
+
+.search_user_input input {
+  background: transparent !important;
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 15px;
+}
+
+.manage_user_container {
+  background: rgba(11, 241, 255, 0.1);
+}
+
+.manage_user_container .user_detail_page {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.manage_user_page_detail_hr .hr {
+  margin: 0 0 !important;
+}
+
+.manage_users {
+  padding: 15px !important;
+  background: transparent !important;
+}
+
+.manage_users .input_radion_and_button span {
+  font-family: Orbitron;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.3px;
+  text-align: left;
+  color: rgba(11, 241, 255, 1);
+}
+
+.manage_users .input_radion_and_button .role_select div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(11, 241, 255, 0.25);
+}
+
+.manage_users_right_content .input_radion_and_button {
+  display: flex;
+  align-items: start !important;
+  justify-content: space-between !important;
+  padding: 0 25px;
+}
+
+.manage_users_page_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background: rgba(11, 241, 255, 0.05);
+  padding: 17px 34px;
+}
+
+.manage_users_page_checkbox_ {
+  display: flex !important;
+  align-items: center;
+  gap: 17px;
+}
+
+.manage_users_page_checkbox_ h2 {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.manage_users_page_text_ {
+  font-family: "Bai Jamjuree SemiBold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.25px;
+  text-align: left;
+  color: rgba(250, 65, 65, 0.5);
+  text-transform: uppercase;
+}
+
+.some_padding {
+  padding: 0 15px;
+}
+
+.some_padding .hr {
+  margin-top: 0;
+}
+
+.sales_page_clip_left_content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px !important;
+}
+
+.base_page_block_caption {
+  margin-bottom: 20px;
+}
+
+.base_page_dashboard_divs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.eth_image {
+  width: 20px;
+  height: 20px;
+}
+
+.base_page_corner {
+  margin-top: 20px;
+}
+
+.base_page_table_container table tr td {
+  font-family: Orbitron, sans-serif !important;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.3px;
+  text-align: left;
+  color: rgba(11, 241, 255, 0.5);
+}
+
+@media (min-width: 1430px) {
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+  }
+
+  .simple_base_page_ .corner-right-top-clip-sm {
+    margin-top: 0 !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard {
+    margin-bottom: 20px !important;
+  }
+
+  .base_page_main_html {
+    margin-top: 30px;
+  }
+
+  .admin_panel_cards {
+    display: block !important;
+  }
+
+  .admin_panel_cards {
+    gap: 30px;
+  }
+}
+
+.base_page_dashboard_divs .dashboard .indicator-panel {
+  width: 100% !important;
+  /* gap: 20px !important; */
+}
+
+@media (min-width: 1430px) and (max-width: 1530px) {
+  .admin_panel_cards {
+    display: block !important;
+  }
+
+  .sales_page_clip {
+    display: flex;
+    gap: 20px;
+  }
+
+  .base_page_dashboard_divs .dashboard .indicator-panel {
+    width: 100% !important;
+  }
+
+  .base_page_main_html {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .admin_panel_page_caption {
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+  }
+
+  .admin_panel_cards_2 {
+    gap: 20px !important;
+  }
+}
+
+.admin_panel_page_caption {
+  margin-bottom: 20px;
+  margin-left: 0 !important;
+  margin-top: 20px;
+}
+
+.corner_triangle_sellers_page .space-wrapper {
+  margin-bottom: 10px;
+}
+
+.admin_panel_cards_2 {
+  gap: 20px !important;
+}
+
+@media (max-width: 1430px) {
+  .withdrawal_requests_cvv_dashboard {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .base_page_dashboard_divs .the_first {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+
+  .base_panel_main .base_page_dashboard_divs {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filtercha {
+    margin-left: 20px;
+  }
+
+  .admin_panel_cards_2 {
+    gap: 0;
+  }
+
+  .withdrawal_requests_cvv_dashboard .indicator-panel {
+    max-width: 1000px !important;
+    display: block !important;
+  }
+
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overview_section_flex_div {
+    display: block;
+  }
+
+  .admin_panel_card_main__ {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .withdrawal_requests_page_flex {
+    display: none;
+  }
+
+  .withdrawal_requests_cvv_dashboard_texts {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 10px;
+    margin-top: 20px;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div button {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .deposits_page_clip_left_ {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    gap: 0 !important;
+  }
+
+  .deposits_page_clip_left_ .the_first {
+    margin-bottom: 0 !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard_1_5 {
+    width: 0 !important;
+    display: none;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div .title .block-caption {
+    margin-left: 0 !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div .title {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+  }
+
+  .sellers_page_flex_div {
+    display: block;
+  }
+
+  .admin_panel_page_caption {
+    width: unset;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-bottom: 20px;
+  }
+
+  .the_first {
+    display: block !important;
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width: 100% !important;
+  }
+
+  .sellers_page_right {
+    margin: 20px;
+    width: 100% !important;
+  }
+
+  .responsive_offf {
+    display: none;
+  }
+
+  .support_container_1_3 {
+    height: 100% !important;
+  }
+
+  .support_page_title {
+    height: 100% !important;
+  }
+}
+
+.deposit_page_responsive_container_table table tr th {
+  background: rgba(11, 241, 255, 0.02) !important;
+}
+
+.simple_base_page_ .corner-right-top-clip-sm {
+  margin-top: 20px;
+}
+
+.manage_base_page_yes_or_no .remove {
+  border: 1px solid #fa414180;
+  height: 40px !important;
+  width: 100px !important;
+  padding: 0 10px !important ;
+}
+
+@media (max-width: 1530px) {
+  .responsive_off_corner {
+    display: none;
+  }
+
+  .simple_base_page_ {
+    display: block;
+  }
+
+  .base_page_dashboard_divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .sales_page_clip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .responsive_offffff {
+    display: none;
+  }
+
+  .sales_page_clip_left_content {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .deposit_page_responsive {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .details__page_flex__div {
+    display: block;
+  }
+
+  .details__page_flex__div .details_user_left_content {
+    width: 100% !important;
+  }
+
+  .details__page_flex__div .details_user_right_content {
+    width: 100% !important;
+    margin-top: 25px;
+  }
+
+  .details__page_flex__div .details_user_right_content button {
+    text-align: center;
+  }
+
+  .details_user_right_content {
+    padding: 15px 20px;
+  }
+
+  .manage_bases_main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding-top: 10px;
+  }
+
+  .manage_bases_main .indicator-panel {
+    display: block !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .manage_bases_main {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start;
+  }
+
+  .responsive_offffff {
+    display: none;
+  }
+
+  .manage_bases_main .indicator-panel {
+    display: block !important;
+  }
+
+  .withdrawal_texts .meyn_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .withdrawal_texts {
+    margin: 0 auto;
+  }
+
+  .responsive_off_coriner {
+    display: none;
+  }
+
+  .manage_button {
+    width: 100%;
+    display: flex;
+    max-width: 1000px !important;
+  }
+
+  .manage_button button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .manage_bases_main {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+
+  .responsive_offffff {
+    display: none !important;
+  }
+
+  .manage_bases_main .indicator-panel {
+    display: block !important;
+  }
+
+  .withdrawal_texts .meyn_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .withdrawal_texts {
+    margin: 0 auto;
+  }
+
+  .responsive_off_coriner {
+    display: none;
+  }
+
+  .manage_button {
+    width: 100%;
+    display: flex;
+    max-width: 1500px !important;
+  }
+
+  .manage_button button {
+    width: 100%;
+  }
+
+  .admin_panel_cards {
+    display: flex;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .admin_panel_page_caption {
+    width: 94% !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard {
+    padding-top: 20px;
+  }
+
+  .admin_panel_cards_2 {
+    padding-top: 20px;
+  }
+
+  .admin_panel_cards_2 .dashboard .indicator-panel {
+    max-width: 1000px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .base_page_main_html {
+    width: 94% !important;
+    margin: 40px auto !important;
+  }
+
+  .saless_pagee {
+    margin-top: 40px;
+  }
+
+  .media_responsive_on .action .search {
+    text-align: center !important;
+    margin: 0 auto;
+    justify-content: center !important;
+  }
+
+  .admin_panel_page_caption {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .base_page_main_html {
+    margin-top: 20px;
+  }
+
+  .withdrawal_requests_page_admin_panel {
+    padding: 20px 20px !important;
+  }
+
+  .responsive_card_div {
+    display: block !important;
+  }
+
+  .responsive_card_div .indicator-panel {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  .corner_triangle {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 767px) {
+  .withdrawal_requests_cvv_dashboard .indicator-panel {
+    padding-top: 20px !important;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1300px) {
+  .admin_panel_page_caption {
+    width: 100% !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard {
+    padding-top: 20px !important;
+  }
+
+  .admin_panel_cards {
+    display: flex;
+  }
+
+  .base_page_main_html {
+    width: 100% !important;
+  }
+
+  .sellers_page_right {
+    width: 100% !important;
+  }
+
+  .base_page_main_html {
+    margin-right: 0 !important;
+  }
+
+  .sellers_page_right {
+    margin-top: 30px !important;
+  }
+
+  .sellers_page_right {
+    margin: 20px auto !important;
+  }
+
+  .admin_panel_page_caption {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .saless_pagee {
+    margin-left: 20px;
+  }
+
+  .withdrawal_requests_page_admin_panel {
+    padding: 20px 20px !important;
+  }
+
+  .responsive_card_div {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .responsive_card_div .indicator-panel {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1530px) {
+  .base_page_main_html {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100% !important;
+  }
+
+  .base_page_dashboard_divs .indicator-panel {
+    margin-bottom: 10px;
+  }
+}
+
+.deposit_page_corner {
+  margin-top: 20px;
+}
+
+@media (min-width: 100px) and (max-width: 1500px) {
+  .manage_bases_dashboard_seller_page {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 0 !important;
+  }
+
+  .base_page_main_html .corner-right-top-clip-sm {
+    display: none;
+  }
+
+  .manage_bases_page_main .indicator-panel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .contents_inner_manage_base_page {
+    padding: 0 !important;
+  }
+
+  .corner-left {
+    clip-path: polygon(
+      0 12px,
+      12px 0,
+      100% 0,
+      100% calc(100% - 12px),
+      calc(100% - 12px) 100%,
+      0 100%
+    ) !important;
+    padding: 10px !important;
+  }
+
+  .manage_base_page_button {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .manage_base_page_button button {
+    width: 100% !important;
+    margin-right: 10px;
+  }
+
+  .corner-left {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .details_page_userrr_tittle .details_user_title_flex_div_2_img {
+    width: 10px;
+  }
+
+  .manage_bases_main {
+    gap: 0 !important;
+  }
+
+  .details_page_userrr_tittle .details_user_page_image_2 {
+    width: 40px;
+  }
+
+  .responsive_off_text {
+    display: none;
+  }
+
+  .details_page_user_main_divv {
+    padding: 20px 15px;
+  }
+
+  .details_user_page_little_flex {
+    display: block;
+  }
+  .details_user_right_content {
+    padding: 15px 0;
+    background: transparent;
+  }
+
+  .details__page_flex__div .details_user_right_content button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .details_user_title_flex_div_1 h1 {
+    font-size: 15px;
+  }
+
+  .details_user_title_flex_div {
+    gap: 5px;
+  }
+
+  .div_flex_buttons button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .base_page_main_html .corner-right-top-clip-sm {
+    display: none;
+  }
+
+  .cornered-text-block {
+    padding: 10px 20px;
+  }
+
+  .base_page_dashboard_divs .dashboard .indicator-panel .value {
+    padding-left: 30px;
+  }
+
+  .sales_page_ {
+    padding: 10px !important;
+  }
+
+  .base_page_dashboard_divs .indicator-panel {
+    margin-bottom: 15px;
+  }
+
+  .deposit_page_responsive {
+    margin: 0 20px !important;
+  }
+
+  .base_page_dashboard_divs {
+    gap: 0;
+  }
+
+  .admin_panel_page_caption {
+    margin-bottom: 20px !important;
+  }
+  .off {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overview_paage_main .dashboard .indicator-panel {
+    display: block !important;
+  }
+
+  .off {
+    display: none;
+  }
+
+  .overview_page_table_container {
+    margin: 20px;
+  }
+
+  .dashboard_section {
+    width: calc(100% - 0px) !important;
+    /* margin: 10px !important; */
+  }
+}
+
+@media (max-width: 420px) {
+  .dashboard_page_div {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .chart_texts {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: unset;
+  }
+}
+
+@media (max-width: 700px) {
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .off {
+    display: none;
+  }
+
+  .overview_page_table_container {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .admin_panel_card_main__ {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .admin_panel_card_main__ .dashboard .indicator-panel {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+  .overview_page_kla {
+    margin: 10px !important;
+    width: 90% !important;
+  }
+
+  .off {
+    display: none;
+  }
+
+  .overview_page_table_container {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sales_page_clip {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 20px;
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .deposit_page_dashboard_flex {
+    display: block;
+  }
+
+  .dashboard_page_admin_panel_cards {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .dashboard_page_admin_panel_cards .dashboard .indicator-panel {
+    max-width: 1000px !important;
+    display: grid !important;
+    grid-template-columns: auto;
+  }
+
+  .dashboard_page_lenovo {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100% !important;
+  }
+
+  .sales_page_clip .dashboard .indicator-panel {
+    width: 100%;
+  }
+
+  .media_responsive_off {
+    display: none;
+  }
+  .media_responsive_onn {
+    display: block;
+  }
+
+  .overview_paage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .admin_panel_card_main__ .dashboard {
+    width: 100% !important;
+  }
+
+  .responsive_details_user_page_flex_div {
+    display: grid;
+    width: 100% !important;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsive_details_user_page_flex_div .details_user_right_content {
+    width: 100% !important;
+    max-width: 1000px !important;
+    background: rgba(11, 241, 255, 0.05);
+    padding: 10px;
+  }
+
+  .manage_user_page_responsive {
+    display: block;
+  }
+
+  .manage_user_page_responsive_checkbox_text {
+    margin-top: 20px;
+  }
+
+  .responsive_off_corner {
+    display: none;
+  }
+
+  .sales_page_clip {
+    display: block !important;
+  }
+
+  .responsive_offffff {
+    display: none;
+  }
+
+  .sales_page_clip_left_content {
+    width: 100%;
+  }
+
+  .sales_page_clip_left_content .dashboard .indicator-panel {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .deposit_page_responsive {
+    display: block;
+  }
+
+  .simple_base_page_ {
+    display: block;
+  }
+
+  .base_page_dashboard_divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100% !important;
+  }
+
+  .base_page_dashboard_divs .dashboard {
+    width: 100%;
+  }
+
+  .base_panel_main {
+    margin: 0;
+  }
+
+  .admin_panel_page_caption_responsive {
+    width: fit-content !important;
+  }
+
+  .base_page_dashboard_divs .dashboard .indicator-panel {
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block !important;
+  }
+
+  /* .filters_basee {
+		margin-top: 30px;
+	} */
+
+  .base_page_main_html {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .admin_panel_page_caption_base_html {
+    width: 100% !important;
+  }
+
+  .seles_page_flex_div {
+    display: block;
+  }
+
+  .main_seles_page {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .taybel_container {
+    max-width: 500vh !important;
+    width: 100% !important;
+  }
+
+  .media_responsive_off {
+    display: none;
+  }
+  .media_responsive_on {
+    position: relative;
+  }
+}
+.taybel_container {
+  overflow: scroll !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+@media (min-width: 1600px) {
+  .taybel_container {
+    overflow: scroll !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .media_responsive_onn {
+    display: none;
+  }
+
+  .sales_page_clip_left_content .dashboard .indicator-panel {
+    padding: 20px !important;
+  }
+  .sales_page_mayin .dashboard .indicator-panel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .sales_page_admin_panel_caption {
+    width: 100% !important;
+  }
+
+  .saless_pagee {
+    width: 50% !important;
+  }
+  .overview_paage_main .dashboard .indicator-panel {
+    margin-bottom: 20px !important;
+  }
+}
+
+.saless_pagee {
+  width: 100% !important;
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .sales_page_clip {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 20px;
+    margin: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .overview_paage_main .dashboard .indicator-panel {
+    margin-bottom: 20px !important;
+  }
+
+  .admin_panel_page_caption_main_ {
+    width: 91% !important;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .sales_page_clip .dashboard .indicator-panel {
+    width: 100%;
+  }
+
+  .main_page_sales_page .dashboard .indicator-panel {
+    max-width: 1000px !important;
+    width: 100% !important;
+  }
+
+  .seles_page_flex_div {
+    display: block;
+  }
+
+  .admin_panel_page_caption {
+    /* width: 90% !important; */
+    margin: 0 auto;
+  }
+
+  .main_seles_page {
+    margin: 10px;
+    padding: 0 !important;
+  }
+
+  .taybel_container {
+    max-width: 500vh !important;
+    width: 100% !important;
+  }
+
+  .admin_panel_page_caption {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .responsive_off_corner {
+    display: none;
+  }
+
+  .admin_panel_page_caption {
+    margin-top: 20px;
+  }
+
+  .overview_paage_main .dashboard .indicator-panel {
+    margin-bottom: 20px !important;
+  }
+
+  .sales_page_clip {
+    display: block !important;
+  }
+
+  .responsive_offffff {
+    display: none;
+  }
+
+  .sales_page_clip_left_content {
+    width: 100%;
+    gap: 0 !important;
+  }
+
+  .sales_page_clip {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 20px;
+    margin: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .deposit_page_responsive {
+    display: block;
+  }
+
+  .admin_panel_page_caption_main_ {
+    width: 91% !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .admin_panel_page_caption_main_ {
+    width: 93% !important;
+  }
+}
+
+.manage_bases_page_table_container {
+  height: 700px;
+  overflow: scroll;
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .seles_page_flex_div {
+    display: block !important;
+  }
+
+  .sellers_page_right {
+    padding: 0px !important;
+    width: 93% !important;
+  }
+
+  .manage_base_section_meyn_div_res .meyn_div {
+    padding: 0 !important;
+  }
+
+  .overview_page_hr .hr {
+    display: none;
+  }
+
+  .overview_page_hr .the_first {
+    margin-bottom: 0 !important;
+  }
+
+  .filter_second_text {
+    margin-left: 20px;
+  }
+
+  .dashboard_page_admin_panel_cards .dashboard .the_first {
+    max-width: 100% !important;
+    padding: 20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .dashboard_page_flex .p_two {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard_page_table_container_1 {
+    font-size: 9px !important;
+  }
+
+  .dashboard_page_flex_2 {
+    padding: 0 !important;
+  }
+  .manage_bases_dashboard {
+    margin: 10px 10px;
+  }
+
+  .dashboard_page_div .chart-donut {
+    /*height: 100px !important;
+    width: 150px !important;*/
+  }
+
+  .manage_bases_page_chart {
+    display: flex;
+    align-items: center;
+  }
+  .withdrawal_texts .meyn_div {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 10px;
+  }
+
+  .dashboard_page_table_container {
+    padding: 5px !important;
+  }
+
+  .dashboard_page_table_container table tr td {
+    font-size: 10px !important;
+  }
+
+  .responsive_off_coriner {
+    display: none;
+  }
+
+  .main_seles_page {
+    padding: 10px 10px 30px 10px !important;
+  }
+
+  .taybel_container {
+    max-width: 500vh !important;
+    width: 100% !important;
+  }
+
+  .the_first {
+    max-width: 1000px !important;
+    width: 100% !important;
+  }
+
+  .sales_page_mayin .dashboard {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .sales_page_mayin .dashboard .indicator-panel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 15px !important;
+
+    margin-bottom: 0;
+  }
+
+  .sales_page_admin_panel_caption {
+    width: 94% !important;
+  }
+
+  .manage_bases_main {
+    display: block !important;
+  }
+
+  .manage_bases_page_main .indicator-panel {
+    max-width: 10000px !important;
+    margin-bottom: 20px;
+  }
+
+  .manage_bases_dashboard_seller_page .corner-left {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .media_responsive_on {
+    display: none;
+    position: absolute;
+  }
+
+  .manage_bases_page_mt .meyn_div {
+    margin-top: 20px !important;
+  }
+
+  .manage_bases_page_mt {
+    gap: 20px !important;
+  }
+
+  .admin_panel_page_caption {
+    width: 100% !important;
+  }
+
+  .withdrawal_texts {
+    margin-top: 0 !important;
+  }
+
+  .manage_base_section_meyn_div .meyn_div {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1530px) {
+  .seles_page_flex_div {
+    display: block !important;
+  }
+
+  .admin_panel_page_caption {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .manage_bases_main {
+    display: block !important;
+  }
+
+  .manage_bases_page_main .indicator-panel {
+    max-width: 10000px !important;
+    margin-bottom: 20px;
+  }
+
+  .manage_bases_dashboard_seller_page .corner-left {
+    margin-top: 0 !important;
+  }
+  .manage_base_section_meyn_div_res .meyn_div {
+    padding: 20px !important;
+  }
+
+  .manage_base_page_button button {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .dashboard_page_admin_panel_cards {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .dashboard_page_admin_panel_cards .dashboard .the_first {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .dashboard_page_contents {
+    width: 100% !important;
+  }
+
+  .withdrawal_requests_cvv_dashboard_meyn_div {
+    margin: 10px !important;
+  }
+
+  .saless_pagee {
+    margin-left: 20px;
+  }
+
+  .main_seles_page {
+    padding: 10px !important;
+  }
+
+  .taybel_container {
+    max-width: 500vh !important;
+    width: 100% !important;
+  }
+}
+
+.responsive_off_corner ~ .responsive_off_corner {
+  margin-top: 20px !important;
+}
+
+@media (min-width: 1000px) and (max-width: 1530px) {
+  .base_page_dashboard_divs .indicator-panel {
+    margin-bottom: 20px;
+  }
+
+  .manage_bases_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manage_bases_page_main .indicator-panel {
+    max-width: 10000px !important;
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+
+  .manage_bases_dashboard_seller_page {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 0 !important;
+    /* background: red  !important; */
+  }
+  .manage_bases_dashboard_seller_page .corner-left {
+    margin-top: 0 !important;
+  }
+
+  .base_page_dashboard_divs {
+    gap: 0 !important;
+  }
+}
+
+.taybel_container {
+  width: 105vh;
+  overflow: scroll;
+}
+
+.sales_page_main_title {
+  width: 100%;
+}
+
+.sales_page_table_eye_svg img {
+  width: 20px;
+  height: 20px;
+}
+
+.withdrawal_page_check_icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.media_on {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.secondary_aside_nav {
+  margin: 0px 15px 50px 0 !important;
+}
+
+.secondary_aside_nav .menu-item a {
+  color: rgba(11, 241, 255, 1) !important;
+}
+
+.block_caption input {
+  padding: 10px 0 !important;
+  display: flex;
+  align-items: center;
+  height: 100% !important;
+  background: transparent !important;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.block_caption {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+  width: 100% !important;
+  border: 1px solid var(--color__light_blue_10);
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sales_page_ .space-wrapper{
+  margin-top: 20px !important;
+}
+
+@media (min-width: 1500px) {
+  .manage_bases_html .meyn_div,
+  .withdrawal_requests_cvv_dashboard_texts .meyn_div {
+    display: flex;
+    gap: 15px !important;
+  }
+
+  .manage_bases_page_main {
+    /* gap: 20px !important; */
+    display: flex;
+    justify-content: space-between;
+    width: 100% ;
+    justify-content: space-between !important;
+  }
+
+  .manage_bases_page_main .indicator-panel {
+    width: 200% !important;
+    max-width: 1000px !important;
+  }
+
+  .manage_bases_page_main .dashboard-container {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .withdraw_req_page_table_container_cvv {
+    height: 700px;
+    overflow: scroll;
+  }
+}
+
+.taybel_container_sales_page {
+  height: 700px;
+  overflow: scroll;
+}

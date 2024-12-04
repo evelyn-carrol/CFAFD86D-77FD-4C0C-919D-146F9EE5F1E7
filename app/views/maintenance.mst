@@ -1,0 +1,24 @@
+<div class="bl-top">
+    <div class="title">
+        <h1>Site en maintenance <br> depuis le:</h1>
+        <img src="/assets/img/warning.svg" alt="">
+    </div>
+    <div class="date">
+        <p>25.07</p>
+    </div>
+</div>
+<div class="bl-middle">
+    <div class="placeholder striped red"></div>
+    <h2>Haec dum oriens diu perferret, caeli reserato tepore Constantius
+        consulatu suo septies et Caesaris ter egressus.</h2>
+    <div class="placeholder striped red"></div>
+</div>
+<div class="bl-bottom">
+    <div class="buttons">
+        <button class="red">Domaine Jarvys</button>
+        <button class="red">Our telegram</button>
+    </div>
+    <div class="status">
+        <p class="button bordered red">not ready</p>
+    </div>
+</div>

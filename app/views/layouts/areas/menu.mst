@@ -1,0 +1,122 @@
+<nav class="primary">
+
+        {{#if profile.role 'NE' 'seller'}}
+            <div class="menu-item">
+                <a href="/">
+                    <img src="/assets/img/dashboard.svg" alt="">
+                    <span>{{#i18n}}menu.dashboard{{/i18n}}</span>
+                    <!--<span class="arrow"></span>-->
+                </a>
+                <!--
+                <div class="submenu">
+                    <a href=""></a>
+                </div>
+                -->
+            </div>
+        {{/if}}
+
+        {{#if profile.role 'seller'}}
+            <div class="menu-item">
+                <a onclick="this.parentElement.classList.toggle('active')">
+                    <img src="/assets/img/dashboard.svg" alt="">
+                    <span>{{#i18n}}menu.dashboard{{/i18n}}</span>
+                    <span class="arrow"></span>
+                </a>
+                <div class="submenu">
+                    <a href="/">{{#i18n}}menu.dashboard{{/i18n}}</a>
+                    <a href="/bases/">{{#i18n}}menu.seller.items.bases{{/i18n}}</a>
+                </div>
+            </div>
+        {{/if}}
+
+        <div class="menu-item">
+            <a href="/">
+                <a href="/news/">
+                    <img src="/assets/img/news.svg" alt="">
+                    <span>{{#i18n}}menu.news{{/i18n}}</span>
+                </a>
+            </a>
+        </div>
+
+        {{#if profile.role 'IN' 'client' 'seller'}}
+            <div class="menu-item">
+                <a onclick="this.parentElement.classList.toggle('active')">
+                    <img src="/assets/img/shop.svg" alt="">
+                    <span>{{#i18n}}menu.shop._{{/i18n}}</span>
+                    <span class="arrow"></span>
+                </a>
+                <div class="submenu">
+                    <a href="/shop/cvv/">{{#i18n}}menu.shop.cvv{{/i18n}}</a>
+                    <a href="/shop/bulk/">{{#i18n}}menu.shop.bulk{{/i18n}}</a>
+                </div>
+            </div>
+        {{/if}}
+
+        <!--div class="menu-item">
+            <a onclick="this.parentElement.classList.toggle('active')">
+                <img src="/assets/img/exit.svg" alt="">
+                <span>Mini games</span>
+                <span class="arrow"></span>
+            </a>
+            <div class="submenu">
+                <a href=""></a>
+            </div>
+        </div-->
+
+        {{#if profile.role 'IN' 'admin' 'support'}}
+            <div class="menu-item">
+                <a onclick="this.parentElement.classList.toggle('active')">
+                    <img src="/assets/img/shop.svg" alt="">
+                    <span>Site</span>
+                    <span class="arrow"></span>
+                </a>
+                <div class="submenu">
+                    <a href="/admin/faq/">{{#i18n}}faq.title{{/i18n}}</a>
+                    <a href="/admin/news/">{{#i18n}}menu.news{{/i18n}}</a>
+                    <a href="/admin/users/">{{#i18n}}menu.users{{/i18n}}</a>
+                    <a href="/admin/bases/">{{#i18n}}bases.title{{/i18n}}</a>
+                    <a href="/admin/orders/">{{#i18n}}orders.title{{/i18n}}</a>
+
+                    <a href="----">------------------</a>
+                    <a href="/admin/users_/">Users</a>
+                    <a href="/admin/bases_/">Bases</a>
+                    <a href="/admin/deposits/">Deposits</a>
+                    <a href="/admin/overview/">Overview</a>
+                    <a href="/admin/sales/">Sales</a>
+                    <a href="/admin/sellers/">Sellers</a>
+                    <a href="/admin/withdrawal/">Withdrawal Requests</a>
+                    <a href="/admin/withdrawalcvv/">Withdrawal cvv</a>
+                </div>
+            </div>
+        {{/if}}
+
+        <div class="menu-item">
+            <a onclick="this.parentElement.classList.toggle('active')">
+                <img src="/assets/img/box.svg" alt="">
+                <span>{{#i18n}}menu.utils._{{/i18n}}</span>
+                <span class="arrow"></span>
+            </a>
+            <div class="submenu">
+                <a href="/utilities/checker-bin/">{{#i18n}}menu.utils.checker_bin{{/i18n}}</a>
+                <a href="/utilities/checker-cc/">{{#i18n}}menu.utils.checker_cc{{/i18n}}</a>
+            </div>
+        </div>
+</nav>
+
+<nav class="secondary">
+<!--    <div class="menu-item">-->
+<!--        <p class="title">Admin:</p>-->
+<!--        <a href="">Panel admin</a>-->
+<!--        <div></div>-->
+<!--    </div>-->
+<!--    <div class="menu-item">-->
+<!--        <p class="title">Support:</p>-->
+<!--        <a href="">Panel support</a>-->
+<!--        <div></div>-->
+<!--    </div>-->
+<!--    <div class="menu-item">-->
+<!--        <p class="title">Seller:</p>-->
+<!--        <a href="">Panel seller</a>-->
+<!--        <div></div>-->
+<!--    </div>-->
+</nav>

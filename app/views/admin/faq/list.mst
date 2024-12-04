@@ -1,0 +1,98 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm manage_base_page_corner_left_top_clip_sm">
+            <div class="title manage_base_page_corner_left_top_clip_sm_title_">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption panel_seller_h2">
+                    <h2>{{#i18n}}faq.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="withdrawal_texts manage_bases_html manage_base_section_meyn_div manage_base_section_meyn_div_res">
+                <div class="meyn_div">
+                    <div class="title">
+                        <div class="block_caption">
+                            {{#filter_autocomplete multiple='false' placeholder='table.status' name='status' value=filter.status items=statuses min=0 onchange=filter_change}}
+                            {{/filter_autocomplete}}
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <div class="block_caption">
+                            {{#filter_autocomplete multiple='false' placeholder='faq.table.lang' name='language' value=filter.language items=languages min=0 onchange=filter_change}}
+                            {{/filter_autocomplete}}
+                        </div>
+                    </div>
+
+                    <div class="buttons manage_button manage_base_page_button">
+                        <button type="button" class="bordered col-1-1" onclick="___mc.events.push('admin.faq.filter.filter', this)">
+                            {{#i18n}}buttons.search{{/i18n}}
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="col-1-5 responsive_off_coriner responsive_off_coriner_">
+                    <div class="corner-right-top-clip-sm media_off space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <div class="contents contents_inner_manage_base_page" handler="controllers/admin/faq/handler">
+                <div class="contents-inner contents_inner_">
+                    <div class="table-container withdraw_req_page_table_container manage_bases_page_table_container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>{{#i18n}}faq.table.date{{/i18n}}</th>
+                                <th>{{#i18n}}faq.table.lang{{/i18n}}</th>
+                                <th>{{#i18n}}faq.table.question{{/i18n}}</th>
+                                <th>{{#i18n}}faq.table.status{{/i18n}}</th>
+                                <th colspan="2">action</th>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="100%">
+                                    <div class="loader">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        <div class="placeholder striped flex flex-justify-center">
+                            {{#pagination}}{{/pagination}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

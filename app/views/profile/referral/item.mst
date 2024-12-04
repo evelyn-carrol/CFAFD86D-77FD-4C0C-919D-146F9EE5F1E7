@@ -1,0 +1,288 @@
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered_red">declined</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered">ACTIVE</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered_uncheck">SLEEPING</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered_red">declined</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered">ACTIVE</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered_uncheck">SLEEPING</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered_red">declined</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>416549</span>
+        </div>
+    </td>
+    <td>
+        user name
+    </td>
+    <td>
+        <div class="flex">
+            <a href="" class="button bordered">
+                <span>gold</span>
+            </a>
+            <a href="" class="button">
+                <img src="/assets/img/gold.svg" alt="">
+            </a>
+        </div>
+    </td>
+    <td class="action">
+        <span class="price">16.00&euro;</span>
+    </td>
+    <td>
+        <button class="bordered">12.05.23</button>
+    </td>
+    <td>
+        <button class="bordered">ACTIVE</button>
+    </td>
+    <td class="action">
+        <a class="button search"></a>
+    </td>
+    <td class="action">
+        <button class="remove bordered red padding-sm"></button>
+    </td>
+</tr>

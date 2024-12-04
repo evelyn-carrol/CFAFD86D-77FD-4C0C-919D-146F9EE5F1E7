@@ -1,0 +1,6 @@
+<div class="bg-caption top">Access denied</div>
+<div class="bg-caption bottom">Access denied</div>
+<div class="caption">
+    <h1>Restricted</h1>
+    <a href="/" class="button">Back to main page</a>
+</div>

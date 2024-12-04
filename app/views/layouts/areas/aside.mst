@@ -1,0 +1,52 @@
+
+<aside>
+    <div class="bl-top">
+        <img src="/assets/img/logo.svg" alt="logo">
+    </div>
+    <div style="flex-grow: 1">
+        {{> layouts/areas/menu}}
+    </div>
+    <div class="bl-bottom">
+        <nav>
+            <a href="/faq/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>FAQ</span>
+            </a>
+            <a href="/support/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>Support</span>
+            </a>
+            <a href="/seller/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>Become seller</span>
+            </a>
+        </nav>
+    </div>
+</aside>
+
+<div class="responsive_toggle_menu">
+    <div class="bl-top">
+        <img src="/assets/img/logo.svg" alt="logo">
+    </div>
+    <div>
+        {{> layouts/areas/menu}}
+    </div>
+    <div class="bl-bottom">
+        <nav>
+            <a href="/faq/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>FAQ</span>
+            </a>
+            <a href="/support/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>Support</span>
+            </a>
+            <a href="/seller/">
+                <img src="/assets/img/arrow-top-right.svg" alt="">
+                <span>Become seller</span>
+            </a>
+        </nav>
+    </div>
+</div>
+<div class="responsive_toggle_m" onclick="document.querySelector('.responsive_toggle_menu').classList.toggle('show');
+            document.querySelector('.responsive_toggle_m').classList.toggle('active')"></div>

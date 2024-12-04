@@ -1,0 +1,6 @@
+<label id="{{id}}" class="d-flex align-center gap-8 mt-0">
+    <input type="checkbox" class="default" name="{{name}}" {{#if value }}checked{{/if }}/>
+    {{#if label }}
+        {{#i18n}}{{label}}{{/i18n}}
+    {{/if }}
+</label>

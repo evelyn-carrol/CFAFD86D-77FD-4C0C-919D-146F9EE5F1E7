@@ -1,0 +1,58 @@
+<div class="connect_dashboard_page_title_15">
+    <div>
+        <p class="cornered-text-block">{{#i18n}}dashboard.activity.products{{/i18n}}</p>
+        <h1>{{products}}</h1>
+    </div>
+    <div class="connect_dashboard_page_title_15_second_div">
+        <a href="/shop/cart/" class="flex flex-align-center flex-justify-between w-100">
+            <p>{{#i18n}}dashboard.activity.cart{{/i18n}}</p>
+            <img src="/assets/img/arrow-right-up.svg" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="connect_page_dashboard_end_section">
+    <div class="cornered-text-block corner-right-top-clip-xs main_padding">
+        <p>{{#i18n}}dashboard.activity.latest{{/i18n}}</p>
+    </div>
+    <div class="flex gap-sm margin-top-sm connect_page_dashboard_end_section_c">
+        {{#each orders.items}}
+            <div class="corner-left-bottom-right-top-clip-xs padding-sm col-1-2 bg-blue cornered_connect_dashboard">
+                <div class="flex flex-align-center flex-justify-between">
+                    <button class="bordered dashboard_page_bordered">
+                        {{#i18n}}dashboard.activity.date{{/i18n}}
+                    </button>
+                    <button class="bordered dashboard_page_bordered">{{created|date}}</button>
+                </div>
+                <div class="flex flex-align-center flex-justify-between">
+                    <button class=" dashboard_page_bordered">
+                        {{#i18n}}dashboard.activity.amount{{/i18n}}
+                    </button>
+                    <button class="price dashboard_page_bordered">{{amount|money}}$</button>
+                </div>
+                <div class="check_now_button_">
+                    <a href="/profile/orders/" class="button dashboard_page_bordered">
+                        {{#i18n}}dashboard.activity.check{{/i18n}}
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+<div class="corner-left-bottom-clip-sm bg-blue margin-top-sm padding-lg">
+    <div class="flex flex-align-center flex-justify-between gap-sm">
+        <h2>{{#i18n}}news.title{{/i18n}}</h2>
+        <!--<span>+&nbsp;<span class="small-caption">5</span></span>-->
+    </div>
+    <div class="flex_wrap_div flex flex-align-center gap-sm margin-top-sm">
+        {{#each news.items}}
+            <div class="corner-right-bottom-clip-xs col-1-4 padding-sm bg-blue open_modal_1">
+                <p>{{created|datetime}}</p>
+                <a href="/news/">
+                    <p class="small-caption margin-top-xs">{{title}}</p>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</div>

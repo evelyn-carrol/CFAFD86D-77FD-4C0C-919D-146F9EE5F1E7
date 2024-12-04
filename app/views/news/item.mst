@@ -1,0 +1,14 @@
+<div class="news-item col-1-1 corner-left-top-right-bottom-clip-xs">
+    <div class="bl-top">
+        <h2>{{title}}</h2>
+        <span>{{created|datetime}}</span>
+    </div>
+    <div class="bl-middle">
+        <div class="space-wrapper col-1-2 media_off">
+            <div class="placeholder striped"></div>
+        </div>
+        <div class="news-text">
+            {{{text}}}
+        </div>
+    </div>
+</div>

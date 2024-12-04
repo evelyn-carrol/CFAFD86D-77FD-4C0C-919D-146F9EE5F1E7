@@ -1,0 +1,97 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="dashboard referral_page">
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>Total number</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">2,144</span>
+                        <span class="measure">users</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>Joined from you</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">users</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>Joined from your friends</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">users</span>
+                    </div>
+                </div>
+
+                <div class="col-1-4 referral_page_col_1">
+                    <div class="cornered-text-block corner-left-top-right-bottom-clip-xs margin-bottom-xs referral-link">
+                        <img src="/assets/img/ok.svg" alt="">
+                        <p>Your referral link | Copy link</p>
+                    </div>
+                    <div class="referral-url">
+                        <a href="" class="button gap-xs">
+                            <span>focusedstudio.com/referral-link</span>
+                            <img src="/assets/img/arrow-top-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents" handler="controllers/profile/referral/handler">
+                <div class="contents-inner">
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        <div class="placeholder striped"></div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>user id</th>
+                                <th>username</th>
+                                <th>rank</th>
+                                <th>your earning</th>
+                                <th>date</th>
+                                <th>status</th>
+                                <th colspan="2">action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="100%">
+                                        <div class="loader">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        {{#pagination}}{{/pagination}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

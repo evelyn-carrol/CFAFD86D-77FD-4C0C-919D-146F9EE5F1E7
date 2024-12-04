@@ -1,0 +1,6 @@
+<div class="filter-chip" id="{{id}}" {{#if filterId }} data-filter-id="{{filterId }}" {{/if }} data-value="{{value }}">
+    <span class="filter-chip-text">{{option}}</span>
+    {{#if isCloseble }}
+        <span class="mdi mdi-close" data-type='close'></span>
+    {{/if}}
+</div>

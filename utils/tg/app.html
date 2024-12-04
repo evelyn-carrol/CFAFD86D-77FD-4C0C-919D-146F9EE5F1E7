@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="MobileOptimized" content="176"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            --bg-color: var(--tg-theme-bg-color, #fff);
+            font-family: sans-serif;
+            background-color: var(--bg-color);
+            color: var(--tg-theme-text-color, #222);
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            color-scheme: var(--tg-color-scheme);
+        }
+
+        #app{
+            padding: 15px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            margin: 15px 0;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--tg-theme-button-color, #50a8eb);
+            color: var(--tg-theme-button-text-color, #ffffff);
+            cursor: pointer;
+        }
+
+        button.small{
+            /*width: fit-content;*/
+            padding: 6px 10px;
+            margin: 7px 0;
+        }
+
+        button[disabled] {
+            opacity: 0.6;
+            cursor: auto;
+            pointer-events: none;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"],
+        .input[contenteditable] {
+            display: block;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border: 1px solid var(--tg-theme-link-color, #000);
+            background-color: var(--tg-theme-bg-color, #ffffff);
+            border-radius: 4px;
+            color: var(--tg-theme-text-color, #222222);
+            text-align: start;
+        }
+
+        input[type="text"]::-webkit-input-placeholder,
+        input[type="email"]::-webkit-input-placeholder,
+        input[type="tel"]::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder,
+        {
+            color: var(--tg-theme-hint-color, #ccc);
+        }
+
+        input[type="text"]::-moz-placeholder,
+        input[type="email"]::-moz-placeholder,
+        input[type="tel"]::-moz-placeholder,
+        textarea::-moz-placeholder{
+            color: var(--tg-theme-hint-color, #ccc);
+        }
+
+        input[type="text"]:-ms-input-placeholder,
+        input[type="email"]:-ms-input-placeholder,
+        input[type="tel"]:-ms-input-placeholder,
+        textarea:-ms-input-placeholder{
+            color: var(--tg-theme-hint-color, #ccc);
+        }
+
+        .input[data-placeholder] {
+            position: relative;
+        }
+
+        .input[data-placeholder]:empty:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            content: attr(data-placeholder);
+            color: var(--tg-theme-hint-color, #ccc);
+            padding: 0 20px;
+            font-weight: normal;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        textarea {
+            font-family: sans-serif;
+            width: 100%;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border: 1px solid var(--tg-theme-link-color, #000);
+            background-color: var(--tg-theme-bg-color, #ffffff);
+            border-radius: 4px;
+            color: var(--tg-theme-text-color, #222222);
+        }
+        pre {
+            background: rgba(0, 0, 0, .07);
+            color: var(--tg-theme-text-color, #222);
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 7px 0;
+            word-break: break-word;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table tr{
+            text-align: center;
+        }
+        table td{
+            border-bottom: 1px solid var(--tg-theme-link-color, #000);
+        }
+        table tr:last-child td{
+            border-bottom: none;
+        }
+
+        .profile-info-data, .home-menu, .product, .recharge-menu{
+            margin-bottom: 8px;
+            padding: 8px;
+        }
+        .profile-info-data{
+            border-radius: 4px;
+            border: 1px solid var(--tg-theme-link-color, #000);
+            text-align: center;
+        }
+        .product{
+            border-radius: 4px;
+            border: 1px solid var(--tg-theme-link-color, #000);
+        }
+
+        .fx{
+            display: flex;
+        }
+        .fx-gap-xs{
+            gap: 2px;
+        }
+        .fx-gap-sm{
+            gap: 4px;
+        }
+        .fx-gap-lg{
+            gap: 8px;
+        }
+        .fx-gap-xl{
+            gap: 16px;
+        }
+        .fx-h-center{
+            justify-content: center;
+        }
+        .fx-v-center{
+            align-items: center
+        }
+
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <div v-if="isAuth">
+            <home v-if="current === 'home'" @set-current-menu="setCurrentMenu" :user="user"></home>
+            <profile v-if="current === 'profile'" @set-current-menu="setCurrentMenu" :user="user" :updateuser="updateUser"></profile>
+            <products v-if="current === 'products'" @set-current-menu="setCurrentMenu" @set-product-id="setProductId"></products>
+            <product-details v-if="current === 'product-details'" @set-current-menu="setCurrentMenu" :id="product_id"></product-details>
+            <support v-if="current === 'support'" @set-current-menu="setCurrentMenu" :user="user" @set-ticket-id="setTicketId"></support>
+            <ticket-details v-if="current === 'ticket-details'" @set-current-menu="setCurrentMenu" :id="ticket_id"></ticket-details>
+            <ticket-answer v-if="current === 'ticket-answer'" @set-current-menu="setCurrentMenu" :id="ticket_id"></ticket-answer>
+            <ticket-create v-if="current === 'ticket-create'" @set-current-menu="setCurrentMenu"></ticket-create>
+            <recharge v-if="current === 'recharge'" @set-current-menu="setCurrentMenu" :user="user"></recharge>
+        </div>
+        <div v-else class="fx fx-h-center fx-v-center">
+            <p>Not authorized...</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        let app = Vue.createApp({
+            data: function (){
+                return {
+                    current: "home",
+                    product_id: false,
+                    ticket_id: false,
+                    isAuth: false,
+                    token: false,
+                    user: {
+                        role: "public"
+                    },
+                    tgApp: {
+                        initData      : Telegram.WebApp.initData || '',
+                        initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
+                    }
+                }
+            },
+            methods: {
+                setCurrentMenu(name){
+                    this.current = name;
+                    if (this.current === "home") {
+                        Telegram.WebApp.BackButton.hide();
+                    } else {
+                        Telegram.WebApp.BackButton.show();
+                    }
+                },
+                setProductId(id){
+                    this.product_id = id;
+                },
+                setTicketId(id){
+                    this.ticket_id = id;
+                },
+                updateUser(data){
+                    this.user = data;
+                },
+                ticketStatus: async function (id, event){
+                    let status = event ? event.target.dataset.status : "",
+                        button = event && event.target.tagName === "BUTTON";
+                    if (button){
+                        event.target.disabled = true;
+                    }
+                    let res = await this.api("support."+status, {id: id});
+                    if (res.error && res.error.message){
+                        alert(res.error.message);
+                    } else if (res.result){
+                        if (button){
+                            event.target.innerText = (status === "close" ? "Reopen" : "Close");
+                            event.target.dataset.status = (status === "close" ? "reopen" : "close");
+                        }
+                        alert(`Ticket successfully ${(status === "close" ? "close" : "reopene")}d`)
+                    } else {
+                        alert("Operation failed")
+                    }
+                    if (button){
+                        event.target.disabled = false;
+                    }
+                },
+                async api(method, params) {
+                    try {
+                        let token = this.token || null;
+                        let request = await fetch("https://jarvys.mytg.pro/api/", {
+                            credentials: 'include',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                Token: token,
+                            },
+                            body: JSON.stringify({
+                                method: method,
+                                params: params
+                            }),
+                            method: 'POST',
+                        });
+                        let data = await request;
+                        if (request.headers.get('content-type').match('json')) {
+                            data = await request.json();
+                        } else {
+                            return request;
+                        }
+
+                        return data;
+                    } catch (e) {
+                        alert(e.message);
+                        return false
+                    }
+                },
+                /*
+                api(method, params){
+                    console.log("call api" + method + JSON.stringify(params));
+                    return {
+                        result: [
+                            {id: 1, name: "Test", price: 15}
+                        ]
+                    };
+                },
+                 */
+                timestampToDateTime: function (ts){
+                    if (isNaN(parseInt(ts))){
+                        return "";
+                    }
+                    let d = new Date(parseInt(ts) * 1000);
+                    return d.toLocaleDateString() + " " + d.toLocaleTimeString();
+                },
+                tgBackBtnHandler(){
+                    let prevs = {
+                        "product-details": "products",
+                        "ticket-details": "support",
+                        "ticket-create": "support",
+                        "ticket-answer": "ticket-details"
+                    }, name = "home";
+                    if (prevs[this.current]){
+                        name = prevs[this.current];
+                    }
+                    this.setCurrentMenu(name);
+                },
+                tgAppClose(){
+                    Telegram.WebApp.close();
+                },
+                tgAppShowAlert(message) {
+                    Telegram.WebApp.showAlert(message);
+                },
+                tgAppShowConfirm(message) {
+                    Telegram.WebApp.showConfirm(message);
+                }
+            },
+            provide: function (){
+                return {
+                    api: this.api,
+                    timestampToDateTime: this.timestampToDateTime,
+                    ticketStatus: this.ticketStatus,
+                    showAlert: this.tgAppShowAlert
+                }
+            },
+            created: async function (){
+                Telegram.WebApp.onEvent('backButtonClicked', this.tgBackBtnHandler);
+                Telegram.WebApp.ready();
+                Telegram.WebApp.expand();
+
+                const url_args = new URLSearchParams(window.location.search);
+                this.token = url_args.get('token');
+                if (this.token){
+                    let user = await this.api("users.me");
+                    if (user.result && user.result.id){
+                        this.user = user.result;
+                        this.isAuth = true;
+                    }
+                }
+            }
+        });
+
+        app.component("home", {
+            /*
+            props: ['currentMenu'],
+            computed: {
+                currentItem: {
+                    get: function (){
+                        return this.currentMenu;
+                    },
+                    set: function (val){
+                        console.log("emit");
+                        this.$emit("setCurrentMenu", val);
+                    }
+                }
+            },
+             */
+            props: ['user'],
+            template : `
+            <div>
+                <div class="profile-info-data">
+                  <p>
+                    <span v-if="user.name">{{user.name}}</span>
+                    <span v-else>Unknown</span>
+                  </p>
+                  <p>\${{user.balance}}</p>
+                </div>
+                <div class="home-menu">
+                    <button @click="changeMenu('profile')">👤Profile</button>
+                    <button @click="changeMenu('products')">🛍Products</button>
+                    <button @click="changeMenu('support')">🧑‍💻Support</button>
+                    <button @click="changeMenu('recharge')">💲Balance</button>
+                </div>
+            </div>
+            `,
+            methods: {
+                changeMenu: function (val){
+                    this.$emit("set-current-menu", val);
+                }
+            }
+        });
+        app.component("profile", {
+            template: `
+            <div>
+                <form @submit.prevent="saveProfile">
+                    <label>Name
+                      <input type="text" name="name" v-model="name">
+                    </label>
+                    <label>Email
+                      <input type="email" name="email" v-model="email">
+                    </label>
+                    <label>Phone
+                      <input type="tel" name="phone" v-model="phone">
+                    </label>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+            `,
+            props: ["user", "updateuser"],
+            inject: ["api"],
+            data: function (){
+                return {
+                    name: this.user.name??"",
+                    email: this.user.email??"",
+                    phone: this.user.phone??""
+                }
+            },
+            methods: {
+                saveProfile: async function (e){
+                    let data = Object.fromEntries((new FormData(e.target)).entries());
+                    data.id = this.user.id;
+                    console.log(JSON.stringify(data));
+                    if (data.email === ""){
+                        data.email = null
+                    }
+                    if (data.phone === ""){
+                        data.phone = null;
+                    }
+                    let res = await this.api("users.update", data);
+                    if (res.error && res.error.message){
+                        alert(res.error.message);
+                    } else if (res.result && res.result.id){
+                        this.updateuser(res.result);
+                        alert("Updated successfully");
+                    } else {
+                        alert("Operation failed...");
+                    }
+                }
+            }
+        });
+        app.component("products", {
+            template: `
+            <div v-if="!products.loading">
+                <div id="products-list">
+                    <div class="product" v-for="product in products.items" :key="product.id">
+                      <div>
+                        <p>Name: <span>{{ product.name }}</span></p>
+                        <p>Price: <span>{{ product.price }}</span></p>
+                      </div>
+                      <div class="fx fx-gap-lg">
+                        <button @click="productDetail(product.id)">Details</button>
+                        <button @click="productBuy(product.id)" :disabled="buyLoading[product.id]">Buy</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="pagination fx fx-gap-lg">
+                    <button v-if="pagination.prev" @click="changePaginationPage(pagination.page-1)">&lt;-</button>
+                    <button v-if="pagination.next" @click="changePaginationPage(pagination.page+1)">-&gt;</button>
+                </div>
+            </div>
+            <div v-else class="fx fx-h-center fx-v-center">
+                <div>
+                  <p>Loading...</p>
+                </div>
+            </div>
+            `,
+            inject: ["api"],
+            data: function (){
+                return {
+                    products: {
+                        items: [],
+                        total: 0,
+                        loading: false
+                    },
+                    pagination: {
+                        limit: 3,
+                        offset: 0,
+                        page: 1,
+                        pages: 1,
+                        prev: false,
+                        next: false
+                    },
+                    buyLoading: {}
+                }
+            },
+            methods: {
+                productsList: async function (params){
+                    this.products.loading = true;
+                    this.products.items = [];
+                    this.products.total = 0;
+
+                    let products = await this.api("shop.products.list", params);
+                    if (products.error && products.error.message){
+                        alert(products.error.message);
+                    } else if (products.result){
+                        this.products = products.result;
+                        this.pagination.pages = Math.ceil(this.products.total/this.pagination.limit);
+
+                        if (this.pagination.page < this.pagination.pages){
+                            this.pagination.next = true;
+                        } else {
+                            this.pagination.next = false;
+                        }
+                        if (this.pagination.page > 1){
+                            this.pagination.prev = true
+                        } else {
+                            this.pagination.prev = false
+                        }
+                        if (this.pagination.pages === 1){
+                            this.pagination.next = false;
+                            this.pagination.prev = false
+                        }
+                    }
+
+                    this.products.loading = false;
+                },
+                productDetail: function (id){
+                    this.$emit("set-product-id", id);
+                    this.$emit("set-current-menu", "product-details");
+                },
+                productBuy: async function (id){
+                    this.buyLoading[id] = true;
+                    let res = await this.api("shop.products.buy", {id: id});
+                    if (res.error && res.error.message){
+                        alert(res.error.message);
+                    } else if (res.result && !isNaN(parseInt(res.result))){
+                        alert("Purchase is successful")
+                    } else {
+                        alert("Operation failed")
+                    }
+                    this.buyLoading[id] = false;
+                },
+                changePaginationPage: async function (page){
+                    this.pagination.page = parseInt(page);
+                    this.pagination.offset = (this.pagination.page - 1) * this.pagination.limit;
+                    await this.productsList(this.pagination);
+                }
+            },
+            created: async function (){
+                await this.productsList(this.pagination);
+            }
+        });
+        app.component("product-details", {
+            template: `
+                <div v-if="product">
+                    <div>
+                        <p>Name: <span>{{ product.name }}</span></p>
+                        <p>Price: <span>{{ product.price }}</span></p>
+                    </div>
+                    <div>
+                        <button @click="productBuy(product.id)" :disabled="loading">Buy</button>
+                    </div>
+                </div>
+                <div v-else>
+                  <p>No product data...</p>
+                </div>
+            `,
+            props: ['id'],
+            inject: ["api"],
+            data: function (){
+                return {
+                    product: false,
+                    loading: false
+                }
+            },
+            methods: {
+                productBuy: async function (id){
+                    this.loading = true;
+                    let res = await this.api("shop.products.buy", {id: id});
+                    if (res.error && res.error.message){
+                        alert(res.error.message);
+                    } else if (res.result && !isNaN(parseInt(res.result))){
+                        alert("Purchase is successful")
+                    } else {
+                        alert("Operation failed")
+                    }
+                    this.loading = false;
+                }
+            },
+            created: async function (){
+                let product = await this.api("shop.products.get", {id: this.id});
+                if (product.error && product.error.message){
+                    this.product = false;
+                    alert(product.error.message);
+                } else if (product.result){
+                    this.product = product.result;
+                } else {
+                    this.product = false;
+                }
+            }
+        })
+        app.component("support", {
+            template: `
+            <div>
+                <div class="fx" style="justify-content: flex-end">
+                  <button class="small" style="width: 40px" @click="createTicket">➕</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Messages</th>
+                            <th>...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-if="tickets.total > 0" v-for="ticket in tickets.items" :key="ticket.id">
+                            <td>{{ticket.id}}</td>
+                            <td>{{timestampToDateTime(ticket.created)}}</td>
+                            <td>{{ticket.title}}</td>
+                            <td>{{ticket.messages}}</td>
+                            <td>
+                                <button class="small" @click="ticketDetails(ticket.id)">Details</button>
+                                <button class="small" v-if="ticket.status !== 'closed'" @click="(event) => ticketStatus(ticket.id, event)" data-status="close">Close</button>
+                                <button class="small" v-if="ticket.status === 'closed'" @click="(event) => ticketStatus(ticket.id, event)" data-status="reopen">Reopen</button>
+                            </td>
+                        </tr>
+                        <tr v-else>
+                          <td colspan="100%">No tickets...</td>
+                        </tr>
+                    </tbody>
+                    <tfoot v-if="pagination.more">
+                        <tr>
+                          <td colspan="100%"><button class="small" @click="loadMore">More...</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            `,
+            inject: ["api", "timestampToDateTime", "ticketStatus"],
+            data: function (){
+                return {
+                    tickets: {
+                        items: [],
+                        total: 0
+                    },
+                    pagination: {
+                        limit: 1,
+                        offset: 0,
+                        page: 1,
+                        pages: 1,
+                        more: false
+                    }
+                }
+            },
+            methods: {
+                ticketsList: async function(params){
+                    let tickets = await this.api("support.list", params);
+                    if (tickets.error && tickets.error.message){
+                        alert(tickets.error.message);
+                    } else if (tickets.result){
+                        this.tickets.total = tickets.result.total;
+                        this.tickets.items.push(...tickets.result.items);
+                        this.pagination.pages = Math.ceil(this.tickets.total/this.pagination.limit);
+
+                        if (this.pagination.page < this.pagination.pages){
+                            this.pagination.more = true;
+                        } else {
+                            this.pagination.more = false;
+                        }
+                        if (this.pagination.pages === 1){
+                            this.pagination.more = false
+                        }
+                    }
+                },
+                loadMore: async function (){
+                    this.pagination.page++;
+                    this.pagination.offset = (this.pagination.page - 1) * this.pagination.limit;
+                    await this.ticketsList(this.pagination);
+                },
+                ticketDetails: function (id){
+                    this.$emit("set-ticket-id", id);
+                    this.$emit("set-current-menu", "ticket-details");
+                },
+                createTicket(){
+                    this.$emit("set-current-menu", "ticket-create");
+                }
+            },
+            created: async function (){
+                await this.ticketsList(this.pagination);
+            }
+        });
+        app.component("ticket-details", {
+            template: `
+              <div>
+                <div>
+                  <p>Title: {{ticket.title}}</p>
+                  <p>Created: {{timestampToDateTime(ticket.created)}}</p>
+                  <p>Status: {{ticket.status}}</p>
+                  <div class="fx fx-gap-sm">
+                    <button class="small" @click="ticketAnswer(ticket.id)">Answer</button>
+                    <button class="small" v-if="ticket.status !== 'closed'" @click="(event) => ticketStatus(ticket.id, event)" data-status="close">Close</button>
+                    <button class="small" v-if="ticket.status === 'closed'" @click="(event) => ticketStatus(ticket.id, event)" data-status="reopen">Reopen</button>
+                  </div>
+                </div>
+                <p>Messages:</p>
+                <div style="margin-top: 16px">
+                    <div v-if="ticket.messages?.length" v-for="msg in ticket.messages" :key="msg.id">
+                      <p>
+                        {{timestampToDateTime(msg.created)}}&nbsp;
+                        <span v-if="msg.user.is_me">Me</span>
+                        <span v-else>{{msg.user.name}}</span>
+                      </p>
+                      <pre>{{msg.text}}</pre>
+                    </div>
+                    <div v-else>
+                      <p>No messages...</p>
+                    </div>
+                </div>
+              </div>
+            `,
+            props: ["id"],
+            inject: ["api", "timestampToDateTime", "ticketStatus"],
+            data: function (){
+                return {
+                    ticket: false
+                }
+            },
+            methods: {
+                ticketAnswer: function (id){
+                    this.$emit("set-ticket-id", id);
+                    this.$emit("set-current-menu", "ticket-answer");
+                }
+            },
+            created: async function (){
+                let ticket = await this.api("support.get", {id: this.id});
+                if (ticket.error && ticket.error.message){
+                    this.ticket = false;
+                    alert(ticket.error.message);
+                } else if (ticket.result){
+                    this.ticket = ticket.result;
+                } else {
+                    this.ticket = false;
+                }
+            }
+        })
+        app.component("ticket-answer", {
+            template: `
+              <div>
+                <form @submit.prevent="answerTicket">
+                  <label>Text
+                    <textarea style="resize: none; min-height: 50vh" name="text" v-model="text"/>
+                  </label>
+                  <button type="submit">Answer</button>
+                </form>
+              </div>
+            `,
+            props: ["id"],
+            inject: ["api"],
+            data: function (){
+                return {
+                    id: this.id,
+                    text: ""
+                }
+            },
+            methods: {
+                answerTicket: async function (e){
+                    let data = Object.fromEntries((new FormData(e.target)).entries());
+                    data.id = this.id;
+                    console.log(JSON.stringify(data));
+                    if (data.text.trim() !== "") {
+                        let res = await this.api("support.answer", data);
+                        if (res.error && res.error.message) {
+                            alert(res.error.message);
+                        } else if (res.result && !isNaN(parseInt(res.result))) {
+                            alert("Answered successfully");
+                        } else {
+                            alert("Operation failed...");
+                        }
+                    } else {
+                        alert("Enter your text");
+                    }
+                }
+            }
+        })
+        app.component("ticket-create", {
+            template: `
+              <div>
+                <form @submit.prevent="createTicket">
+                  <label>Title
+                    <input type="text" name="title" placeholder="Enter title of ticket" v-model="title">
+                  </label>
+                  <label>Text
+                    <textarea style="resize: none; min-height: 50vh" name="text" placeholder="Enter text of ticket" v-model="text"/>
+                  </label>
+                  <button type="submit">Create</button>
+                </form>
+              </div>
+            `,
+            inject: ["api"],
+            data: function (){
+                return {
+                    title: "",
+                    text: ""
+                }
+            },
+            methods: {
+                createTicket: async function (e){
+                    let data = Object.fromEntries((new FormData(e.target)).entries());
+                    //alert(JSON.stringify(data));
+                    if (data.title.trim() === "") {
+                        alert("Enter title");
+                        return;
+                    }
+                    if (data.text.trim() === "") {
+                        alert("Enter text");
+                        return;
+                    }
+                    let res = await this.api("support.add", data);
+                    if (res.error && res.error.message) {
+                        alert(res.error.message);
+                    } else if (res.result && !isNaN(parseInt(res.result))) {
+                        alert(`Ticket #${res.result} created successfully`);
+                        this.title = "";
+                        this.text = "";
+                    } else {
+                        alert("Operation failed...");
+                    }
+                }
+            }
+        })
+        app.component("recharge", {
+            template: `
+            <div>
+                <div class="profile-info-data">
+                  <p>
+                    <span v-if="user.name">{{user.name}}</span>
+                    <span v-else>Unknown</span>
+                  </p>
+                  <p>\${{user.balance}}</p>
+                </div>
+                <div class="recharge-menu">
+                    <p>Make payments on these addresses:</p>
+                    <div>
+                        <p>BTC: 0x123456</p>
+                    </div>
+                    <div>
+                        <p>ETH: 0xabcdef</p>
+                    </div>
+                    <div>
+                        <p>XMR: 0x0a1b2c</p>
+                    </div>
+                </div>
+            </div>
+            `,
+            props: ["user"]
+        })
+
+        app.mount("#app");
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<tr>
+    <td>
+        <input type="checkbox" data-pos="{{id}}">
+    </td>
+    <td>
+        <div class="card-number">
+            <img src="/assets/cards/thumb/{{info.bin}}.png" alt="">&nbsp;
+            <span>{{info.bin}}</span>
+        </div>
+    </td>
+    <!--<td>{{info.expire}}</td>-->
+    <td>{{info.brand}}</td>
+    <td>{{info.type}}</td>
+    <td>{{info.category}}</td>
+    <!--
+    <td>
+        <div class="card-number">
+            <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/refs/heads/main/svg/{{info.country|lowercase}}.svg" alt="">
+            <span>{{info.country}}</span>
+        </div>
+    </td>
+    <td>{{info.issuer}}</td>
+    <td>{{info.base.name}}</td>
+    -->
+    <td><span class="price">{{price|money}}$</span></td>
+    <td class="action">
+        <button class="remove red" data-pos="{{id}}" onclick="___mc.events.push('shop.cart.remove', this)"></button>
+    </td>
+</tr>

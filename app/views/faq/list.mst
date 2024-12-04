@@ -1,0 +1,39 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{#i18n}}faq.heading{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <div class="col-2-3">
+                        <p>{{#i18n}}faq.notice{{/i18n}}</p>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-inner col-1-2">
+                            <ul class="faq-list">
+                                {{#each faq.items}}
+                                    {{> faq/item}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="col-1-2 media_off_2">
+                            <div class="corner-right-top-clip-sm space-wrapper">
+                                <div class="placeholder striped"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

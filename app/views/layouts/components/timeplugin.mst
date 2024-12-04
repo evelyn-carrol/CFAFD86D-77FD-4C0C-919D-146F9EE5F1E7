@@ -1,0 +1,14 @@
+<div class="timeplugin " id="{{id}}">
+    <div>
+        <label>{{#i18n}}calendar.time.hours{{/i18n}}</label>
+        <input type="number" class="timepicker-hours" min="0" max="23" step="1"/>
+    </div>
+    <div>
+        <label>{{#i18n}}calendar.time.minutes{{/i18n}}</label>
+        <input type="number" class="timepicker-minutes" min="0" max="59" step="1"/>
+    </div>
+    <div>
+        <label>{{#i18n}}calendar.time.seconds{{/i18n}}</label>
+        <input type="number" class="timepicker-seconds" min="0" max="59" step="1"/>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="flex flex-col gap-sm margin-top-sm">
+    <div class="flex flex-justify-between flex-wrap">
+        <div class="dashboard_page flex flex-justify-between  left_dashboard_chart">
+            <div class="flex flex-col">
+                <div class="cornered-text-block corner-right-top-clip-xs dashboard_page_cornered">
+                    <p>{{#i18n}}shop.title{{/i18n}} / {{#i18n}}cards.title{{/i18n}}</p>
+                </div>
+                <div>
+                    <p class="big-caption connect_dashboard_page_1358">{{current.total}}</p>
+                </div>
+                <div>
+                    <p class="mid-caption flex flex-align-center gap-xs dashboard_page_mid_caption">
+                        <img class="col-1-8" src="/assets/img/arrow-up.svg" alt="">
+                        <span>{{change}}%</span>
+                        <span class="indicator-horizontal yellow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="dashboard_page_div">
+                <div class="chart-donut" style="{{chart.style}}">
+                    <div></div>
+                </div>
+                <div>
+                    {{#each current.items}}
+                        <p>
+                            <span class="dot-middle {{class}}"></span>
+                            {{brand}} . <span class="small-caption">{{count}}</span>
+                        </p>
+                    {{/each}}
+                    <!--
+                    <p>
+                        <span class="dot-middle blue"></span>
+                        Classique . <span class="small-caption">232</span>
+                    </p>
+                    <p>
+                        <span class="dot-middle yellow"></span>
+                        Gold . <span class="small-caption">232</span>
+                    </p>
+                    <p>
+                        <span class="dot-middle red"></span>
+                        BUsiness . <span class="small-caption">232</span>
+                    </p>
+                    <p>
+                        <span class="dot-middle green"></span>
+                        Infinite . <span class="small-caption">232</span>
+                    </p>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

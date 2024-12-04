@@ -1,0 +1,33 @@
+<tr>
+    <td>
+        <input type="checkbox" data-id="{{id}}">
+    </td>
+    <td>
+        {{created|datetime}}
+    </td>
+    <td>
+        {{name}}
+    </td>
+
+    <td>
+        <span class="price">{{price|money}}$</span>
+    </td>
+
+    <td class="action">
+        <button class="bordered_red boridered">{{status}}</button>
+    </td>
+
+    <td class="action">
+        <a href="/bases/edit/{{id}}" class="button pencil bordered"></a>
+    </td>
+
+    <td class="action">
+        <a href="/bases/{{id}}/cards/" class="button eye bordered"></a>
+    </td>
+
+    <td class="action">
+        {{#if status 'active'}}
+            <button class="button remove red bordered" data-id="{{id}}" onclick="___mc.events.push('bases.archive', {id: {{id}}, name:'{{name|escape_html}}' })"></button>
+        {{/if}}
+    </td>
+</tr>

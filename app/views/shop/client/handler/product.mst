@@ -1,0 +1,35 @@
+<tr>
+    <td>
+        <input type="checkbox">
+    </td>
+    <td>
+        <div class="card-number">
+            <span class="masked"></span>
+            <span>{{id}}</span>
+        </div>
+    </td>
+    <!--
+    <td>
+        classique
+    </td>
+    <td>
+        vendeur name
+    </td>
+    <td>
+        us
+    </td>
+    -->
+    <td>
+        {{name}}
+    </td>
+    <td class="action">
+        <span class="price">{{price}}&euro;</span>
+    </td>
+    <td class="action">
+        <button class="cart" onclick="___mc.events.push('shop.products.buy', {{id}})"></button>
+    </td>
+    <!--
+    <td class="action">
+        <a class="button shop"></a>
+    </td>-->
+</tr>

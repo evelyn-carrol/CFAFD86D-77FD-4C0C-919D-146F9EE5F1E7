@@ -1,0 +1,27 @@
+<tr>
+    <td class="action">
+        <button class="eye" onclick="___mc.events.push('support.ticket.get', {{id}})"></button>
+    </td>
+
+    {{#if filter.status 'active'}}
+        <td class="action">
+            <button class="remove red" onclick="___mc.events.push('support.ticket.close', {{id}})"></button>
+        </td>
+    {{/if}}
+
+    {{#if filter.status 'closed'}}
+        <td class="action">
+            <button class="pencil" onclick="___mc.events.push('support.ticket.reopen', {{id}})"></button>
+        </td>
+        {{#if profile.role 'IN' 'client' 'seller'}}
+            <td class="action">
+                <button class="trash" onclick="___mc.events.push('support.ticket.archive', {{id}})"></button>
+            </td>
+        {{/if}}
+    {{/if}}
+
+    <td>
+        <p class="title">{{title}}</p>
+        <p class="description">{{created|datetime}}</p>
+    </td>
+</tr>

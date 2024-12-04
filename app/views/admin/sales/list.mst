@@ -1,0 +1,650 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="admin_panel block corner-left-top-clip-sm">
+
+            <div class="flex_div seles_page_flex_div">
+                <div class="admin_panel_cards sales_page_clip main_page_sales_page">
+                    <div class="sales_page_mayin">
+                        <div class="dashboard">
+                            <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                                <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>Total purchases</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">2,144</span>
+                                    <span class="measure">pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard">
+                            <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                                <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>successful</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">1,250</span>
+                                    <span class="measure">pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="responsive_off_corner">
+                        <div class="corner-right-top-clip-sm media_off space-wrapper">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+                    <div class="saless_pagee">
+                        <div class="filter_text">
+                            <p class="filters_text filters_text_text filtercha">filters</p>
+                            <span></span>
+                        </div>
+                        <div class="admin_panel_page_caption sal corner-left-top-right-bottom-clip-xs">
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="buttons margin-top-sm">
+                                <button type="submit" class="bordered col-1-1">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="responsive_off_corner">
+                        <div class="corner-right-top-clip-sm media_off space-wrapper">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sales_page_ corner-left-top-right-bottom-clip-xs main_seles_page">
+                    <div class="title sales_page_main_title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>2.2k</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>sales</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="">
+                        <div class="corner-right-top-clip-sm media_off space-wrapper">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="table-container taybel_container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="media_responsive_off">sale id</th>
+                                <th class="media_responsive_off">client name</th>
+                                <th class="media_responsive_off">seller name</th>
+                                <th class="media_responsive_off">payment gateway</th>
+                                <th class="media_responsive_off">prices</th>
+                                <th class="media_responsive_off">date</th>
+                                <th class="media_responsive_off">PRODUCT</th>
+                                <th class="media_responsive_off">status</th>
+                                <th class="media_responsive_off" colspan="2">action</th>
+                                <th class="media_responsive_on">username</th>
+                                <th class="media_responsive_on">PRODUCT</th>
+                                <th class="media_responsive_on">more</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/btc.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>BTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>LTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img class="eth_image" src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>ETH</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/btc.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>BTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img class="eth_image" src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>ETH</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/btc.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>BTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>LTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img class="eth_image" src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>ETH</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_red">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/eth.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>LTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered_uncheck">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_off">
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    seller name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <img src="/assets/img/btc.svg" alt="">
+                                        </a>
+                                        <a href="" class="button">
+                                            <span>BTC</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 16:21:23</button>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action sales_page_table_eye_svg">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr class="media_responsive_on">
+                                <td>
+                                    username
+                                </td>
+                                <td>
+                                    <span class="bordered">CARDS</span>
+                                </td>
+                                <td class="action">
+                                    <button class="search bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="placeholder  pagination-wrapper">
+                        <nav class="pagination">
+                            <a href="" class="prev"></a>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <span class="active">-</span>
+                            <a href="">4</a>
+                            <a href="" class="next"></a>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<div class="confirm">
+    <div>
+    <div class="block conf">
+        <h2>{{title}}</h2>
+        <p>{{{text}}}</p>
+        <div style="text-align: center">
+            <a data-answer="false" class="button bordered">{{#i18n}}buttons.cancel{{/i18n}}</a>
+            <a data-answer="true" class="button bordered green">OK</a>
+        </div>
+    </div>
+    </div>
+</div>

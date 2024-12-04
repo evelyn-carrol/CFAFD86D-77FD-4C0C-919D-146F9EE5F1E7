@@ -1,0 +1,69 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="flex gap-sm cvv_page">
+            {{> shop/cvv/filters}}
+            <div class="col-4-5  cvv_page_col_4_5">
+                <div class="block corner-left-top-clip-sm">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>312</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}shop.cvv.title{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="corner-right-top-clip-sm space-wrapper margin-top media_off">
+                            <div class="placeholder striped"></div>
+                        </div>
+
+                        <div class="table-container cvv_page_container" handler="controllers/shop/cvv/handler">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" onchange="___mc.events.push('shop.cvv.checkbox.all.toggle', this)"></th>
+                                    <th>{{#i18n}}shop.cvv.table.bin{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.expire{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.brand{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.type{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.category{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.country{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.issuer{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.base{{/i18n}}</th>
+                                    <th>{{#i18n}}shop.cvv.table.price{{/i18n}}</th>
+                                    <th>{{#i18n}}table.action{{/i18n}}</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <td colspan="11">
+                                    <div class="loader">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </td>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="line-with-triangle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                            {{#pagination}}{{/pagination}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,78 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{title}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}users.table.nickname{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}users.table.nickname{{/i18n}}" name="nickname" autocomplete="off" value="{{user.nickname}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}users.table.name{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}users.table.name{{/i18n}}" name="name" autocomplete="off" value="{{user.name}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}users.table.role{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=user.role onsuggest=user_role_suggest onchange=user_role_change}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}users.table.status{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=user.status onsuggest=user_status_suggest onchange=user_status_change}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}users.edit.timezone{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="number" placeholder="{{#i18n}}users.edit.timezone{{/i18n}}" name="timezone" autocomplete="off" value="{{user.settings.time_zone}}">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="buttons">
+                            {{#if user.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.user.save', this)" data-action="add">{{#i18n}}buttons.add{{/i18n}}</button>
+                            {{/if}}
+                            {{#unless user.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.user.save', this)" data-action="update">{{#i18n}}buttons.update{{/i18n}}</button>
+                            {{/unless}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

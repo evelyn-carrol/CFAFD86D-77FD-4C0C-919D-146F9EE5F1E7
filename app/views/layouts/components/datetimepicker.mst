@@ -1,0 +1,32 @@
+<div class="datetimepicker {{classlist}}" id="{{id}}">
+    {{#if label}}
+        <label>{{label}}</label>
+    {{/if}}
+    <span class="mdi {{#if type 'date' }}mdi-calendar{{/if }}{{#if type 'period' }}mdi-calendar{{/if }}{{#if type 'time' }}mdi-clock{{/if }}{{#if type 'datetime' }}mdi-calendar-clock{{/if }}">
+        <input type="text" placeholder="{{placeholder}}" {{#if name }}name="{{name }}"{{/if }} value="{{value }}" {{#if disabled }}disabled{{/if }} autocomplete="off"/>
+        <span class="mdi mdi-close clear {{#unless value}}hide{{/unless}}"></span>
+        <div class="datetimepicker_container hide">
+            <div class="datetimepicker-inner">
+                {{#if type 'date' }}
+                    {{#dateplugin type=type value=value onchange=onselect}}{{/dateplugin}}
+                {{/if}}
+                {{#if type 'period' }}
+                    {{#dateplugin type=type value=value onchange=onselect}}{{/dateplugin}}
+                {{/if}}
+                {{#if type 'time' }}
+                    {{#timeplugin type=type value=value onchange=onselect}}{{/timeplugin}}
+                {{/if}}
+                {{#if type 'datetime' }}
+                    {{#dateplugin type=type value=value onchange=onselect}}{{/dateplugin}}
+                    {{#timeplugin type=type value=value onchange=onselect}}{{/timeplugin}}
+                {{/if}}
+                <div {{#if type 'period' }}style="display:none"{{/if}} class="datetimepicker-selector">
+                    <button type="button">{{#i18n}}buttons.pick{{/i18n}}</button>
+                </div>
+            </div>
+        </div>
+    </span>
+</div>
+<div>
+    <img src="/assets/img/box-arrow-right-top.svg" alt="">
+</div>

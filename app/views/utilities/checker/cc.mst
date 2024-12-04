@@ -1,0 +1,379 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="flex gap-sm checker-wrapper_">
+            <div class="col-1-2">
+                <div class="block corner-left-top-clip-sm checker_bin_page">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>01</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>{{#i18n}}utilities.checker.cc.title{{/i18n}}</h2>
+                            <span>
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p style="text-align: center; margin: 25vh 0; color: var(--color__light_blue_50)">Coming soon...</p>
+                        <!--
+                        <form action="" autocomplete="off">
+                            <div class="col-1-1">
+                                <div class="form-element">
+                                    <p class="label">Number of card</p>
+                                    <input type="text" class="main_input"
+                                           placeholder="1234 5678 1234 5678">
+                                    <p class="notes">
+                                        numeric character (12 characterss)
+                                    </p>
+                                </div>
+                                <div class="form-element">
+                                    <p class="label">Name on card</p>
+                                    <input type="text" class="main_input"
+                                           placeholder="Enter name on card">
+                                </div>
+                                <div class="form-element">
+                                    <p class="label">CVV</p>
+                                    <input class="main_input" type="text" placeholder="421">
+                                    <p class="notes">
+                                        numeric character (3 characters)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" class="bordered col-1-1">Start checking</button>
+                            </div>
+                        </form>
+                        -->
+                    </div>
+                </div>
+
+                <div class="corner-right-bottom-clip-sm space-wrapper margin-top checker_cc_page_block_corner">
+                    <div class="placeholder striped"></div>
+                </div>
+            </div>
+
+            <div class="col-1-2 corner-left-top-clip-sm">
+                <div class="table-container">
+                    <p style="text-align: center; margin: 25vh 0; color: var(--color__light_blue_50)">Coming soon...</p>
+                    <!--
+                    <div class="table-filters">
+                        <div class="select_option_search">
+                            <select class="padding-sm">
+                                <option value="">Yor checked cards</option>
+                                <option value="">Yor checked cards</option>
+                                <option value="">Yor checked cards</option>
+                            </select>
+                        </div>
+                        <div class="corner-right-top-clip-xs space-wrapper col-1-3">
+                            <div class="placeholder striped"></div>
+                        </div>
+                        <div class="search-input media_off">
+                            <input class="padding-sm" type="search" placeholder="Search">
+                            <span class="search-input-img"></span>
+                        </div>
+                        <div class="search_icon media_onn">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>card</th>
+                            <th>type</th>
+                            <th>level</th>
+                            <th>result</th>
+                            <th>action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="red">declined</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="green bordered">approved</button>
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>4165492141654921</span>|
+                                    <span>01/01</span>|
+                                    <span>907</span>
+                                </div>
+                            </td>
+                            <td>
+                                debit
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                declined
+                            </td>
+                            <td class="action">
+                                <a class="button refresh"></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

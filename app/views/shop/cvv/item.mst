@@ -1,0 +1,27 @@
+<tr>
+    <td>
+        <input type="checkbox" data-id="{{id}}">
+    </td>
+    <td>
+        <div class="card-number">
+            <img src="/assets/cards/thumb/{{bin}}.png" alt="">&nbsp;
+            <span>{{bin}}</span>
+        </div>
+    </td>
+    <td>{{expire}}</td>
+    <td>{{brand}}</td>
+    <td>{{type}}</td>
+    <td>{{category}}</td>
+    <td>
+        <div class="card-number">
+            <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/refs/heads/main/svg/{{country|lowercase}}.svg" alt="">
+            <span>{{country}}</span>
+        </div>
+    </td>
+    <td>{{issuer}}</td>
+    <td>{{base.name}}</td>
+    <td><span class="price">{{price|money}}$</span></td>
+    <td class="action">
+        <button class="cart" data-id="{{id}}" onclick="___mc.events.push('shop.cvv.cart.add', this)"></button>
+    </td>
+</tr>

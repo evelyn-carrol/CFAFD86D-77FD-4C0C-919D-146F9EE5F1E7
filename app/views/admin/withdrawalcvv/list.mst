@@ -1,0 +1,461 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="dashboard referral_page withdrawal_requests_cvv_dashboard">
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>Total balance</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">2,144</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>WAITING FOR WITHDRAW</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>ALL TIME WITHDRAWAL</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <span class="measure">usd</span>
+                    </div>
+                </div>
+                <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                    <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                        <p>REQUESTS</p>
+                    </div>
+                    <div class="flex gap-sm justify-content-space-between">
+                        <span class="value">1,250</span>
+                        <!-- <span class="measure">users</span> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="withdrawal_texts withdrawal_requests_cvv_dashboard_texts">
+                <div class="meyn_div withdrawal_requests_cvv_dashboard_meyn_div">
+                    <div class="title">
+                        <div class="block-caption block_caption">
+                            <h2>DATE</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div class="block-caption block_caption">
+                            <h2>AMOUNT</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div class="block-caption block_caption">
+                            <h2>STATUS</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="bordered col-1-1">Search</button>
+                    </div>
+                </div>
+
+
+                <div class="col-1-5 withdrawal_requests_cvv_dashboard_1_5">
+                    <div class="corner-right-top-clip-sm media_off space-wrapper">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="contents-inner contents_inner_">
+
+
+                    <div class="table-container withdraw_req_page_table_container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>request ID</th>
+                                <th>rank</th>
+                                <th>amount</th>
+                                <th>CREATED </th>
+                                <th>UPDATED</th>
+                                <th>StatuS</th>
+                                <th colspan="2">action</th>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">APPROVED</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered_red">declined</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">APPROVED</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered_red">declined</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">APPROVED</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered_red">declined</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">APPROVED</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered_red">declined</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>416549</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button bordered">
+                                            <span>gold</span>
+                                        </a>
+                                        <a href="" class="button">
+                                            <img src="/assets/img/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">21.12.2024</span>
+                                </td>
+                                <td>
+                                    <span class="bordered">12.05.23</span>
+                                </td>
+                                <td>
+                                    <button class="bordered">APPROVED</button>
+                                </td>
+                                <td class="action withdrawal_page_check_icon">
+                                    <img src="/assets/img/ok.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <button class="remove bordered red padding-sm"></button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                        <div class="placeholder striped pagination-wrapper">
+                            <nav class="pagination">
+                                <a href="" class="prev"></a>
+                                <a href="">1</a>
+                                <a href="">2</a>
+                                <span class="active">-</span>
+                                <a href="">4</a>
+                                <a href="" class="next"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

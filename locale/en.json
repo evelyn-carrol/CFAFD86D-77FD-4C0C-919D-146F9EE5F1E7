@@ -1,0 +1,450 @@
+{
+  "login": {
+    "auth": {
+      "title": "Login",
+      "notes": "Welcome to Jarvis",
+      "login": "Sign in"
+    },
+    "registration": {
+      "title": "Registration",
+      "notes": "<p>Please Note Inactive users Without Balance will be deleted Weekly</p>",
+      "nickname": "Nick name",
+      "password": "Password",
+      "password_confirm": "Confirm password",
+      "username": "User name",
+      "signup": "Sign up"
+    }
+  },
+  "header": {
+    "my_profile": "My profile",
+    "settings": "Settings",
+    "more": "More",
+    "support": "Support",
+    "log_out": "Log out"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "shop": {
+      "_": "Shop",
+      "cvv": "CVV",
+      "bulk": "Bulk"
+    },
+    "seller": {
+      "items": {
+        "_": "items",
+        "bases": "Manage Bases",
+        "cards": "Manage Cards"
+      }
+    },
+    "news": "News",
+    "utils": {
+      "_": "Utils",
+      "checker_bin": "Checker BIN",
+      "checker_cc": "Checker CC"
+    },
+    "minigames": {
+      "_": "Mini Games"
+    },
+    "users": "Users"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "tiles": {
+      "total": {
+        "deposit": "Your total deposit",
+        "orders": "Your total orders",
+        "spend": "Amount you spend"
+      },
+      "referral": {
+        "copy": "Your referral link | Copy link"
+      }
+    },
+    "rank": {
+      "title": "Rank",
+      "of": "of",
+      "my_progress": "My progress",
+      "ranks": {
+        "bronze": "bronze",
+        "silver": "silver",
+        "gold": "gold"
+      }
+    },
+    "activity": {
+      "title": "Activity",
+      "products": "Products in cart",
+      "cart": "My cart",
+      "latest": "Latest purchase",
+      "date": "Date",
+      "amount": "Amount",
+      "check": "Check now"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "heading": "Frequently Asked Questions",
+    "notice": "Feel free to write us on support section if You have an strange or untypical question",
+    "create": "Create a FAQ record",
+    "edit": {
+      "caption": "Edit FAQ",
+      "add": "Add a FAQ",
+      "update": "Update the FAQ"
+    },
+    "table": {
+      "date": "Created",
+      "lang": "Language",
+      "question": "Question",
+      "answer": "Answer",
+      "status": "Status"
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "product": {
+      "edit": {
+        "title": "Edit product",
+        "add": "Add product",
+        "update": "Update product"
+      },
+      "name": "Name",
+      "type": "Type",
+      "price": "Price",
+      "status": "Status"
+    },
+    "cvv": {
+      "title": "CVV Shop",
+      "table": {
+        "bin": "BIN",
+        "brand": "Brand",
+        "type": "Type",
+        "category": "Category",
+        "country": "Country",
+        "issuer": "Issuer",
+        "base": "Base",
+        "expire": "Expire",
+        "price": "Price"
+      }
+    },
+    "bulk": {
+      "title": "Bulk Shop",
+      "table": {
+        "created": "Created",
+        "name": "Name",
+        "price": "Price",
+        "status": "Status",
+        "base_name": "Base name"
+      }
+    },
+    "seller": "Seller",
+    "user": "User"
+  },
+  "cart": {
+    "title": "Cart",
+    "cvv": {
+      "title": "CVV"
+    },
+    "bulk": {
+      "title": "Bulk"
+    }
+  },
+  "deposit": {
+    "title": "Deposit",
+    "subtitle": "Balance",
+    "balance": {
+      "title": "Total balance",
+      "text": "This represents the total amount of funds available in your account, including all deposits, earnings, and any other credited amounts. It reflects the full sum that can be used for transactions, withdrawals, or purchases."
+    },
+    "history": {
+      "title": "Transactions history"
+    },
+    "date": "Date",
+    "total": "Total",
+    "comment": "Comment",
+    "funds": {
+      "title": "Deposit funds",
+      "caption": "Send bitcoin to this address to deposit funds",
+      "notice": "This address will be available for 24 hours only",
+      "address": "Address",
+      "show": "Show address"
+    }
+  },
+  "profile": {
+    "menu": {
+      "info_title": "Account info:",
+      "setting_title": "Account setting:",
+      "deposit": "Deposit funds",
+      "history": "Purchase history",
+      "referral": "Affiliation",
+      "index": "Edit account",
+      "password": "Change password",
+      "telegram": "Link telegram"
+    },
+    "title": "Profile",
+    "bio": {
+      "notes": "160 characters maximum"
+    },
+    "account": {
+      "title": "Edit account",
+      "nickname": "Nick name",
+      "name": "Name"
+    },
+    "info": {
+      "title": "Info",
+      "text": "Do not leave information that may reveal your identity and/or location."
+    },
+    "password": {
+      "title": "Change password",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Confirm new password"
+    },
+    "telegram": {
+      "title": "Link telegram",
+      "status": {
+        "linked": "Linked",
+        "not_linked": "Not linked"
+      }
+    }
+  },
+  "support": {
+    "title": "Support",
+    "manage": "Manage my tickets",
+    "info": "To get an answer faster describe the sequence of actions leading to the problem.",
+    "statuses": {
+      "closed": "Closed",
+      "active": "Active",
+      "archived": "Archived"
+    },
+    "new_ticket": "New ticket",
+    "subject": "Subject",
+    "message": "Message"
+  },
+  "utilities": {
+    "title": "Utilities",
+    "checker": {
+      "bin": {
+        "title": "Checker BIN",
+        "label": "BIN number of card",
+        "notes": "numeric character (min 6 max 16 characters)",
+        "button": "Start checking",
+        "table": {
+          "search": "Search",
+          "bin": "BIN - Brand",
+          "bank": "Bank",
+          "country": "Country",
+          "type": "Type"
+        }
+      },
+      "cc": {
+        "title": "Checker CC"
+      }
+    }
+  },
+  "buttons": {
+    "add": "Add",
+    "update": "Update",
+    "link_tg": "Link telegram",
+    "send": "Send",
+    "pick": "Pick",
+    "search": "Search",
+    "cancel": "Cancel",
+    "upload": "Upload",
+    "remove_selected": "Remove selected",
+    "clear_cart": "Clear cart",
+    "back_home": "Back to home page"
+  },
+  "actions": {
+    "archive": "Archive",
+    "make_seller": "Are you sure to change the role to seller",
+    "support": {
+      "close": "The ticket will be closed",
+      "reopen": "The ticket will be reopened",
+      "archive": "The ticket will be archived"
+    }
+  },
+  "statuses": {
+    "active": "active",
+    "inactive": "inactive",
+    "blocked": "blocked",
+    "archived": "archived",
+    "live": "live",
+    "pending": "pending",
+    "sold": "sold",
+    "declined": "declined",
+    "refunded": "refunded",
+    "new": "new",
+    "canceled": "canceled",
+    "payed": "payed"
+  },
+  "notify": {
+    "success": "Success",
+    "add_successfully": "Added successfully",
+    "create_successfully": "Added successfully",
+    "update_successfully": "Updated successfully",
+    "buy_success": "Purchase is successful",
+    "error": "Error",
+    "add_error": "Adding failed",
+    "create_error": "Creating failed",
+    "update_error": "Updating failed",
+    "auth_error": "Authorization failed",
+    "buy_error": "Purchase failed",
+    "message_short": "Message is too short",
+    "bin_exist": "Bin is exists",
+    "bin_not_exist": "Bin not exists",
+    "cart_added": "Added to cart successfully",
+    "already_in_cart": "Already in cart",
+    "upload_successfully": "Uploaded successfully",
+    "upload_error": "Uploading failed",
+    "archive_successfully": "Archived successfully",
+    "archive_error": "Archiving failed",
+    "seller_successfully": "Role successfully changed to seller",
+    "seller_error": "Failed to change role",
+    "clear_successfully": "Cart cleared successfully",
+    "clear_error": "Clearing failed",
+    "checkout_successfully": "Order created successfully",
+    "empty_cart": "Your cart is empty",
+    "operation_successfully": "Operation success",
+    "operation_error": "Operation failed",
+    "nickname_error": "Invalid nickname characters",
+    "passwords_mismatched": "Passwords mismatched",
+    "clipboard_success": "Address copied to clipboard successfully",
+    "clipboard_error": "Failed to copy the address to the clipboard"
+  },
+  "info": {
+    "characters_minimum": "Characters minimum",
+    "total_amount": "Total amount"
+  },
+  "table": {
+    "empty": "No records...",
+    "action": "Actions",
+    "status": "Status",
+    "role": "Role"
+  },
+  "calendar": {
+    "weekdays": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    },
+    "weekdays_full": {
+      "sun": "Sunday",
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "time": {
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "period": {
+      "label": "Period"
+    },
+    "controls": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "sevendays": "7 days",
+      "currentmonth": "This month",
+      "currentyear": "This year"
+    }
+  },
+  "news": {
+    "title": "News",
+    "table": {
+      "lang": "Language",
+      "role": "Role",
+      "title": "Title",
+      "date": "Date",
+      "status": "Status"
+    },
+    "edit": {
+      "caption": "Edit news",
+      "title": "Title",
+      "add": "Add a news",
+      "update": "Update the news",
+      "text": "Text",
+      "description": "Description"
+    }
+  },
+  "bases": {
+    "title": "Bases",
+    "table": {
+      "name": "Name",
+      "status": "Status",
+      "type": "Type",
+      "created": "Created",
+      "price": "Price"
+    },
+    "edit": {
+      "create_btn": "Create a base",
+      "caption": "Edit base",
+      "add": "Add a base",
+      "update": "Update the base"
+    }
+  },
+  "cards": {
+    "title": "Cards",
+    "caption": "Cards of base #",
+    "upload": {
+      "title": "Upload CC",
+      "price": "Price",
+      "base": "Base",
+      "dump": "Dump",
+      "file": "File",
+      "choose": "Choose"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "table": {
+      "date": "Created",
+      "nickname": "Nickname",
+      "name": "Name",
+      "role": "Role",
+      "status": "Status",
+      "balance": "Balance"
+    },
+    "edit": {
+      "caption": "Edit user",
+      "add": "Add a user",
+      "update": "Update the user",
+      "timezone": "Time Zone"
+    }
+  },
+  "orders": {
+    "title": "Orders",
+    "make": "Make an order",
+    "table": {
+      "amount": "Amount",
+      "count": "Count"
+    }
+  },
+  "errors": {
+    "_": "Unknown error encountered",
+    "_32630": "Not enough money on your balance",
+    "_32633": "Nickname is required",
+    "_32634": "Wrong captcha",
+    "_32635": "Wrong nickname or password",
+    "_32636": "Already in cart"
+  }
+}

@@ -1,0 +1,26 @@
+<tr>
+    <td>
+        {{id}}
+    </td>
+    <td>
+        {{created|datetime}}
+    </td>
+    <td>
+        {{name}}
+    </td>
+
+    <td>
+        <span class="price">{{price|money}}$</span>
+    </td>
+
+    <td>
+        {{type}}
+    </td>
+    <td class="action">
+        <button class="bordered_red boridered">{{status}}</button>
+    </td>
+
+    <td class="action">
+        <a href="/admin/bases/{{id}}/cards/" class="button eye bordered"></a>
+    </td>
+</tr>

@@ -1,0 +1,86 @@
+<div class="col-1-5">
+    <div class="corner-right-top-clip-sm media_off space-wrapper">
+        <div class="placeholder striped"></div>
+    </div>
+    <div class="filters-column corner-left-top-clip-sm cvv_page_input_title">
+        <form action="" autocomplete="off">
+            <div class="col-1-1">
+                <div class="title">
+                    <div class="block_caption">
+                        <input type="text" placeholder="{{#i18n}}shop.cvv.table.bin{{/i18n}}" name="bins" value="{{filter.bins}}" onchange="___mc.events.push('shop.cvv.filter.bin.change', this)" autocomplete="off">
+                        <span>
+                            <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#datetimepicker type='date' placeholder='shop.cvv.table.expire' value=filter.date onchange='shop.cvv.filter.expire.change'}}{{/datetimepicker}}
+                        <!--
+                        <input type="text" placeholder="{{#i18n}}shop.cvv.table.expire{{/i18n}}" name="expire" value="{{filter.expire}}" onchange="___mc.events.push('shop.cvv.filter.expire.change', this)" autocomplete="off">
+                        <span>
+                            <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                        </span>
+                        -->
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.cvv.table.brand' name='brand' value=filter.brand onset=brand_set onsuggest='shop.brands.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.cvv.table.type' name='type' value=filter.type onset=type_set onsuggest='shop.types.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.cvv.table.category' name='category' value=filter.category onset=category_set onsuggest='shop.categories.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.cvv.table.country' name='country' value=filter.country onset=country_set onsuggest='shop.countries.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.cvv.table.base' name='base_id' value=filter.base_id onset=base_set onsuggest='shop.bases.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="block_caption">
+                        {{#filter_autocomplete multiple='false' placeholder='shop.seller' name='seller' value=filter.seller onset=seller_set onsuggest='sellers.suggest' min=0 onchange=filter_change}}
+                        {{/filter_autocomplete}}
+                    </div>
+                </div>
+                <!--
+                <div class="form-element cvv_page_text">
+                    <p class="label libel">Price</p>
+                    <div class="progress-container captions yellow">
+                        <div class="progress-number">
+                            <span>0</span>
+                            <span>16&euro;</span>
+                        </div>
+                        <div class="progress-indicator">
+                            <div class="progress-percent" style="width: 55.5%"></div>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <div class="buttons margin-top-sm">
+                <button type="button" class="bordered col-1-1" onclick="___mc.events.push('shop.cvv.filter.filter', this)">
+                    {{#i18n}}buttons.search{{/i18n}}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

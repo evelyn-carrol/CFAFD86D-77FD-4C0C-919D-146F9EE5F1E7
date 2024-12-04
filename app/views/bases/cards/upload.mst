@@ -1,0 +1,66 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{#i18n}}cards.upload.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}cards.upload.base{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 onsuggest='upload.bases.suggest' onchange=upload_base_change onset=upload_base_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}cards.upload.price{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="number" placeholder="{{#i18n}}cards.upload.price{{/i18n}}" name="price" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}cards.upload.dump{{/i18n}}</p>
+                            <textarea placeholder="{{#i18n}}cards.upload.dump{{/i18n}}" name="data" autocomplete="off"></textarea>
+                            <p class="notes"></p>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}cards.upload.file{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 flex flex-justify-around flex-align-center">
+                                    <input type="text" placeholder="{{#i18n}}cards.upload.file{{/i18n}}" name="file" autocomplete="off">
+                                    <input type="file" id="dump_file" onchange="___mc.events.push('cards.upload.file.read', this)" style="width: 1px; height: 1px; padding: 0; margin: 0" readonly>
+                                    <button type="button" class="button bordered" style="height: 61px; margin-left: 10px"
+                                            onclick="___mc.events.push('cards.upload.file.select', this)">
+                                        {{#i18n}}cards.upload.choose{{/i18n}}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('cards.upload.save', this)">{{#i18n}}buttons.upload{{/i18n}}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

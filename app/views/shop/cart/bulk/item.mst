@@ -1,0 +1,18 @@
+<tr>
+    <td>
+        <input type="checkbox" data-pos="{{id}}">
+    </td>
+    <td>
+        {{info.name}}
+    </td>
+
+    <td class="action">
+        <span class="price">{{price|money}}$</span>
+    </td>
+    <td class="action">
+        <button class="bordered_red boridered">{{info.status}}</button>
+    </td>
+    <td class="action">
+        <button class="remove red" data-pos="{{id}}" onclick="___mc.events.push('shop.cart.remove', this)"></button>
+    </td>
+</tr>

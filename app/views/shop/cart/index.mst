@@ -1,0 +1,120 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{#i18n}}cart.cvv.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div id="cvv">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" onchange="___mc.events.push('shop.cart.checkbox.toggle.all', this)"></th>
+                                <th>{{#i18n}}shop.cvv.table.bin{{/i18n}}</th>
+                                <!--<th>{{#i18n}}shop.cvv.table.expire{{/i18n}}</th>-->
+                                <th>{{#i18n}}shop.cvv.table.brand{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.type{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.category{{/i18n}}</th>
+                                <!--<th>{{#i18n}}shop.cvv.table.country{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.issuer{{/i18n}}</th>
+                                <th>{{#i18n}}shop.cvv.table.base{{/i18n}}</th>-->
+                                <th>{{#i18n}}shop.cvv.table.price{{/i18n}}</th>
+                                <th>{{#i18n}}table.action{{/i18n}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="100%">
+                                    <div class="loader">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="corner-right-top-clip-sm space-wrapper">
+            <div class="placeholder striped"></div>
+        </div>
+
+        <div class="block">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>02</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{#i18n}}cart.bulk.title{{/i18n}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+
+                <div id="bulk">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" onchange="___mc.events.push('shop.cart.checkbox.toggle.all', this)"></th>
+                                <th>{{#i18n}}shop.bulk.table.name{{/i18n}}</th>
+                                <th>{{#i18n}}shop.bulk.table.price{{/i18n}}</th>
+                                <th>{{#i18n}}shop.bulk.table.status{{/i18n}}</th>
+                                <th>{{#i18n}}table.action{{/i18n}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="100%">
+                                    <div class="loader">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="line-with-triangle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="corner-right-top-clip-sm space-wrapper">
+            <div class="placeholder striped"></div>
+        </div>
+
+    </div>
+</section>

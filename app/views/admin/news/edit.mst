@@ -1,0 +1,88 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{title}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.edit.title{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}news.edit.title{{/i18n}}" name="title" autocomplete="off" value="{{news.title}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.table.lang{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=news.lang onsuggest=news_lang_suggest onchange=news_lang_change onset=news_lang_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.table.role{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=news.role onsuggest=news_role_suggest onchange=news_role_change onset=news_role_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.table.status{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=news.status onsuggest=news_status_suggest onchange=news_status_change onset=news_status_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.table.date{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#datetimepicker type='date' placeholder='news.table.date' value=news.date onchange='admin.news.date.change'}}{{/datetimepicker}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.edit.description{{/i18n}}</p>
+                            <textarea placeholder="{{#i18n}}news.edit.description{{/i18n}}" name="description" autocomplete="off">{{news.description}}</textarea>
+                            <p class="notes">20 {{#i18n}}info.characters_minimum{{/i18n}}</p>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}news.edit.text{{/i18n}}</p>
+                            <div id="html-editor-description">{{{news.text}}}</div>
+                        </div>
+
+                        <div class="buttons">
+                            {{#if news.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.news.save', this)" data-action="create">{{#i18n}}buttons.add{{/i18n}}</button>
+                            {{/if}}
+                            {{#unless news.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('admin.news.save', this)" data-action="update">{{#i18n}}buttons.update{{/i18n}}</button>
+                            {{/unless}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

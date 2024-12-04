@@ -1,0 +1,9 @@
+<div class="{{classlist}}" id="{{id}}">
+    <span>{{value}}</span> {{text}}
+    <input type="range"
+           min="{{min}}"
+           max="{{max}}"
+           step="{{step}}"
+           value="{{value}}"
+           name="{{name}}">
+</div>

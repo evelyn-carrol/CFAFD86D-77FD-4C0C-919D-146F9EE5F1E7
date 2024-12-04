@@ -1,0 +1,64 @@
+<div class="corner-left-bottom-right-top-clip-lg">
+    <div class="inner">
+        <div class="bl-top">
+            <div class="title">
+                <h1>{{#i18n}}login.registration.title{{/i18n}}</h1>
+                <img src="/assets/img/warning-yellow.svg" alt="">
+            </div>
+            <div class="notes col-1-2">
+                {{#i18n}}login.registration.notes{{/i18n}}
+            </div>
+            <div class="notes">
+                <p class="bordered">
+                    <span>Cout de l’inscription : </span><span class="status">100 €</span>
+                    <span>Statu d’inscription : </span><span class="status">Open</span>
+                </p>
+            </div>
+        </div>
+        <div class="bl-bottom">
+            <div class="tabs">
+                <div>
+                    <a class="button active">{{#i18n}}login.registration.title{{/i18n}}</a>
+                    <a class="button" href="/login">{{#i18n}}login.auth.title{{/i18n}}</a>
+                    <!--<a class="button">Visiter sans se connecteur</a>-->
+                </div>
+                <!--
+                <div>
+                    <a class="button">Login via telegram</a>
+                </div>
+                -->
+            </div>
+            <div class="tab-content">
+                <div class="row">
+                    <div class="col-1-1 corner-right-top-clip-xs">
+                        <input type="text" placeholder="{{#i18n}}login.registration.nickname{{/i18n}} (A-Z0-9_) *" name="nickname" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-2">
+                        <input type="password" placeholder="{{#i18n}}login.registration.password{{/i18n}} *" name="password" autocomplete="new-password">
+                    </div>
+                    <div class="col-1-2">
+                        <input type="password" placeholder="{{#i18n}}login.registration.password_confirm{{/i18n}} *" name="password_confirm" autocomplete="new-password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-1">
+                        <input type="text" placeholder="{{#i18n}}login.registration.username{{/i18n}}" name="name" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-4">
+                        <button id="captcha" class="bordered" onclick="___mc.events.push('auth.register.captcha', this)">Captcha</button>
+                    </div>
+                    <div class="col-1-1">
+                        <input type="text" placeholder="... *" name="captcha" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="buttons">
+    <button onclick="___mc.events.push('auth.register')">{{#i18n}}login.registration.signup{{/i18n}}</button>
+</div>

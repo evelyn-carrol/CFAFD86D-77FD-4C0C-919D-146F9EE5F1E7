@@ -1,0 +1,22 @@
+<div class="col-1-4">
+    <div class="block corner-right-top-clip-sm">
+        <div class="menu-container">
+            {{#if profile.role 'IN' 'client' 'seller'}}
+                <div class="menu-container-item">
+                    <h2>{{#i18n}}profile.menu.info_title{{/i18n}}</h2>
+                    <div class="flex flex-col flex-align-flex-start">
+                        <a href="/profile/deposit/" class="button{{#if active 'deposit'}} active{{/if}}">{{#i18n}}profile.menu.deposit{{/i18n}}</a>
+                        <a href="/profile/orders/" class="button{{#if active 'orders'}} active{{/if}}">{{#i18n}}profile.menu.history{{/i18n}}</a>
+                        <a href="/profile/referral/" class="button hide{{#if active 'referral'}} active{{/if}}">{{#i18n}}profile.menu.referral{{/i18n}}</a>
+                    </div>
+                </div>
+            {{/if}}
+            <div class="menu-container-item">
+                <h2>{{#i18n}}profile.menu.setting_title{{/i18n}}</h2>
+                <a href="/profile/" class="button{{#if active 'index'}} active{{/if}}">{{#i18n}}profile.menu.index{{/i18n}} </a>
+                <a href="/profile/password/" class="button{{#if active 'password'}} active{{/if}}">{{#i18n}}profile.menu.password{{/i18n}} </a>
+                <a href="/profile/telegram/" class="button{{#if active 'telegram'}} active{{/if}}">{{#i18n}}profile.menu.telegram{{/i18n}} </a>
+            </div>
+        </div>
+    </div>
+</div>

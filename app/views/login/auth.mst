@@ -1,0 +1,52 @@
+<div class="corner-left-bottom-right-top-clip-lg">
+    <div class="inner">
+        <div class="bl-top">
+            <div class="title">
+                <h1>{{#i18n}}login.auth.title{{/i18n}}</h1>
+                <img src="/assets/img/warning-yellow.svg" alt="">
+            </div>
+            <div class="notes">
+                {{#i18n}}login.auth.notes{{/i18n}}
+            </div>
+        </div>
+        <div class="bl-bottom">
+            <div class="tabs">
+                <div>
+                    <a class="button" href="/registration">{{#i18n}}login.registration.title{{/i18n}}</a>
+                    <a class="button active">{{#i18n}}login.auth.title{{/i18n}}</a>
+                    <!--<a class="button">Visiter sans se connecteur</a>-->
+                </div>
+                <div>
+                    <!--<a class="button">Login via telegram</a>-->
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="row">
+                    <div class="col-1-2">
+                        <input type="text" placeholder="{{#i18n}}login.registration.nickname{{/i18n}} *" name="nickname" autocomplete="off">
+                    </div>
+                    <div class="col-1-2">
+                        <input type="password" placeholder="{{#i18n}}login.registration.password{{/i18n}} *" name="password" autocomplete="new-password">
+                    </div>
+                </div>
+                <div class="row" style="display: none">
+                    <div class="col-1-1">
+                        <input id="twofa" type="text" placeholder="2FA" name="code" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-4">
+                        <button id="captcha" class="bordered" onclick="___mc.events.push('auth.login.captcha', this)">Captcha</button>
+                    </div>
+                    <div class="col-1-1">
+                        <input type="text" placeholder="... *" name="captcha" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="buttons">
+    <button>Want to become our seller</button>
+    <button onclick="___mc.events.push('auth.login')">{{#i18n}}login.auth.login{{/i18n}}</button>
+</div>

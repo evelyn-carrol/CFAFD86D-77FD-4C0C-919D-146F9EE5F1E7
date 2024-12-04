@@ -1,0 +1,7 @@
+<div id="{{id}}" class="relative">
+    <span class="mdi mdi-{{icon}} pointer f-s-{{icon_size}} {{color}}"></span>
+    <div class="hide info-wrapper"
+         style="width:{{width}}px;margin-left:{{left}}px;{{#if top }}top:0px;bottom:auto;{{/if }}">
+        {{comment}}
+    </div>
+</div>

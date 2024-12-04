@@ -1,0 +1,482 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="user_detail_page block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>details user</h2>
+                    <a href="">
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="hr"></div>
+        </div>
+        <div class="details_user details_page_user_main_divv">
+            <div class="details_user_title details_page_userrr_tittle">
+                <div class="details_user_title_flex_div details_user_title_flex_div_1">
+                    <h1>Focusedstudio</h1>
+                    <p class="responsive_off_text">no role</p>
+                </div>
+                <div class="details_user_title_flex_div details_user_title_flex_div_2">
+                    <p class="responsive_off_text">RANK</p>
+                    <img class="details_user_title_flex_div_2_img responsive_off_text"
+                         src="/assets/img/arrow-right.svg" alt="">
+                    <p class="bordered">GOLD</p>
+                    <img class="details_user_page_image_2" src="/assets/img/gold.svg" alt="">
+                </div>
+            </div>
+
+            <div class="details_user_page_flex_div details__page_flex__div">
+                <div class="details_user_left_content">
+                    <div class="hr"></div>
+                    <div class="details_user_page_little_flex">
+
+                        <div>
+                            <div class="details_user_page_little_div">
+                                <p>Total buy</p>
+                                <p>.</p>
+                                <span>$123k</span>
+                            </div>
+                            <div class="details_user_page_little_div">
+                                <p>current balance</p>
+                                <p>.</p>
+                                <span>$234k</span>
+                            </div>
+                        </div>
+
+                        <div class="details_user_page_little_div">
+                            <p>account</p>
+                            <p>.</p>
+                            <span>actived</span>
+                        </div>
+
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="details_user_page_little_flex_2">
+                        <div class="details_user_page_little_div">
+                            <p>Total spent</p>
+                            <p>.</p>
+                            <span>$200k</span>
+                        </div>
+                        <div class="details_user_page_little_div">
+                            <p>history balance</p>
+                            <p>.</p>
+                            <span>$400k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details_user_right_content">
+                    <div>
+                        <p>Add role :</p>
+                        <div class="hr"></div>
+                        <div class="input_radion_and_button">
+                            <div class="role_select">
+                                <div>
+                                    <input type="checkbox">
+                                    <p>Support</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <p>Admin</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <p>Seller</p>
+                                </div>
+                            </div>
+                            <div class="buttons margin-top-sm">
+                                <button type="submit" class="bordered col-1-1">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details_user_page_some_text">
+            <p>user history.</p>
+        </div>
+        <div class="div_flex div_flex_buttons">
+            <div class="details_user_page_some_text">
+                <button class="active">individual cc history</button>
+            </div>
+            <div class="details_user_page_some_text">
+                <button>Bulk history</button>
+            </div>
+        </div>
+
+        <div class="corner_triangle">
+            <div class="corner-right-top-clip-sm space-wrapper">
+                <div class="placeholder striped"></div>
+            </div>
+        </div>
+
+        <div class="table-container details_page_table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Bin</th>
+                    <th>vendeur</th>
+                    <th>Base</th>
+                    <th>Prix d’achat</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th colspan="2">action</th>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>Base name</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_red">DEAD</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>SILVER</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_red">DEAD</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>GOLD</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered">Live</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>Base name</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_uncheck">Uncheck</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>gold</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_uncheck">Uncheck</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>Base name</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_red">DEAD</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>SILVER</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered">Live</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>gold</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered">Live</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>SILVER</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_uncheck">Uncheck</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-number">
+                            <span class="masked"></span>
+                            <span>416549</span>
+                        </div>
+                    </td>
+                    <td>
+                        Vendeur name
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <a href="" class="button">
+                                <span>Base name</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <span class="price">16.00&euro;</span>
+                    </td>
+                    <td>
+                        <button class="bordered">12.05.23</button>
+                    </td>
+                    <td>
+                        <span class="bordered_red">DEAD</span>
+                    </td>
+                    <td class="action">
+                        <a class="button search"></a>
+                    </td>
+                    <td class="action">
+                        <button class="remove bordered red padding-sm"></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="line-with-triangle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+            <div class="placeholder striped pagination-wrapper"></div>
+        </div>
+    </div>
+</section>

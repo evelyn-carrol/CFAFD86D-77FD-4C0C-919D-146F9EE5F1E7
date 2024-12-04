@@ -1,0 +1,220 @@
+{
+  "/": {
+    "controller": "dashboard/index",
+    "role": ["admin", "support", "client", "seller"]
+  },
+  "/login": {
+    "controller": "login/auth",
+    "role": ["public"],
+    "layout": "login"
+  },
+  "/registration": {
+    "controller": "login/register",
+    "role": ["public"],
+    "layout": "login"
+  },
+  "/forgot": {
+    "controller": "login/forgot",
+    "role": ["public"],
+    "layout": "login"
+  },
+  "/404": {
+    "controller": "404",
+    "role": ["public"],
+    "layout": "404"
+  },
+  "/restricted": {
+    "controller": "restricted",
+    "role": ["public"],
+    "layout": "404"
+  },
+  "/maintenance": {
+    "controller": "maintenance",
+    "role": ["public"],
+    "layout": "maintenance"
+  },
+
+  "/profile/": {
+    "controller": "profile/index",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/profile/password/": {
+    "controller": "profile/password",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/profile/telegram/": {
+    "controller": "profile/telegram",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/profile/deposit/": {
+    "controller": "profile/deposit/index",
+    "role": ["client", "seller"]
+  },
+  "/profile/orders/": {
+    "controller": "profile/orders/list",
+    "role": ["client", "seller"]
+  },
+  "/profile/referral/": {
+    "controller": "profile/referral/list",
+    "role": ["client", "seller"]
+  },
+
+  "/reglement/": {
+    "controller": "reglement/list",
+    "role": ["client", "support", "admin", "seller"]
+  },
+
+  "/faq/": {
+    "controller": "faq/list",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/admin/faq/": {
+    "controller": "admin/faq/list",
+    "role": ["admin", "support"]
+  },
+  "/admin/faq/edit/:id": {
+    "controller": "admin/faq/edit",
+    "role": ["admin", "support"]
+  },
+
+  "/news/": {
+    "controller": "news/list",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/admin/news/": {
+    "controller": "admin/news/list",
+    "role": ["admin"]
+  },
+  "/admin/news/edit/:id": {
+    "controller": "admin/news/edit",
+    "role": ["admin"]
+  },
+
+  "/shop/": {
+    "controller": "shop/client/list",
+    "role": ["client", "seller"]
+  },
+  "/shop/cvv/": {
+    "controller": "shop/cvv/list",
+    "role": ["client", "seller"]
+  },
+  "/shop/bulk/": {
+    "controller": "shop/bulk/list",
+    "role": ["client", "seller"]
+  },
+  "/shop/cart/": {
+    "controller": "shop/cart/index",
+    "role": ["client", "seller"]
+  },
+  "/shop/edit/:id": {
+    "controller": "shop/client/edit",
+    "role": ["seller"]
+  },
+
+  "/support/": {
+    "controller": "support/index",
+    "role": ["client", "support", "admin", "seller"]
+  },
+  "/support/:status": {
+    "controller": "support/index",
+    "role": ["client", "support", "admin", "seller"]
+  },
+
+  "/utilities/": {
+    "controller": "utilities/index",
+    "role": ["client", "seller", "admin"]
+  },
+  "/utilities/checker-bin/": {
+    "controller": "utilities/checker/bin",
+    "role": ["client", "seller", "admin"]
+  },
+  "/utilities/checker-cc/": {
+    "controller": "utilities/checker/cc",
+    "role": ["client", "seller", "admin"]
+  },
+
+  "/bases/": {
+    "controller": "bases/list",
+    "role": ["seller"]
+  },
+  "/bases/edit/:id": {
+    "controller": "bases/edit",
+    "role": ["seller"]
+  },
+  "/bases/:base_id/cards/": {
+    "controller": "bases/cards/list",
+    "role": ["seller"]
+  },
+  "/bases/cards/upload/": {
+    "controller": "bases/cards/upload",
+    "role": ["seller"]
+  },
+  "/admin/bases/": {
+    "controller": "admin/bases/list",
+    "role": ["admin"]
+  },
+  "/admin/bases/edit/:id": {
+    "controller": "admin/bases/edit",
+    "role": ["admin"]
+  },
+  "/admin/bases/:base_id/cards/": {
+    "controller": "admin/bases/cards/list",
+    "role": ["admin"]
+  },
+
+  "/admin/orders/": {
+    "controller": "admin/orders/list",
+    "role": ["admin"]
+  },
+
+  "/admin/users/": {
+    "controller": "admin/users/list",
+    "role": ["admin"]
+  },
+  "/admin/users/edit/:id": {
+    "controller": "admin/users/edit",
+    "role": ["admin"]
+  },
+
+
+  "/admin/bases_/": {
+    "controller": "admin/bases_/list",
+    "role": ["admin"]
+  },
+  "/admin/base/": {
+    "controller": "admin/base/list",
+    "role": ["admin"]
+  },
+  "/admin/deposits/": {
+    "controller": "admin/deposits/list",
+    "role": ["admin"]
+  },
+  "/admin/users_/": {
+    "controller": "admin/users_/list",
+    "role": ["admin"]
+  },
+  "/admin/user/": {
+    "controller": "admin/user/list",
+    "role": ["admin"]
+  },
+  "/admin/overview/": {
+    "controller": "admin/overview/list",
+    "role": ["admin"]
+  },
+  "/admin/sales/": {
+    "controller": "admin/sales/list",
+    "role": ["admin"]
+  },
+  "/admin/sellers/": {
+    "controller": "admin/sellers/list",
+    "role": ["admin"]
+  },
+  "/admin/withdrawal/": {
+    "controller": "admin/withdrawal/list",
+    "role": ["admin"]
+  },
+  "/admin/withdrawalcvv/": {
+    "controller": "admin/withdrawalcvv/list",
+    "role": ["admin"]
+  }
+}

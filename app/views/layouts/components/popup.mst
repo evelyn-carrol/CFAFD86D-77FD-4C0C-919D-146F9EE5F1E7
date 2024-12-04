@@ -1,0 +1,7 @@
+<div class="popup-wrapper ">
+    <div class="overlay"></div>
+    <div class="popup block" id="{{id}}">
+        <span class="mdi mdi-close popup-close"></span>
+        {{{content}}}
+    </div>
+</div>

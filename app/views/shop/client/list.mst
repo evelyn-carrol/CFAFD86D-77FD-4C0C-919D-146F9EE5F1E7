@@ -1,0 +1,348 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>Best seller</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="seller-cards">
+                    <div class="best-seller-card corner-left-top-right-bottom-clip-sm col-1-3">
+                        <div class="bl-top">
+                            <h2>Seller7789 <span>top: 1</span></h2>
+                            <div class="bl-panel">
+                                <a href="" class="button rank">
+                                    <span>Rank</span>
+                                    <span class="arrow arrow-right"></span>
+                                </a>
+                                <a href="" class="button bordered">
+                                    <span>silver</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/silver.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bl-middle">
+                            <div>
+                                <p>Total cc sold <span>.</span> <span>001</span></p>
+                                <p>CC currently on the shop <span>.</span> <span>001</span></p>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>show cc</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bl-bottom">
+                            <div>
+                                <p>Validrate</p>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-number">75.5%</div>
+                                <div class="progress-indicator">
+                                    <div class="progress-percent" style="width: 75.5%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-seller-card corner-left-top-right-bottom-clip-sm col-2-3">
+                        <div class="bl-top">
+                            <h2>Seller7789 <span>top: 1</span></h2>
+                            <div class="bl-panel">
+                                <a href="" class="button rank">
+                                    <span>Rank</span>
+                                    <span class="arrow arrow-right"></span>
+                                </a>
+                                <a href="" class="button bordered">
+                                    <span>silver</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/silver.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bl-middle">
+                            <div>
+                                <p>Total cc sold <span>.</span> <span>001</span></p>
+                                <p>CC currently on the shop <span>.</span> <span>001</span></p>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>show cc</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bl-bottom">
+                            <div>
+                                <p>Validrate</p>
+                            </div>
+                            <div class="progress-container orange">
+                                <div class="progress-number">55.5%</div>
+                                <div class="progress-indicator">
+                                    <div class="progress-percent" style="width: 55.5%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-seller-card corner-left-top-right-bottom-clip-sm col-2-3">
+                        <div class="bl-top">
+                            <h2>Seller7789 <span>top: 1</span></h2>
+                            <div class="bl-panel">
+                                <a href="" class="button rank">
+                                    <span>Rank</span>
+                                    <span class="arrow arrow-right"></span>
+                                </a>
+                                <a href="" class="button bordered">
+                                    <span>silver</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/silver.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bl-middle">
+                            <div>
+                                <p>Total cc sold <span>.</span> <span>001</span></p>
+                                <p>CC currently on the shop <span>.</span> <span>001</span></p>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>show cc</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bl-bottom">
+                            <div>
+                                <p>Validrate</p>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-number">75.5%</div>
+                                <div class="progress-indicator">
+                                    <div class="progress-percent" style="width: 75.5%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-seller-card corner-left-top-right-bottom-clip-sm col-1-3">
+                        <div class="bl-top">
+                            <h2>Seller7789 <span>top: 1</span></h2>
+                            <div class="bl-panel">
+                                <a href="" class="button rank">
+                                    <span>Rank</span>
+                                    <span class="arrow arrow-right"></span>
+                                </a>
+                                <a href="" class="button bordered">
+                                    <span>silver</span>
+                                </a>
+                                <a href="" class="button">
+                                    <img src="/assets/img/silver.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bl-middle">
+                            <div>
+                                <p>Total cc sold <span>.</span> <span>001</span></p>
+                                <p>CC currently on the shop <span>.</span> <span>001</span></p>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>show cc</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bl-bottom">
+                            <div>
+                                <p>Validrate</p>
+                            </div>
+                            <div class="progress-container red">
+                                <div class="progress-number">35.2%</div>
+                                <div class="progress-indicator">
+                                    <div class="progress-percent" style="width: 35.2%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="bordered col-1-1">Voir tous les vendeurs</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>All seller</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Seller name</th>
+                            <th>Seller rank</th>
+                            <th>Blacklist</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>XMR</td>
+                            <td>
+                                <div class="bl-panel">
+                                    <a href="" class="button rank">
+                                        <span>Rank</span>
+                                        <span class="arrow arrow-right"></span>
+                                    </a>
+                                    <a href="" class="button bordered">
+                                        <span>silver</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/silver.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="action text-right">
+                                <button class="eye"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>thay_2811</td>
+                            <td>
+                                <div class="bl-panel">
+                                    <a href="" class="button rank">
+                                        <span>Rank</span>
+                                        <span class="arrow arrow-right"></span>
+                                    </a>
+                                    <a href="" class="button bordered">
+                                        <span>none</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/none.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="action text-right">
+                                <button class="eye"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Etherueum</td>
+                            <td>
+                                <div class="bl-panel">
+                                    <a href="" class="button rank">
+                                        <span>Rank</span>
+                                        <span class="arrow arrow-right"></span>
+                                    </a>
+                                    <a href="" class="button bordered">
+                                        <span>gold</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/gold.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="action text-right">
+                                <button class="eye"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DOGcoin</td>
+                            <td>
+                                <div class="bl-panel">
+                                    <a href="" class="button rank">
+                                        <span>Rank</span>
+                                        <span class="arrow arrow-right"></span>
+                                    </a>
+                                    <a href="" class="button bordered">
+                                        <span>bronze</span>
+                                    </a>
+                                    <a href="" class="button">
+                                        <img src="/assets/img/bronze.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="action text-right">
+                                <button class="eye"></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <button class="bordered col-1-1">Fermer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="corner-right-top-clip-sm space-wrapper">
+            <div class="placeholder striped"></div>
+        </div>
+
+        <div handler="controllers/shop/client/handler/products">
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>id</th>
+                        <!--
+                        <th>level</th>
+                        <th>vendeur</th>
+                        <th>pays</th>
+                        -->
+                        <th>name</th>
+                        <th>price</th>
+                        <th colspan="1">action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="100%">
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="line-with-triangle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="corner-left-bottom-clip-sm space-wrapper margin-top">
+                <div class="placeholder striped flex flex-justify-center">
+                    {{#pagination}}{{/pagination}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

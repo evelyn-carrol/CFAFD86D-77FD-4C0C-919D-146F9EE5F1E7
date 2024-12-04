@@ -1,0 +1,6 @@
+<div class="bg-caption top">Error 404</div>
+<div class="bg-caption bottom">Error 404</div>
+<div class="caption">
+    <h1>404</h1>
+    <a href="/" class="button">{{#i18n}}buttons.back_home{{/i18n}}</a>
+</div>

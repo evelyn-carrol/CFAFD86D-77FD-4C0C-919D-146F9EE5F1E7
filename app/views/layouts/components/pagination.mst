@@ -1,0 +1,20 @@
+<div class="placeholder striped pagination-wrapper">
+    <nav class="pagination">
+        {{#if total_pages '>' 1 }}
+            {{#if prev }}
+                <a class="prev" href="{{prev}}"></a>
+            {{/if}}
+            {{#each pages }}
+                {{#if page ../current }}
+                    <span class="active">-</span>
+                {{/if}}
+                {{#if page 'NE' ../current}}
+                    <a {{#if uri }}href="{{uri}}"{{/if}}>{{page}}</a>
+                {{/if}}
+            {{/each}}
+            {{#if next }}
+                <a class="next" href="{{next}}"></a>
+            {{/if}}
+        {{/if}}
+    </nav>
+</div>

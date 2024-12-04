@@ -1,0 +1,243 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm dashboard_page_block">
+            <div class="user_detail_page corner-left-top-clip-sm">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>01</span>
+                    </div>
+                    <div class="block-caption block_caption">
+                        <h2>DASHBOARD</h2>
+                        <span>
+                            <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="hr"></div>
+            </div>
+
+            <div class="dashboard_flex deposit_page_dashboard_flex">
+
+
+                <div class="admin_panel_cards dashboard_page_admin_panel_cards">
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>Total users</p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">2,144</span>
+                                <span class="measure">users</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>TOTAL cardes in site</p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">214k</span>
+                                <span class="measure">pcs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>TOTAL balance in site </p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">115k</span>
+                                <span class="measure">usd</span>
+                                <span class="measure">
+													<usd></usd>
+												</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>BALANCE CASHGEN</p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">115k</span>
+                                <span class="measure">usd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>BALANCE CASHGEN BULK</p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">115k</span>
+                                <span class="measure">usd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="indicator-panel col-1-4 the_first corner-left-top-right-bottom-clip-xs">
+                            <div class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                <p>USERS BALANCE TOTAL</p>
+                            </div>
+                            <div class="flex gap-sm justify-content-space-between dashboard_page_lenovo">
+                                <span class="value">115k</span>
+                                <span class="measure">usd</span>
+                                <span class="measure">
+													<usd></usd>
+												</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contents dashboard_page_contents">
+                    <div class="corner-right-bottom-clip-sm space-wrapper ">
+                        <div class="placeholder striped"></div>
+                    </div>
+                    <div class="dashboard_page_flex dashboard_page_flex_2">
+                        <p class="p_one">name</p>
+                        <p class="p_two">value</p>
+                    </div>
+                    <div class="table-container dashboard_page_table_container dashboard_page_table_container_1">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>CARTES VENDUES</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">65,678&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>CARTES LIVE</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">7,072&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>CARTES DEAD</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">2,954&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>CARTES NOTCHECK</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">5,570&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>VALID-RATE</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">81.06&euro;</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="corner-right-bottom-clip-sm space-wrapper ">
+                        <div class="placeholder striped"></div>
+                    </div>
+
+                    <div class="dashboard_page_flex dashboard_page_flex_2">
+                        <p class="p_one">name</p>
+                        <p class="p_two">value</p>
+                    </div>
+                    <div class="table-container dashboard_page_table_container">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>DEPOSITS TODAY</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">65,678&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>DEPOSITS A WEEK</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">7,072&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>DEPOSITS A MONTH</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">2,954&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>DEPOSITS 3 MONTHS</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">5,570&euro;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>DEPOSIT TOTAL</span>
+                                    </div>
+                                </td>
+                                <td class="action">
+                                    <span class="price">81.06&euro;</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

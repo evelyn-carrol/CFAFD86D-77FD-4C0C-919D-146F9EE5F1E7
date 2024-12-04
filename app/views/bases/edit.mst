@@ -1,0 +1,68 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{title}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}bases.table.name{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}bases.table.name{{/i18n}}" name="name" autocomplete="off" value="{{base.name}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}bases.table.price{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="number" min="0.00" placeholder="{{#i18n}}bases.table.price{{/i18n}}" name="price" autocomplete="off" value="{{base.price}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}bases.table.type{{/i18n}} *</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=base.type onsuggest=base_type_suggest onchange=base_type_change onset=base_type_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}bases.table.status{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1 block_caption">
+                                    {{#autocomplete min=0 value=base.status onsuggest=base_status_suggest onchange=base_status_change onset=base_status_set}}{{/autocomplete}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            {{#if base.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('base.save', this)" data-action="add">{{#i18n}}buttons.add{{/i18n}}</button>
+                            {{/if}}
+                            {{#unless base.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('base.save', this)" data-action="update">{{#i18n}}buttons.update{{/i18n}}</button>
+                            {{/unless}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

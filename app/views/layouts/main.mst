@@ -1,0 +1,9 @@
+<div id="bg-circle"></div>
+<div id="app">
+    <div id="app-wrapper">
+        {{> layouts/areas/aside}}
+        <main data-content-holder>
+            {{{content}}}
+        </main>
+    </div>
+</div>

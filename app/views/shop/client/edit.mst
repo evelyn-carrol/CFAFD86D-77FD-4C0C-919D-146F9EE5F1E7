@@ -1,0 +1,73 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="block corner-left-top-clip-sm">
+            <div class="title">
+                <div class="block-number corner-left-top-right-bottom-clip-xs">
+                    <span>01</span>
+                </div>
+                <div class="block-caption block_caption">
+                    <h2>{{title}}</h2>
+                    <span>
+                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents-inner">
+                    <form action="" autocomplete="off">
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}shop.product.type{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <select name="type">
+                                        {{#each types}}
+                                            <option value="{{option}}">{{value}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}shop.product.status{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <select name="status">
+                                        {{#each statuses}}
+                                            <option value="{{option}}">{{value}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}shop.product.name{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="text" placeholder="{{#i18n}}shop.product.name{{/i18n}} *" name="name" autocomplete="off" value="{{product.name}}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element col-1-1">
+                            <p class="label">{{#i18n}}shop.product.price{{/i18n}}</p>
+                            <div class="wrap-container">
+                                <div class="col-1-1">
+                                    <input type="number" min="0.01" step="0.01" placeholder="{{#i18n}}shop.product.price{{/i18n}} *" name="price" autocomplete="off" value="{{product.price}}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            {{#if product.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('shop.product.save', this)" data-action="add">{{#i18n}}buttons.add{{/i18n}}</button>
+                            {{/if}}
+                            {{#unless product.id 'new'}}
+                                <button type="button" class="bordered col-1-1" onclick="this.disabled=true;___mc.events.push('shop.product.save', this)" data-action="update">{{#i18n}}buttons.update{{/i18n}}</button>
+                            {{/unless}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

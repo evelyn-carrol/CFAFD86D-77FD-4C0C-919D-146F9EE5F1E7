@@ -1,0 +1,541 @@
+{{> layouts/areas/header}}
+<section>
+    <div class="container">
+        <div class="admin_panel base_page block corner-left-top-clip-sm">
+
+            <div class="flex_div simple_base_page_">
+                <div class="admin_panel_cards sales_page_clip base_panel_main">
+                    <div class="base_page_dashboard_divs">
+                        <div class="dashboard">
+                            <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>Total users</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">2,144</span>
+                                    <span class="measure">users</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard">
+                            <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>TOTAL balance of users</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">1,250</span>
+                                    <span class="measure">usd</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard">
+                            <div class="indicator-panel col-1-4 corner-left-top-right-bottom-clip-xs">
+                                <div
+                                        class="cornered-text-block corner-left-top-clip-xs referral_page_main_text">
+                                    <p>TOTAL balance of users</p>
+                                </div>
+                                <div class="flex gap-sm justify-content-space-between">
+                                    <span class="value">1,250</span>
+                                    <span class="measure">usd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="base_page_main_html">
+                        <div class="filter_text">
+                            <p class="filters_text filters_basee">filters</p>
+                            <span></span>
+                        </div>
+                        <div
+                                class="admin_panel_page_caption admin_panel_page_caption_base_html corner-left-top-right-bottom-clip-xs">
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="base" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="date" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="type" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="block_caption">
+                                    <input type="text" placeholder="seller" name="" id="">
+                                    <a href="">
+                                        <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="buttons margin-top-sm">
+                                <button type="submit" class="bordered col-1-1">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sales_page_ corner-left-top-right-bottom-clip-xs">
+                    <div class="title">
+                        <div class="block-number corner-left-top-right-bottom-clip-xs">
+                            <span>312</span>
+                        </div>
+                        <div class="block-caption block_caption">
+                            <h2>base / manage bases</h2>
+                            <a href="">
+                                <img src="/assets/img/box-arrow-right-top.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="corner-right-top-clip-sm media_off space-wrapper">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+
+                    <div class="table-container deposits_page_table_container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>base</th>
+                                <th>seller</th>
+                                <th>type</th>
+                                <th>date</th>
+                                <th>price</th>
+                                <th colspan="3">action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action none_image">
+                                    <img src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action trash">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="card-number">
+                                        <span class="masked"></span>
+                                        <span>spotify_mail</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    client name
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <a href="" class="button">
+                                            <span>card</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="bordered">21/06/2024 15:44:42</button>
+                                </td>
+                                <td>
+                                    <span class="price">16.00&euro;</span>
+                                </td>
+                                <td class="action eye_image">
+                                    <img src="/assets/img/eye.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="none_image" src="/assets/img/no.svg" alt="">
+                                </td>
+                                <td class="action">
+                                    <img class="trash_image" src="/assets/img/trash.svg" alt="">
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="placeholder  pagination-wrapper">
+                        <nav class="pagination">
+                            <a href="" class="prev"></a>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <span class="active">-</span>
+                            <a href="">4</a>
+                            <a href="" class="next"></a>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,410 @@
+{{> layouts/areas/header}}
+<section class="panel-seller">
+    <div class="container panel_seller_page_row">
+        <ul class="ul-section-top">
+            <li>
+                <a href="./panel-seller.html" class="active">Dashboard</a>
+            </li>
+            <li>
+                <a href="./manage-base.html">Manage base</a>
+            </li>
+            <li>
+                <a href="./upload-base.html">Upload base</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="block corner-left-top-clip-sm panel_seller_page_row_corner_left_top_clip_sm">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>01</span>
+                    </div>
+                    <div class="block-caption block_caption panel_seller_h2">
+                        <h2>My rank and progress</h2>
+                        <a href="">
+                            <img src="/front/img/box-arrow-right-top.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="ul panel_seller_page_row_corner_left_top_clip_sm_ul">
+                    <div class="panel_seller_border_span">
+                                        <span>
+                                            <p>Rank</p>
+                                            <img src="../img/arrow-right.svg" alt="">
+                                        </span>
+                        <span class="border_span">
+                                            <p>Silver</p>
+                                            <img src="../img/silver.svg" alt="">
+                                        </span>
+                    </div>
+                    <div class="panel_seller_border_span_1">
+                                        <span class="panel_seller_border_span_1">
+                                            <p>Rank</p>
+                                            <img src="../img/arrow-right.svg" alt="">
+                                        </span>
+                        <span class="border_span panel_seller_border_span_1">
+                                            <p>Silver</p>
+                                            <img src="../img/silver.svg" alt="">
+                                        </span>
+                    </div>
+
+                    <div class="loading-bar">
+                        <div class="loading">
+
+                        </div>
+                    </div>
+                    <div class="panel_seller_border_span panel_seller_border_span_22">
+                                        <span>
+                                            <p>Rank</p>
+                                            <img src="../img/arrow-right.svg" alt="">
+                                        </span>
+                        <span class="border_span">
+                                            <p>gold</p>
+                                            <img src="../img/gold.svg" alt="">
+                                        </span>
+                    </div>
+                    <div class="panel_seller_border_span_1">
+                                        <span>
+                                            <p>Rank</p>
+                                            <img src="../img/arrow-right.svg" alt="">
+                                        </span>
+                        <span class="border_span">
+                                            <p>gold</p>
+                                            <img src="../img/gold.svg" alt="">
+                                        </span>
+                    </div>
+                </div>
+
+                <div class="center_percentage">
+                    <h3>50.16%</h3> <span>Sur</span>
+                    <h3>100%</h3>
+                </div>
+                <div class="left_bottom panel_seller_sales_stats_left_bottom">
+                    <div class="silver_left_btm">
+                        <p>Current rank.</p>
+                        <h2>
+                            <span>Silver</span> <img src="../img/silver.svg" alt="">
+                        </h2>
+                        <div class="bg media_responsive_off">
+                            <div class="placeholder striped"></div>
+                        </div>
+                    </div>
+                    <div class="silver_right_btm silver_right_btm_li_containers">
+                        <h4>Calculated based on <br> total cc sales</h4>
+                        <div class="li_container">
+                            <li>
+                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M14.2046 0.934958C14.1116 0.84123 14.001 0.766836 13.8792 0.716067C13.7573 0.665298 13.6266 0.63916 13.4946 0.63916C13.3626 0.63916 13.2319 0.665298 13.11 0.716067C12.9881 0.766836 12.8775 0.84123 12.7846 0.934958L5.33458 8.39496L2.20458 5.25496C2.10806 5.16172 1.99412 5.08841 1.86926 5.0392C1.74441 4.99 1.61108 4.96587 1.4769 4.96819C1.34272 4.97051 1.21031 4.99924 1.08723 5.05273C0.964154 5.10623 0.852817 5.18344 0.759579 5.27996C0.66634 5.37648 0.593026 5.49042 0.543822 5.61528C0.494618 5.74013 0.470488 5.87346 0.472809 6.00764C0.475131 6.14182 0.503858 6.27423 0.557352 6.3973C0.610845 6.52038 0.688057 6.63172 0.784579 6.72496L4.62458 10.565C4.71754 10.6587 4.82814 10.7331 4.95 10.7838C5.07186 10.8346 5.20257 10.8608 5.33458 10.8608C5.46659 10.8608 5.5973 10.8346 5.71916 10.7838C5.84101 10.7331 5.95162 10.6587 6.04458 10.565L14.2046 2.40496C14.3061 2.31132 14.3871 2.19766 14.4425 2.07117C14.4979 1.94467 14.5265 1.80806 14.5265 1.66996C14.5265 1.53186 14.4979 1.39525 14.4425 1.26875C14.3871 1.14225 14.3061 1.0286 14.2046 0.934958Z"
+                                            fill="#0BF1FF" fill-opacity="0.5" />
+                                </svg>
+                                <span>Conscient de l'importance d'un accès</span>
+
+                            </li>
+                        </div>
+                        <div class="li_container">
+
+                            <li>
+                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M14.2046 0.934958C14.1116 0.84123 14.001 0.766836 13.8792 0.716067C13.7573 0.665298 13.6266 0.63916 13.4946 0.63916C13.3626 0.63916 13.2319 0.665298 13.11 0.716067C12.9881 0.766836 12.8775 0.84123 12.7846 0.934958L5.33458 8.39496L2.20458 5.25496C2.10806 5.16172 1.99412 5.08841 1.86926 5.0392C1.74441 4.99 1.61108 4.96587 1.4769 4.96819C1.34272 4.97051 1.21031 4.99924 1.08723 5.05273C0.964154 5.10623 0.852817 5.18344 0.759579 5.27996C0.66634 5.37648 0.593026 5.49042 0.543822 5.61528C0.494618 5.74013 0.470488 5.87346 0.472809 6.00764C0.475131 6.14182 0.503858 6.27423 0.557352 6.3973C0.610845 6.52038 0.688057 6.63172 0.784579 6.72496L4.62458 10.565C4.71754 10.6587 4.82814 10.7331 4.95 10.7838C5.07186 10.8346 5.20257 10.8608 5.33458 10.8608C5.46659 10.8608 5.5973 10.8346 5.71916 10.7838C5.84101 10.7331 5.95162 10.6587 6.04458 10.565L14.2046 2.40496C14.3061 2.31132 14.3871 2.19766 14.4425 2.07117C14.4979 1.94467 14.5265 1.80806 14.5265 1.66996C14.5265 1.53186 14.4979 1.39525 14.4425 1.26875C14.3871 1.14225 14.3061 1.0286 14.2046 0.934958Z"
+                                            fill="#0BF1FF" fill-opacity="0.5" />
+                                </svg>
+                                <span>Conscient de l'importance</span>
+
+                            </li>
+                        </div>
+                        <div class="li_container">
+                            <li>
+                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M14.2046 0.934958C14.1116 0.84123 14.001 0.766836 13.8792 0.716067C13.7573 0.665298 13.6266 0.63916 13.4946 0.63916C13.3626 0.63916 13.2319 0.665298 13.11 0.716067C12.9881 0.766836 12.8775 0.84123 12.7846 0.934958L5.33458 8.39496L2.20458 5.25496C2.10806 5.16172 1.99412 5.08841 1.86926 5.0392C1.74441 4.99 1.61108 4.96587 1.4769 4.96819C1.34272 4.97051 1.21031 4.99924 1.08723 5.05273C0.964154 5.10623 0.852817 5.18344 0.759579 5.27996C0.66634 5.37648 0.593026 5.49042 0.543822 5.61528C0.494618 5.74013 0.470488 5.87346 0.472809 6.00764C0.475131 6.14182 0.503858 6.27423 0.557352 6.3973C0.610845 6.52038 0.688057 6.63172 0.784579 6.72496L4.62458 10.565C4.71754 10.6587 4.82814 10.7331 4.95 10.7838C5.07186 10.8346 5.20257 10.8608 5.33458 10.8608C5.46659 10.8608 5.5973 10.8346 5.71916 10.7838C5.84101 10.7331 5.95162 10.6587 6.04458 10.565L14.2046 2.40496C14.3061 2.31132 14.3871 2.19766 14.4425 2.07117C14.4979 1.94467 14.5265 1.80806 14.5265 1.66996C14.5265 1.53186 14.4979 1.39525 14.4425 1.26875C14.3871 1.14225 14.3061 1.0286 14.2046 0.934958Z"
+                                            fill="#0BF1FF" fill-opacity="0.5" />
+                                </svg>
+                                <span>Conscl'importance d'un accès</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block corner-right-top-clip-sm media_responsive_off">
+                <div class="placeholder striped"></div>
+            </div>
+            <div class="block corner-left-top-clip-sm three_block panel_seller_width_full">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>04</span>
+                    </div>
+                    <div class="block-caption block_caption ">
+                        <h2>Sales / stats</h2>
+                        <a href="">
+                            <img src="/front/img/box-arrow-right-top.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div
+                        class="sales_stats panel_seller_sales_stats panel_seller_width_full_panel_seller_sales_stats">
+                    <div class="currently_on_sale">
+                        <p>currently on sale.</p>
+                        <div class="currently_on_sale_big">
+                            <h1>183</h1>
+                            <span>unit</span>
+                        </div>
+                    </div>
+                    <div class="currently_on_sale">
+                        <p>total sales.</p>
+                        <div class="currently_on_sale_big">
+                            <h1>583</h1>
+                            <span>unit</span>
+                        </div>
+                    </div>
+                    <div class="currently_on_sale_null panel_seller_page_corner_bg">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+                <div class="stats panel_seller_stats_">
+                    <div class="hr_chiziq"></div>
+                    <p class="stats_title">Stats.</p>
+                    <div class="tables">
+                        <div class="table">
+                            <div class="box">
+                                <p>8.000 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table">
+                            <div class="box">
+                                <p>4.000 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table">
+                            <div class="box">
+                                <p>2.000 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table">
+                            <div class="box">
+                                <p>1.000 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table">
+                            <div class="box">
+                                <p>500 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table">
+                            <div class="box">
+                                <p>50 +</p>
+                            </div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div class="table panel_seller_boxes">
+                            <div class="box">
+                            </div>
+                            <div class="box">
+                                <p>Month</p>
+                            </div>
+                            <div class="box">
+                                <p>Month</p>
+                            </div>
+                            <div class="box">
+                                <p>Month</p>
+                            </div>
+                            <div class="box">
+                                <p>Month</p>
+                            </div>
+                            <div class="box">
+                                <p>Month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                    class="block corner-left-top-clip-sm three_block panel_siyaler_corner_left_top_clip_sm">
+                <div class="title">
+                    <div class="block-number corner-left-top-right-bottom-clip-xs">
+                        <span>05</span>
+                    </div>
+                    <div class="block-caption block_caption">
+                        <h2>my results</h2>
+                        <a href="">
+                            <img src="/front/img/box-arrow-right-top.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="sales_stats panel_seller_sales_stats ">
+                    <div class="currently_on_sale">
+                        <p>gross total income.</p>
+                        <div class="currently_on_sale_big">
+                            <h1>1.000</h1>
+                            <span>USD</span>
+                        </div>
+                    </div>
+                    <div class="currently_on_sale">
+                        <p>total net income.</p>
+                        <div class="currently_on_sale_big">
+                            <h1>850</h1>
+                            <span>USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="derniere panel_seller_html_derniere">
+                    <div class="hr_chiziq"></div>
+                    <p>Dernière ventes.</p>
+                    <div class="bg corner-right-top-clip-sm  space-wrapper panel_seller_corner_bg_2">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+                <div class="table-container panel_seller_page_table_container">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>?</th>
+                            <th>buyer's name</th>
+                            <th>Level</th>
+                            <th>amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card-number">
+
+                                    <span>416549</span>
+                                </div>
+                            </td>
+                            <td>thay_2811</td>
+                            <td>Classique</td>
+                            <td class="action">
+                                <span class="price">5.00 €</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_bottom">
+                    <div class="nv">
+                        <div class="line"></div>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 0.25L9.5 5.25H0.5L5 0.25Z" fill="#0BF1FF" fill-opacity="0.5" />
+                        </svg>
+
+                        <div class="line"></div>
+                    </div>
+                    <div class="bg corner-right-top-clip-sm  space-wrapper panel_seller_corner_bg_">
+                        <div class="placeholder striped"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

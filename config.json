@@ -1,0 +1,34 @@
+{
+  "10.9.9.116": {
+    "API_DOMAIN": "//10.9.9.116",
+    "API_URI": "/api/",
+    "UPLOAD_URL": "//10.9.9.116/upload",
+    "PANEL_TITLE": "Jarvis Shop",
+    "LOGO_PATH": "",
+    "FAVICON": "",
+    "SUPPORT_EMAIL": "jarvis@shop.com",
+    "THUMBS": {
+      "DOMAIN": "10.9.9.116",
+      "MINI": "/thumbs/200",
+      "SMALL": "/thumbs/600",
+      "MEDIUM": "/thumbs/1200",
+      "LARGE": "/thumbs/1920"
+    }
+  },
+  "jarvys.mytg.pro": {
+    "API_DOMAIN": "//jarvys.mytg.pro",
+    "API_URI": "/api/",
+    "UPLOAD_URL": "//jarvys.mytg.pro/upload",
+    "PANEL_TITLE": "Jarvis Shop",
+    "LOGO_PATH": "",
+    "FAVICON": "",
+    "SUPPORT_EMAIL": "jarvis@shop.com",
+    "THUMBS": {
+      "DOMAIN": "jarvys.mytg.pro",
+      "MINI": "/thumbs/200",
+      "SMALL": "/thumbs/600",
+      "MEDIUM": "/thumbs/1200",
+      "LARGE": "/thumbs/1920"
+    }
+  }
+}

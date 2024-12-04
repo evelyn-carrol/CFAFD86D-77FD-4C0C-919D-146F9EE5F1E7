@@ -1,0 +1,41 @@
+<tr>
+    <td>
+        {{id}}
+    </td>
+    <td>
+        {{created|datetime}}
+    </td>
+    <td>
+        {{nickname}}
+    </td>
+    <td>
+        {{role}}
+    </td>
+
+    <td class="action">
+        <button class="{{#if status 'blocked'}}red{{/if}} {{#if status 'active'}}green{{/if}}">{{status}}</button>
+    </td>
+
+    <td>
+        {{balance|money}}$
+    </td>
+
+    <td class="action">
+        <a href="/admin/users/edit/{{id}}" class="button pencil"></a>
+    </td>
+<!--
+    <td class="action">
+        <a href="/admin/users/" class="button eye"></a>
+    </td>
+-->
+    <td class="action">
+        {{#if status 'active'}}
+            <button type="button" class="button remove red" data-id="{{id}}" onclick="___mc.events.push('admin.users.archive', {id: {{id}}, name:'{{nickname}}' })"></button>
+        {{/if}}
+    </td>
+    <td class="action">
+        {{#if status 'NE' 'seller'}}
+            <button type="button" class="button shop" data-id="{{id}}" onclick="___mc.events.push('admin.users.seller.set', {id: {{id}}, name:'{{nickname}}' })"></button>
+        {{/if}}
+    </td>
+</tr>
