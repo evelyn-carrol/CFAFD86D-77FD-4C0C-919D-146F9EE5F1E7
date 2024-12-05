@@ -1,8 +1,8 @@
 {
   "jarvyscc.top": {
-    "API_DOMAIN": "//jarvyscc.top",
-    "API_URI": "/api/",
-    "UPLOAD_URL": "//jarvyscc.top/upload",
+    "API_DOMAIN": "//api.jarvyscc.top",
+    "API_URI": "/",
+    "UPLOAD_URL": "//api.jarvyscc.top/upload",
     "PANEL_TITLE": "Jarvis Shop",
     "LOGO_PATH": "",
     "FAVICON": "",
